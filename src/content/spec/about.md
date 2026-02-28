@@ -10,9 +10,8 @@ I am Mashiro, you might also know me as Demian.
 
 A little bit about me:
 
-- 17 yo, currently living in New York.
-- Watches a lot of anime, reads a lot.
-- Not a tryhard but rather kinda stupid.
+- 18 yo, currently living in New York.
+- Watches a lot of movies and anime, reads a lot.
 - Plays: Guitar, Bass, Keyboard, Violin, learning how to make music.
 
 Find some of my anime analysis at:
