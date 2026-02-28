@@ -21,7 +21,7 @@ Find some of my anime analysis at:
 :::note
 Feel free to reach out to me at:
 
-- Discord: mashiroawa
+- Discord: jonespolynomial
 - Email: mashiro.goliu[at]gmail.com
 - QQ: 3986640580
 

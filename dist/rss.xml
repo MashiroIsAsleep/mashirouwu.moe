@@ -1,0 +1,2990 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Mashiro&apos;s Blog</title><description>uwu</description><link>https://mashiroisasleep.github.io/</link><language>en</language><item><title>Regarding 2025 Nobel Prize in Physics</title><link>https://mashiroisasleep.github.io/posts/rant/regarding2025nobelprize/</link><guid isPermaLink="true">https://mashiroisasleep.github.io/posts/rant/regarding2025nobelprize/</guid><pubDate>Sat, 28 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;There is an obvious question one could ask:&lt;/p&gt;
+&lt;p&gt;We have already had phenomena such as the Josephson effect and Bose–Einstein condensation described as &lt;em&gt;macroscopic quantum effects&lt;/em&gt;. So why would &lt;strong&gt;quantum tunneling&lt;/strong&gt; deserve this much emphasis again? What exactly distinguishes the older “macroscopic quantum effects” from the one highlighted this time, both conceptually and experimentally?&lt;/p&gt;
+&lt;p&gt;A compact answer is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;“Third quantization” = quantization of the order parameter&lt;/strong&gt;&lt;br /&gt;
+that is, &lt;strong&gt;macroscopic energy levels + coherent superposition of macroscopic states&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;A quantum system formed by single-state condensation&lt;/h2&gt;
+&lt;p&gt;Let us begin with Bose–Einstein condensation. At sufficiently low temperature, the de Broglie wavelengths of many atoms overlap coherently, and a large number of particles occupy the same quantum state. One is then tempted to describe the condensate as a kind of &lt;strong&gt;macroscopic atom&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Schematically, one may think of the condensate state as&lt;/p&gt;
+&lt;p&gt;$$
+\lvert \mathrm{BEC} \rangle
+= \bigotimes_{i=1}^{N} \lvert \psi(x_i)e^{i\phi_i} \rangle .
+$$&lt;/p&gt;
+&lt;p&gt;Each constituent quasi-particle occupies a state with amplitude $\psi(x)$ and phase $\phi$. The essential point is that a huge number of particles are described by one coherent quantum state.&lt;/p&gt;
+&lt;p&gt;This picture is not limited to atomic gases. In superconductivity, one also encounters a condensed state: the BCS state. In that case the condensation takes place in momentum space rather than ordinary real space, but the spirit is similar: a large number of degrees of freedom become phase coherent.&lt;/p&gt;
+&lt;p&gt;Now connect two superconductors with a thin insulating barrier. Then one obtains a Josephson junction, where the current is determined by the phase difference between the two superconductors. Formally one may write the Josephson current as&lt;/p&gt;
+&lt;p&gt;$$
+I_J = \langle S(\phi) \rvert [H_T, N_L] \lvert S(\phi) \rangle .
+$$&lt;/p&gt;
+&lt;p&gt;In ordinary metals, electrons suffer resistance because of scattering and interactions. But once electrons form Cooper pairs, they can collectively cross the barrier in a coherent manner.&lt;/p&gt;
+&lt;p&gt;Still, from Leggett’s viewpoint, this is not yet the deepest sense of a &lt;strong&gt;macroscopic quantum phenomenon&lt;/strong&gt;. Why? Because one can still say that this is, in some sense, the accumulated effect of many microscopic quantum objects—many Cooper pairs behaving coherently—rather than the direct quantization of a truly macroscopic collective degree of freedom itself.&lt;/p&gt;
+&lt;p&gt;The deeper question is therefore:&lt;/p&gt;
+&lt;p&gt;Can the entire condensate, described by its &lt;strong&gt;order parameter&lt;/strong&gt;, behave as a single quantum object with its own quantized levels and even coherent superpositions?&lt;/p&gt;
+&lt;p&gt;That is the real conceptual leap.&lt;/p&gt;
+&lt;h2&gt;Quantization of the order parameter: “third quantization”&lt;/h2&gt;
+&lt;p&gt;In 1980, A. J. Leggett argued that previously discussed “macroscopic quantum effects” were not yet enough to prove that quantum mechanics genuinely applies at the macroscopic level in the strongest possible sense.&lt;/p&gt;
+&lt;p&gt;A large accumulation of microscopic quantum effects is not automatically the same thing as a genuinely macroscopic quantum variable becoming quantized.&lt;/p&gt;
+&lt;p&gt;So Leggett proposed a sharper target: in a superconducting circuit, one should quantize the &lt;strong&gt;order parameter&lt;/strong&gt; itself. If one can show that a macroscopic variable—such as phase, charge, or magnetic flux—has quantized levels and can even exist in a superposition state, then one has much stronger evidence for true macroscopic quantum behavior.&lt;/p&gt;
+&lt;p&gt;For a superconducting condensate, the macroscopic phase operator $\hat{\phi}$ and number operator $\hat{N}$ satisfy the effective commutation relation&lt;/p&gt;
+&lt;p&gt;$$
+[\hat{\phi}, \hat{N}] = -2i .
+$$&lt;/p&gt;
+&lt;p&gt;This relation suggests that the collective order parameter is not merely a classical field, but may itself be treated quantum mechanically.&lt;/p&gt;
+&lt;p&gt;To test whether such macroscopic quantization is real, Leggett proposed an idea analogous to Bell’s inequality: the &lt;strong&gt;Leggett–Garg inequality&lt;/strong&gt;. The logic is the following.&lt;/p&gt;
+&lt;p&gt;If a macroscopic observable—say, charge or magnetic flux—has a definite pre-existing value at all times, as a classical picture would assume, then the temporal correlations between measurements taken at different times must satisfy certain classical bounds. But if the system behaves quantum mechanically, these correlations can exceed those classical expectations.&lt;/p&gt;
+&lt;p&gt;So the problem becomes: find a physical system in which a macroscopically distinguishable degree of freedom can tunnel, quantize, and possibly superpose.&lt;/p&gt;
+&lt;p&gt;Leggett noticed that a &lt;strong&gt;small Josephson junction&lt;/strong&gt; might do exactly this.&lt;/p&gt;
+&lt;h2&gt;The Josephson junction and the tilted washboard potential&lt;/h2&gt;
+&lt;p&gt;In a current-biased Josephson junction, the order parameter is the phase difference $\phi$ across the junction. Its dynamics can be written in a form analogous to the motion of a particle in an effective potential:&lt;/p&gt;
+&lt;h1&gt;$$
+\ddot{\phi}&lt;/h1&gt;
+&lt;p&gt;-\gamma \dot{\phi}
+-\frac{I_C}{I_0}\sin\phi
++\frac{I}{I_C}.
+$$&lt;/p&gt;
+&lt;p&gt;This produces the famous &lt;strong&gt;tilted washboard potential&lt;/strong&gt;. One may picture the phase as a particle trapped in one of the valleys of a washboard that is tilted downhill.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If the tilt is small enough, the phase remains trapped in a local minimum.&lt;/li&gt;
+&lt;li&gt;If the phase escapes, the junction switches behavior.&lt;/li&gt;
+&lt;li&gt;The escape can occur either by &lt;strong&gt;thermal activation&lt;/strong&gt; over the barrier or by &lt;strong&gt;quantum tunneling&lt;/strong&gt; through it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That distinction is the core of the experiment.&lt;/p&gt;
+&lt;p&gt;To make the order parameter observable in a more direct way, one typically considers a SQUID geometry, where flux quantization links the superconducting phase to magnetic flux. In that setting, the collective variable is no longer just a formal abstraction: it is tied to a measurable macroscopic quantity.&lt;/p&gt;
+&lt;h2&gt;The key experiments behind the macroscopic quantum effect&lt;/h2&gt;
+&lt;p&gt;The essential experimental strategy is to compare &lt;strong&gt;classical thermal escape&lt;/strong&gt; with &lt;strong&gt;quantum tunneling escape&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;If escape is dominated by thermal activation, then the escape rate should depend strongly on temperature.&lt;br /&gt;
+If escape is dominated by quantum tunneling, then it should instead be set by the characteristic plasma frequency and become largely temperature independent at sufficiently low temperature.&lt;/p&gt;
+&lt;p&gt;That is exactly the crucial signature: as the system is cooled, the measured escape rate eventually stops following the thermal prediction. The curve develops a clear crossover, indicating that thermal activation is no longer the dominant mechanism.&lt;/p&gt;
+&lt;p&gt;In other words, below a certain temperature, the phase behaves not like a classical object being kicked over the barrier by heat, but like a quantum object tunneling through the barrier.&lt;/p&gt;
+&lt;p&gt;One natural objection is that such behavior might arise from environmental noise rather than true quantum tunneling. To rule this out, the experiment was repeated using a larger junction, and the same qualitative transition was observed again. This strengthens the claim that the low-temperature saturation is not simply an artifact of noise.&lt;/p&gt;
+&lt;p&gt;A second experiment probes the existence of &lt;strong&gt;macroscopic quantized levels&lt;/strong&gt; more directly. By varying the bias current, one changes the shape of the effective potential $U(\phi)$. If discrete energy levels exist inside the well, then the spacing between them can be tuned, and resonant transitions should appear at specific values of the bias.&lt;/p&gt;
+&lt;p&gt;Experimentally, such resonant features do appear.&lt;/p&gt;
+&lt;p&gt;There is some subtlety here: not every resonance peak must be uniquely quantum in origin. Certain nonlinear classical effects, such as Landau-type nonlinear resonance, can in principle mimic part of the signal. However, such explanations account for only part of the observed structure, not the full set of peaks. This is why the quantized-level interpretation remains compelling.&lt;/p&gt;
+&lt;p&gt;So the significance is not merely “there is tunneling somewhere.” Rather, it is:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;a &lt;strong&gt;macroscopic collective degree of freedom&lt;/strong&gt; is being described quantum mechanically;&lt;/li&gt;
+&lt;li&gt;it exhibits &lt;strong&gt;quantized levels&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;it undergoes &lt;strong&gt;tunneling&lt;/strong&gt; between states;&lt;/li&gt;
+&lt;li&gt;and in principle, this opens the door to &lt;strong&gt;coherent superpositions of macroscopically distinct states&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That is the conceptual reason this is qualitatively different from simply saying “many particles are in a quantum state.”&lt;/p&gt;
+&lt;h2&gt;Why this matters for quantum computation&lt;/h2&gt;
+&lt;p&gt;If one can make the tunneling time long enough and protect coherence well enough, then these macroscopic quantum states can be used as qubits.&lt;/p&gt;
+&lt;p&gt;This is precisely why superconducting circuits became such an important platform for quantum computation.&lt;/p&gt;
+&lt;p&gt;A major practical issue in superconducting qubits is noise—especially charge noise. One influential design idea is therefore to use a &lt;strong&gt;small Josephson junction shunted by a large capacitor&lt;/strong&gt;, reducing sensitivity to charge fluctuations and improving coherence.&lt;/p&gt;
+&lt;p&gt;This line of thought directly connects the old foundational question—&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Can a macroscopic degree of freedom really behave quantum mechanically?&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;—to the modern engineering question—&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Can we stabilize and control that degree of freedom well enough to compute with it?&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Quantum error correction pushes this further by encoding one logical qubit into multiple physical qubits, though this still remains, in many respects, an ongoing technological project rather than a completed practical endpoint.&lt;/p&gt;
+&lt;h2&gt;Outlook&lt;/h2&gt;
+&lt;p&gt;Can other systems also realize genuinely macroscopic quantum effects?&lt;/p&gt;
+&lt;p&gt;Quite possibly.&lt;/p&gt;
+&lt;p&gt;The Gross–Pitaevskii equation for a BEC has a structure reminiscent of the equations governing a small Josephson junction, though with an additional nonlinear term. This suggests that similar ideas about collective variables, tunneling, and coherence may appear in condensate systems as well.&lt;/p&gt;
+&lt;p&gt;Another important direction is the physics of &lt;strong&gt;anyons&lt;/strong&gt; in two dimensions. In two-dimensional systems, particles are not restricted to purely bosonic or fermionic exchange statistics. Instead, one may obtain an additional phase factor upon exchange that is neither $0$ nor $\pi$, but an arbitrary value:&lt;/p&gt;
+&lt;p&gt;$$
+\psi \to e^{i\theta}\psi .
+$$&lt;/p&gt;
+&lt;p&gt;One may heuristically picture this as if the particle carries an attached flux tube, so that braiding two particles generates an extra phase. Such anyonic systems are especially interesting because of their potential use in quantum computation.&lt;/p&gt;
+&lt;h2&gt;A final question: do white dwarfs and neutron stars count?&lt;/h2&gt;
+&lt;p&gt;Can white dwarfs or neutron stars be called examples of &lt;strong&gt;macroscopic quantum effects&lt;/strong&gt;?&lt;/p&gt;
+&lt;p&gt;A useful distinction is the one between:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;quantum macroscopicity&lt;/strong&gt;: a macroscopic system whose behavior reflects the accumulation of quantum effects;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;macroscopic quantum behavior&lt;/strong&gt;: a macroscopically distinguishable variable that is itself quantized and capable, in principle, of coherent quantum behavior.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Under this distinction, compact stars supported by degeneracy pressure belong more naturally to the &lt;strong&gt;first&lt;/strong&gt; category. Their existence certainly depends on quantum mechanics, but that is not quite the same as saying that a macroscopic order parameter has been isolated, quantized, and observed in coherent superposition.&lt;/p&gt;
+&lt;p&gt;That is the deeper sense in which the Josephson-junction experiments are special.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;So the real message is this:&lt;/p&gt;
+&lt;p&gt;The point is not merely that “many microscopic particles behave quantum mechanically.”&lt;br /&gt;
+The stronger statement is that a &lt;strong&gt;macroscopic collective variable itself&lt;/strong&gt; acquires &lt;strong&gt;discrete quantum levels&lt;/strong&gt; and may even participate in &lt;strong&gt;coherent superposition&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;That is the sense in which one may speak of a truly macroscopic quantum phenomenon.&lt;/p&gt;
+</content:encoded></item><item><title>CalcBC Ch10 - Infinite Sequences and Series</title><link>https://mashiroisasleep.github.io/posts/calcbc/calcnotes10/</link><guid isPermaLink="true">https://mashiroisasleep.github.io/posts/calcbc/calcnotes10/</guid><description>Notes on AP calcBC chapter 10</description><pubDate>Thu, 10 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Chapter 10: Infinite Sequences and Series&lt;/h2&gt;
+&lt;p&gt;In this chapter, we delve into the theory and applications of infinite sequences and series. These topics are some of the most challenging in calculus but are fundamental for understanding how functions can be approximated by sums, how convergence is determined, and how error estimates are made. We will explore 15 topics, each building on the previous ideas, and include self–check problems to reinforce your understanding.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;10.1 Defining Convergent and Divergent Infinite Series&lt;/h2&gt;
+&lt;p&gt;An infinite series is expressed as
+$$
+\sum_{n=1}^\infty a_n,
+$$
+and it is said to converge if the sequence of partial sums
+$$
+S_N = \sum_{n=1}^N a_n
+$$
+approaches a finite limit as $$ N \to \infty $$. If the limit does not exist (or is infinite), the series diverges. This definition is foundational and underpins all convergence tests.&lt;/p&gt;
+&lt;h3&gt;Self–Check 1&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Consider the geometric series
+$$
+\sum_{n=1}^\infty \frac{1}{2^n}.
+$$&lt;br /&gt;
+Show that its sequence of partial sums converges and find its limit.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The partial sum is given by the formula for a geometric series:
+$$
+S_N = \frac{a(1-r^N)}{1-r}, \quad \text{with } a=\frac{1}{2} \text{ and } r=\frac{1}{2}.
+$$&lt;/li&gt;
+&lt;li&gt;Thus,
+$$
+S_N = \frac{\frac{1}{2}(1-(1/2)^N)}{1-\frac{1}{2}} = 1 - \frac{1}{2^N}.
+$$&lt;/li&gt;
+&lt;li&gt;Taking the limit as $$ N\to\infty $$:
+$$
+\lim_{N\to\infty} S_N = 1 - 0 = 1.
+$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So, the series converges and its sum is $$ 1 $$.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;10.2 Working with Geometric Series&lt;/h2&gt;
+&lt;p&gt;A geometric series has the form
+$$
+\sum_{n=0}^\infty ar^n.
+$$
+It converges if $$ |r| &amp;lt; 1 $$ with sum
+$$
+\frac{a}{1-r},
+$$
+and diverges if $$ |r| \ge 1 $$. Geometric series appear in many contexts, from finance to physics.&lt;/p&gt;
+&lt;h3&gt;Self–Check 2&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Find the sum of the series
+$$
+\sum_{n=0}^\infty 3\left(0.5\right)^n.
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Since $$ |0.5| &amp;lt; 1 $$, the series converges. Its sum is:
+$$
+\frac{3}{1-0.5} = \frac{3}{0.5} = 6.
+$$&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;10.3 The nth Term Test for Convergence&lt;/h2&gt;
+&lt;p&gt;The nth Term Test states that if
+$$
+\lim_{n\to\infty} a_n \neq 0,
+$$
+then the series
+$$
+\sum_{n=1}^\infty a_n
+$$
+diverges. Note, however, that if the limit is zero, the test is inconclusive.&lt;/p&gt;
+&lt;h3&gt;Self–Check 3&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Determine whether the series
+$$
+\sum_{n=1}^\infty \frac{n}{n+1}
+$$
+converges or diverges.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Calculate the limit:
+$$
+\lim_{n\to\infty} \frac{n}{n+1} = 1 \neq 0.
+$$
+By the nth Term Test, the series diverges.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;10.4 Integral Test for Convergence&lt;/h2&gt;
+&lt;p&gt;If $$ f(x) $$ is continuous, positive, and decreasing for $$ x\geq N $$ and $$ a_n = f(n) $$, then
+$$
+\sum_{n=N}^\infty a_n
+$$
+and
+$$
+\int_N^\infty f(x),dx
+$$
+either both converge or both diverge. This test is useful when comparing a series to an improper integral.&lt;/p&gt;
+&lt;h3&gt;Self–Check 4&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Determine the convergence of the series
+$$
+\sum_{n=2}^\infty \frac{1}{n\ln n}
+$$
+using the integral test.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let $$ f(x)= \frac{1}{x\ln x} $$ for $$ x\ge 2 $$. Then
+$$
+\int_2^\infty \frac{1}{x\ln x},dx.
+$$
+Make the substitution $$ u=\ln x,; du=\frac{dx}{x} $$, so the integral becomes:
+$$
+\int_{\ln2}^\infty \frac{1}{u},du,
+$$
+which diverges (since $$ \int \frac{1}{u},du = \ln|u| $$ and $$ \lim_{u\to\infty}\ln u = \infty $$). Hence, the series diverges.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;10.5 Harmonic Series and p–Series&lt;/h2&gt;
+&lt;p&gt;The harmonic series,
+$$
+\sum_{n=1}^\infty \frac{1}{n},
+$$
+diverges, even though its terms approach zero. More generally, a p–series
+$$
+\sum_{n=1}^\infty \frac{1}{n^p}
+$$
+converges if and only if $$ p&amp;gt;1 $$.&lt;/p&gt;
+&lt;h3&gt;Self–Check 5&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Determine whether the series
+$$
+\sum_{n=1}^\infty \frac{1}{n^{0.9}}
+$$
+converges or diverges.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Since $$ 0.9 &amp;lt; 1 $$, the p–series diverges.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;10.6 Comparison Tests for Convergence&lt;/h2&gt;
+&lt;p&gt;The Comparison Test involves comparing a series with another series whose convergence is known. If $$ 0\leq a_n\leq b_n $$ and $$ \sum b_n $$ converges, then $$ \sum a_n $$ converges. The Limit Comparison Test uses the limit
+$$
+\lim_{n\to\infty}\frac{a_n}{b_n}
+$$
+to draw similar conclusions.&lt;/p&gt;
+&lt;h3&gt;Self–Check 6&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Use the comparison test to decide whether the series
+$$
+\sum_{n=1}^\infty \frac{1}{n^2+3}
+$$
+converges.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For all $$ n\geq1 $$,
+$$
+\frac{1}{n^2+3} &amp;lt; \frac{1}{n^2}.
+$$
+Since $$ \sum \frac{1}{n^2} $$ converges (p–series with $$ p=2&amp;gt;1 $$), by the Comparison Test, the given series converges.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;10.7 Alternating Series Test for Convergence&lt;/h2&gt;
+&lt;p&gt;An alternating series has the form
+$$
+\sum_{n=1}^\infty (-1)^{n+1}a_n,
+$$
+with $$ a_n\geq0 $$. The Alternating Series Test states that if $$ a_n $$ is decreasing and
+$$
+\lim_{n\to\infty}a_n = 0,
+$$
+then the series converges.&lt;/p&gt;
+&lt;h3&gt;Self–Check 7&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Determine whether the series
+$$
+\sum_{n=1}^\infty (-1)^{n+1}\frac{1}{n}
+$$
+converges.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Here, $$ a_n=\frac{1}{n} $$ is decreasing and
+$$
+\lim_{n\to\infty}\frac{1}{n}=0.
+$$
+Thus, by the Alternating Series Test, the series converges (conditionally).&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;10.8 Ratio Test for Convergence&lt;/h2&gt;
+&lt;p&gt;The Ratio Test evaluates
+$$
+L = \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.
+$$
+If $$ L&amp;lt;1 $$, the series converges absolutely; if $$ L&amp;gt;1 $$, it diverges; and if $$ L=1 $$, the test is inconclusive.&lt;/p&gt;
+&lt;h3&gt;Self–Check 8&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Determine the convergence of the series
+$$
+\sum_{n=1}^\infty \frac{n!}{3^n}
+$$
+using the ratio test.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let $$ a_n = \frac{n!}{3^n} $$. Then,
+$$
+\frac{a_{n+1}}{a_n} = \frac{(n+1)!}{3^{n+1}} \cdot \frac{3^n}{n!} = \frac{n+1}{3}.
+$$
+Taking the limit,
+$$
+L = \lim_{n\to\infty} \frac{n+1}{3} = \infty &amp;gt; 1.
+$$
+Thus, the series diverges.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;10.9 Determining Absolute or Conditional Convergence&lt;/h2&gt;
+&lt;p&gt;A series converges absolutely if
+$$
+\sum_{n=1}^\infty |a_n|
+$$
+converges. If a series converges but not absolutely, it converges conditionally. Absolute convergence is a stronger condition and implies convergence.&lt;/p&gt;
+&lt;h3&gt;Self–Check 9&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Determine whether the series
+$$
+\sum_{n=1}^\infty \frac{(-1)^n}{n}
+$$
+converges absolutely, conditionally, or diverges.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Consider the absolute series:
+$$
+\sum_{n=1}^\infty \left|\frac{(-1)^n}{n}\right| = \sum_{n=1}^\infty \frac{1}{n},
+$$
+which is the harmonic series and diverges. However, by the Alternating Series Test, the original series converges. Hence, it converges conditionally.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;10.10 Alternating Series Error Bound&lt;/h2&gt;
+&lt;p&gt;For an alternating series satisfying the Alternating Series Test, the error when approximating the sum by the nth partial sum is at most the absolute value of the first omitted term:
+$$
+|R_n| \leq a_{n+1}.
+$$&lt;/p&gt;
+&lt;h3&gt;Self–Check 10&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Estimate the error when approximating the sum of
+$$
+\sum_{n=1}^\infty (-1)^{n+1}\frac{1}{n}
+$$
+by the sum of the first 4 terms.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The first omitted term is $$ a_5 = \frac{1}{5} = 0.2. $$&lt;br /&gt;
+Thus, the error in using the first 4 terms is at most 0.2.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;10.11 Finding Taylor Polynomial Approximations of Functions&lt;/h2&gt;
+&lt;p&gt;A Taylor polynomial approximates a function by matching its derivatives at a point. The Taylor series for a function $$ f(x) $$ centered at $$ a $$ is given by:
+$$
+f(x)=\sum_{n=0}^\infty \frac{f^{(n)}(a)}{n!}(x-a)^n.
+$$
+When $$ a=0 $$, it is called a Maclaurin series.&lt;/p&gt;
+&lt;h3&gt;Self–Check 11&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Find the third-degree Taylor polynomial for
+$$
+f(x)=e^x
+$$
+centered at 0.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For $$ e^x $$, all derivatives are $$ e^x $$, and at 0 they equal 1. Thus, the third-degree Taylor polynomial is:
+$$
+P_3(x)=1+x+\frac{x^2}{2}+\frac{x^3}{6}.
+$$&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;10.12 Lagrange Error Bound&lt;/h2&gt;
+&lt;p&gt;The Lagrange Error Bound estimates the error in a Taylor polynomial approximation. If $$ f $$ is approximated by its nth-degree Taylor polynomial about $$ a $$, the error satisfies:
+$$
+|R_n(x)|\leq \frac{M}{(n+1)!}|x-a|^{n+1},
+$$
+where $$ M $$ is an upper bound on $$ |f^{(n+1)}(z)| $$ for $$ z $$ between $$ a $$ and $$ x $$.&lt;/p&gt;
+&lt;h3&gt;Self–Check 12&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Estimate the error in approximating $$ e^x $$ by its third-degree Taylor polynomial at $$ x=0.1 $$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For $$ f(x)=e^x $$, all derivatives are $$ e^x $$. On the interval $$ [0,0.1] $$, the maximum of $$ e^x $$ is $$ e^{0.1}\approx1.105. $$&lt;br /&gt;
+Using the error bound with $$ n=3 $$ and $$ a=0 $$:
+$$
+|R_3(0.1)|\leq \frac{1.105}{4!}|0.1|^4 = \frac{1.105}{24}(0.0001) \approx \frac{1.105 \times 0.0001}{24} \approx 0.0000046.
+$$&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;10.13 Radius and Interval of Convergence of Power Series&lt;/h2&gt;
+&lt;p&gt;A power series
+$$
+\sum_{n=0}^\infty a_n (x-a)^n
+$$
+converges for values of $$ x $$ within a radius $$ R $$ around the center $$ a $$, determined by the Ratio or Root Test. The interval of convergence is then $$ (a-R, a+R) $$ (with possible inclusion of endpoints).&lt;/p&gt;
+&lt;h3&gt;Self–Check 13&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Find the radius of convergence for the power series
+$$
+\sum_{n=0}^\infty \frac{x^n}{n!}.
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Using the Ratio Test, compute:
+$$
+\lim_{n\to\infty} \left|\frac{x^{n+1}/(n+1)!}{x^n/n!}\right| = \lim_{n\to\infty} \left|\frac{x}{n+1}\right| = 0.
+$$
+Since this limit is 0 for all $$ x $$, the radius of convergence is $$ \infty $$.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;10.14 Finding Taylor or Maclaurin Series for a Function&lt;/h2&gt;
+&lt;p&gt;To find the Taylor (or Maclaurin) series for a function, compute its derivatives at the center and substitute them into the Taylor series formula. This representation is extremely useful for approximations and for solving differential equations.&lt;/p&gt;
+&lt;h3&gt;Self–Check 14&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Find the Maclaurin series for $$ \sin x $$ up to the term in $$ x^5 $$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The derivatives of $$ \sin x $$ at 0 yield:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$$ f(0)=0, $$&lt;/li&gt;
+&lt;li&gt;$$ f&apos;(0)=\cos 0=1, $$&lt;/li&gt;
+&lt;li&gt;$$ f&apos;&apos;(0)=-\sin 0=0, $$&lt;/li&gt;
+&lt;li&gt;$$ f&apos;&apos;&apos;(0)=-\cos 0=-1, $$&lt;/li&gt;
+&lt;li&gt;$$ f^{(4)}(0)=\sin 0=0, $$&lt;/li&gt;
+&lt;li&gt;$$ f^{(5)}(0)=\cos 0=1. $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thus, the Maclaurin series up to $$ x^5 $$ is:
+$$
+\sin x \approx x - \frac{x^3}{3!} + \frac{x^5}{5!} = x - \frac{x^3}{6} + \frac{x^5}{120}.
+$$&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;10.15 Representing Functions as Power Series&lt;/h2&gt;
+&lt;p&gt;Many functions can be represented as power series within their interval of convergence. This representation allows term–by–term differentiation and integration, making it a powerful tool in both theory and application.&lt;/p&gt;
+&lt;h3&gt;Self–Check 15&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Express the function
+$$
+\frac{1}{1-x}
+$$
+as a power series and state its interval of convergence.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The function can be written as the sum of a geometric series:
+$$
+\frac{1}{1-x}=\sum_{n=0}^\infty x^n,
+$$
+which converges for $$ |x|&amp;lt;1 $$.&lt;/p&gt;
+&lt;hr /&gt;
+</content:encoded></item><item><title>CalcBC Ch9 - Parametric, Polar, and Vectors</title><link>https://mashiroisasleep.github.io/posts/calcbc/calcnotes9/</link><guid isPermaLink="true">https://mashiroisasleep.github.io/posts/calcbc/calcnotes9/</guid><description>Notes on AP calcBC chapter 9</description><pubDate>Wed, 09 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Chapter 9: Parametric Equations, Polar Coordinates, and Vector–Valued Functions&lt;/h2&gt;
+&lt;p&gt;In this chapter we expand our toolbox by studying alternative representations of curves and motion. Instead of expressing functions solely as $$ y=f(x) $$, we can describe curves using parametric equations, represent motion with vector–valued functions, and work in polar coordinates. These methods not only provide different perspectives but also offer powerful techniques to tackle complex problems in physics, engineering, and beyond.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;9.1 Defining and Differentiating Parametric Equations&lt;/h2&gt;
+&lt;p&gt;Parametric equations express both $$ x $$ and $$ y $$ as functions of a third variable (usually $$ t $$). A curve is defined by:
+$$
+x = f(t), \quad y = g(t).
+$$
+To find the slope of the tangent line, we compute
+$$
+\frac{dy}{dx} = \frac{dy/dt}{dx/dt},
+$$
+provided $$ dx/dt \neq 0 $$.&lt;/p&gt;
+&lt;h3&gt;Self–Check 1&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+For the parametric equations
+$$
+x = t^2 + 1, \quad y = t^3 - t,
+$$
+find $$ \frac{dy}{dx} $$ in terms of $$ t $$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Differentiate:
+&lt;ul&gt;
+&lt;li&gt;$$ \frac{dx}{dt} = 2t, $$&lt;/li&gt;
+&lt;li&gt;$$ \frac{dy}{dt} = 3t^2 - 1. $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Compute the derivative:
+$$
+\frac{dy}{dx} = \frac{3t^2 - 1}{2t}.
+$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2&gt;9.2 Second Derivatives of Parametric Equations&lt;/h2&gt;
+&lt;p&gt;The second derivative, $$ \frac{d^2y}{dx^2} $$, tells us about the curvature of the parametric curve. It is computed by differentiating $$ \frac{dy}{dx} $$ with respect to $$ t $$ and dividing by $$ dx/dt $$:
+$$
+\frac{d^2y}{dx^2} = \frac{d}{dt}\left(\frac{dy}{dx}\right) \div \frac{dx}{dt}.
+$$&lt;/p&gt;
+&lt;h3&gt;Self–Check 2&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Given
+$$
+x = t^2, \quad y = t^3,
+$$
+find $$ \frac{d^2y}{dx^2} $$ in terms of $$ t $$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First derivative:
+&lt;ul&gt;
+&lt;li&gt;$$ \frac{dx}{dt} = 2t, $$&lt;/li&gt;
+&lt;li&gt;$$ \frac{dy}{dt} = 3t^2, $$&lt;/li&gt;
+&lt;li&gt;So, $$ \frac{dy}{dx} = \frac{3t^2}{2t} = \frac{3t}{2}. $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Differentiate $$ \frac{dy}{dx} $$ with respect to $$ t $$:
+&lt;ul&gt;
+&lt;li&gt;$$ \frac{d}{dt}\left(\frac{3t}{2}\right) = \frac{3}{2}. $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Divide by $$ dx/dt $$:
+$$
+\frac{d^2y}{dx^2} = \frac{\frac{3}{2}}{2t} = \frac{3}{4t}.
+$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2&gt;9.3 Finding Arc Lengths of Curves Given by Parametric Equations&lt;/h2&gt;
+&lt;p&gt;The arc length of a curve defined by parametric equations from $$ t=a $$ to $$ t=b $$ is given by:
+$$
+L = \int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2},dt.
+$$
+This formula comes from approximating the curve by small line segments and taking the limit as the segment length approaches zero.&lt;/p&gt;
+&lt;h3&gt;Self–Check 3&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Find the arc length of the curve defined by
+$$
+x = 2t, \quad y = t^2,
+$$
+for $$ t $$ in $$ [0,3] $$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Compute derivatives:
+&lt;ul&gt;
+&lt;li&gt;$$ \frac{dx}{dt} = 2, $$&lt;/li&gt;
+&lt;li&gt;$$ \frac{dy}{dt} = 2t. $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Set up the integral:
+$$
+L = \int_0^3 \sqrt{(2)^2 + (2t)^2},dt = \int_0^3 \sqrt{4 + 4t^2},dt.
+$$&lt;/li&gt;
+&lt;li&gt;Factor out 4:
+$$
+L = \int_0^3 2\sqrt{1+t^2},dt = 2\int_0^3 \sqrt{1+t^2},dt.
+$$&lt;/li&gt;
+&lt;li&gt;(Leave the answer in integral form or evaluate numerically as desired.)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2&gt;9.4 Defining and Differentiating Vector–Valued Functions&lt;/h2&gt;
+&lt;p&gt;Vector–valued functions express curves in space by specifying each coordinate as a function of a parameter:
+$$
+\vec{r}(t) = \langle x(t),, y(t),, z(t) \rangle.
+$$
+The derivative, $$ \vec{r}&apos;,(t) $$, represents the velocity vector, giving both speed and direction:
+$$
+\vec{r}&apos;,(t) = \langle x&apos;(t),, y&apos;(t),, z&apos;(t) \rangle.
+$$&lt;/p&gt;
+&lt;h3&gt;Self–Check 4&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Given
+$$
+\vec{r}(t) = \langle \cos t,, \sin t,, t \rangle,
+$$
+find $$ \vec{r}&apos;,(t) $$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Differentiate each component:
+&lt;ul&gt;
+&lt;li&gt;$$ \frac{d}{dt}(\cos t) = -\sin t, $$&lt;/li&gt;
+&lt;li&gt;$$ \frac{d}{dt}(\sin t) = \cos t, $$&lt;/li&gt;
+&lt;li&gt;$$ \frac{d}{dt}(t) = 1. $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;So,
+$$
+\vec{r}&apos;,(t) = \langle -\sin t,, \cos t,, 1 \rangle.
+$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2&gt;9.5 Integrating Vector–Valued Functions&lt;/h2&gt;
+&lt;p&gt;Integrating a vector–valued function allows us to determine the position function from a velocity function. If
+$$
+\vec{v}(t) = \vec{r}&apos;,(t),
+$$
+then the position function is given by:
+$$
+\vec{r}(t) = \int \vec{v}(t),dt.
+$$
+This process is done component–wise.&lt;/p&gt;
+&lt;h3&gt;Self–Check 5&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Find the position function given
+$$
+\vec{v}(t) = \langle 2,, 3t,, 4e^t \rangle,
+$$
+and the initial condition $$ \vec{r}(0)= \langle 0,, 1,, 2 \rangle $$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Integrate each component:
+&lt;ul&gt;
+&lt;li&gt;For the first component: $$ \int 2,dt = 2t + C_1; \quad C_1=0 \text{ (since } x(0)=0 \text{)}. $$&lt;/li&gt;
+&lt;li&gt;Second component: $$ \int 3t,dt = \frac{3t^2}{2} + C_2; \quad C_2=1 \text{ (since } y(0)=1 \text{)}. $$&lt;/li&gt;
+&lt;li&gt;Third component: $$ \int 4e^t,dt = 4e^t + C_3; \quad C_3=2-4= -2 \text{ (since } z(0)=2 \text{)}. $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Therefore,
+$$
+\vec{r}(t) = \langle 2t,, \frac{3t^2}{2}+1,, 4e^t-2 \rangle.
+$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2&gt;9.6 Solving Motion Problems Using Parametric and Vector–Valued Functions&lt;/h2&gt;
+&lt;p&gt;Motion in the plane or space can be modeled using parametric or vector–valued functions. The derivative of the position function gives the velocity vector, and its magnitude yields speed. These representations are essential for solving problems in mechanics—for example, determining the path, speed, or acceleration of a moving object.&lt;/p&gt;
+&lt;h3&gt;Self–Check 6&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+A particle moves according to
+$$
+\vec{r}(t) = \langle t,, t^2,, \ln(t+1) \rangle.
+$$
+Determine the particle’s speed at time $$ t=1 $$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;First, find the velocity vector:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$$ \frac{d}{dt}(t)=1, $$&lt;/li&gt;
+&lt;li&gt;$$ \frac{d}{dt}(t^2)=2t, $$&lt;/li&gt;
+&lt;li&gt;$$ \frac{d}{dt}(\ln(t+1))=\frac{1}{t+1}. $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So,
+$$
+\vec{v}(t) = \langle 1,, 2t,, \frac{1}{t+1} \rangle.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;At $$ t=1 $$,
+$$
+\vec{v}(1) = \langle 1,, 2,, \frac{1}{2} \rangle.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The speed is the magnitude:
+$$
+|\vec{v}(1)| = \sqrt{1^2+2^2+\left(\frac{1}{2}\right)^2} = \sqrt{1+4+\frac{1}{4}} = \sqrt{\frac{20+1}{4}} = \sqrt{\frac{21}{4}} = \frac{\sqrt{21}}{2}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2&gt;9.7 Defining Polar Coordinates and Differentiating in Polar Form&lt;/h2&gt;
+&lt;p&gt;In polar coordinates, a point is defined by a radius $$ r $$ and an angle $$ \theta $$:
+$$
+x = r\cos\theta, \quad y = r\sin\theta.
+$$
+When a curve is defined by a polar equation $$ r=r(\theta) $$, its derivative with respect to $$ x $$ is given by:
+$$
+\frac{dy}{dx} = \frac{\frac{dr}{d\theta}\sin\theta + r\cos\theta}{\frac{dr}{d\theta}\cos\theta - r\sin\theta}.
+$$
+This formula is essential for analyzing the slope of polar curves and for converting between coordinate systems.&lt;/p&gt;
+&lt;h3&gt;Self–Check 7&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+For the polar curve
+$$
+r(\theta)= 2+2\sin\theta,
+$$
+find $$ \frac{dy}{dx} $$ in terms of $$ \theta $$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Compute $$ \frac{dr}{d\theta} = 2\cos\theta. $$&lt;/li&gt;
+&lt;li&gt;Substitute into the formula:
+$$
+\frac{dy}{dx} = \frac{(2\cos\theta)\sin\theta + (2+2\sin\theta)\cos\theta}{(2\cos\theta)\cos\theta - (2+2\sin\theta)\sin\theta}.
+$$&lt;/li&gt;
+&lt;li&gt;Simplify the numerator:
+$$
+= \frac{2\cos\theta\sin\theta + 2\cos\theta + 2\sin\theta\cos\theta}{2\cos^2\theta - 2\sin\theta - 2\sin^2\theta}.
+$$
+Combine like terms in the numerator:
+$$
+= \frac{4\cos\theta\sin\theta + 2\cos\theta}{2\cos^2\theta - 2\sin\theta - 2\sin^2\theta}.
+$$
+(This expression can be simplified further as needed.)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2&gt;9.8 Finding the Area of a Polar Region or the Area Bounded by a Single Polar Curve&lt;/h2&gt;
+&lt;p&gt;The area of a region defined by a polar curve $$ r=r(\theta) $$ over an interval $$ \theta\in[\alpha,\beta] $$ is computed by:
+$$
+A = \frac{1}{2}\int_{\alpha}^{\beta} [r(\theta)]^2,d\theta.
+$$
+This formula arises by dividing the region into narrow sectors and summing their areas.&lt;/p&gt;
+&lt;h3&gt;Self–Check 8&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Find the area enclosed by the polar curve
+$$
+r(\theta)= 3\cos\theta,
+$$
+for $$ \theta $$ between $$ -\frac{\pi}{2} $$ and $$ \frac{\pi}{2} $$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Set up the area integral:
+$$
+A = \frac{1}{2}\int_{-\pi/2}^{\pi/2} [3\cos\theta]^2,d\theta = \frac{1}{2}\int_{-\pi/2}^{\pi/2} 9\cos^2\theta,d\theta.
+$$&lt;/li&gt;
+&lt;li&gt;Factor constants:
+$$
+A = \frac{9}{2}\int_{-\pi/2}^{\pi/2} \cos^2\theta,d\theta.
+$$&lt;/li&gt;
+&lt;li&gt;Use the identity $$ \cos^2\theta = \frac{1+\cos2\theta}{2} $$:
+$$
+A = \frac{9}{2}\cdot\frac{1}{2}\int_{-\pi/2}^{\pi/2} (1+\cos2\theta),d\theta = \frac{9}{4}\left[\theta + \frac{\sin2\theta}{2}\right]_{-\pi/2}^{\pi/2}.
+$$&lt;/li&gt;
+&lt;li&gt;Evaluate:
+&lt;ul&gt;
+&lt;li&gt;At $$ \theta=\pi/2 $$: $$ \frac{\pi}{2} + \frac{\sin\pi}{2} = \frac{\pi}{2}. $$&lt;/li&gt;
+&lt;li&gt;At $$ \theta=-\pi/2 $$: $$ -\frac{\pi}{2} + \frac{\sin(-\pi)}{2} = -\frac{\pi}{2}. $$
+$$
+A = \frac{9}{4}\left(\frac{\pi}{2} - \left(-\frac{\pi}{2}\right)\right) = \frac{9}{4}\cdot \pi = \frac{9\pi}{4}.
+$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2&gt;9.9 Finding the Area of the Region Bounded by Two Polar Curves&lt;/h2&gt;
+&lt;p&gt;When two polar curves, $$ r=r_1(\theta) $$ and $$ r=r_2(\theta) $$ (with $$ r_1(\theta) \ge r_2(\theta) $$), enclose a region, the area between them is:
+$$
+A = \frac{1}{2}\int_{\alpha}^{\beta} \left( [r_1(\theta)]^2 - [r_2(\theta)]^2 \right),d\theta.
+$$
+This method subtracts the inner area from the outer area to obtain the net region.&lt;/p&gt;
+&lt;h3&gt;Self–Check 9&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Find the area of the region bounded by the polar curves
+$$
+r_1(\theta)= 4, \quad r_2(\theta)= 2,
+$$
+for $$ \theta $$ from $$ 0 $$ to $$ 2\pi $$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Since the curves are circles (with constant radii), the area between them is:
+$$
+A = \frac{1}{2}\int_0^{2\pi} \left(4^2 - 2^2\right),d\theta = \frac{1}{2}\int_0^{2\pi} \left(16-4\right),d\theta = \frac{1}{2}\int_0^{2\pi} 12,d\theta.
+$$&lt;/li&gt;
+&lt;li&gt;Integrate:
+$$
+A = \frac{1}{2}\cdot 12\cdot (2\pi) = 12\pi.
+$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+</content:encoded></item><item><title>CalcBC Ch8 - Applications of Integration</title><link>https://mashiroisasleep.github.io/posts/calcbc/calcnotes8/</link><guid isPermaLink="true">https://mashiroisasleep.github.io/posts/calcbc/calcnotes8/</guid><description>Notes on AP calcBC chapter 8</description><pubDate>Tue, 08 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Chapter 8: Applications of Integration&lt;/h2&gt;
+&lt;p&gt;Integration is a versatile tool in calculus that allows us to “accumulate” small changes to determine overall quantities. In this chapter, we apply integration techniques to solve problems in physics, economics, and geometry. We will see how integration is standardly used to compute average values, areas, volumes, and arc lengths—and we will explore how these methods can be adapted to more complex, real–world scenarios.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;8.1 Finding the Average Value of a Function on an Interval&lt;/h2&gt;
+&lt;p&gt;The average value of a function over an interval provides a meaningful summary of the function’s behavior. It is defined by:
+$$
+f_{avg} = \frac{1}{b-a} \int_a^b f(x),dx.
+$$
+This formula is used in many contexts—for example, to compute the average temperature over a day, the average speed of a vehicle, or the average concentration of a chemical in a solution. By “summing” the values of the function and dividing by the length of the interval, we obtain a single number that represents the typical output.&lt;/p&gt;
+&lt;h3&gt;Self-Check 1&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Find the average value of the function $$ f(x)=x^2+1 $$ on the interval $$ [0,4] $$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Set up the formula:&lt;/strong&gt;
+$$
+f_{avg} = \frac{1}{4-0}\int_0^4 (x^2+1),dx = \frac{1}{4}\int_0^4 (x^2+1),dx.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Find the antiderivative:&lt;/strong&gt;
+$$
+\int (x^2+1),dx = \frac{x^3}{3} + x + C.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Evaluate the definite integral:&lt;/strong&gt;
+$$
+\left[\frac{x^3}{3}+x\right]_0^4 = \left(\frac{4^3}{3}+4\right) - \left(0+0\right) = \left(\frac{64}{3}+4\right) = \frac{64+12}{3} = \frac{76}{3}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Compute the average value:&lt;/strong&gt;
+$$
+f_{avg} = \frac{1}{4}\cdot\frac{76}{3} = \frac{76}{12} = \frac{19}{3} \approx 6.33.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2&gt;8.2 Connecting Position, Velocity, and Acceleration Using Integrals&lt;/h2&gt;
+&lt;p&gt;In kinematics, integration plays a key role in linking position, velocity, and acceleration. The velocity function is the derivative of the position function, and by integrating the velocity, we can determine the displacement. Similarly, integrating the acceleration function gives the velocity.&lt;/p&gt;
+&lt;p&gt;For example, if a particle’s velocity is given by $$ v(t) $$, then the displacement from time $$ t=a $$ to $$ t=b $$ is:
+$$
+\Delta s = \int_a^b v(t),dt.
+$$
+This concept is foundational in physics and engineering, and it allows us to predict an object’s position based on its velocity over time.&lt;/p&gt;
+&lt;h3&gt;Self-Check 2&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+A car’s velocity is given by $$ v(t)= 3t^2-4t+2 $$ (in meters per second). Find the displacement from $$ t=0 $$ to $$ t=3 $$ seconds.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Set up the displacement integral:&lt;/strong&gt;
+$$
+\Delta s = \int_0^3 (3t^2-4t+2),dt.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Find the antiderivative:&lt;/strong&gt;
+$$
+\int (3t^2-4t+2),dt = t^3 - 2t^2 + 2t + C.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Evaluate from $$ t=0 $$ to $$ t=3 $$:&lt;/strong&gt;
+$$
+\left[t^3 - 2t^2 + 2t\right]_0^3 = (27 - 18 + 6) - 0 = 15.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, the displacement is $$ 15 $$ meters.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;8.3 Using Accumulation Functions and Definite Integrals in Applied Contexts&lt;/h2&gt;
+&lt;p&gt;Accumulation functions model the total change or “accumulated value” of a quantity over time. This idea is used in economics to model total cost or revenue, in biology to determine population growth, and in physics for work done by a force. The accumulation function is defined as:
+$$
+A(x) = \int_a^x f(t),dt,
+$$
+which represents the total accumulation of $$ f(t) $$ from $$ t=a $$ to $$ t=x $$.&lt;/p&gt;
+&lt;p&gt;By analyzing accumulation functions, we can interpret the overall effect of a continuously changing rate. This approach can be “stretched” to model multi–stage processes or systems where the rate itself changes with time.&lt;/p&gt;
+&lt;h3&gt;Self-Check 3&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+The rate at which water flows into a tank is given by $$ R(t)= 5+0.5t $$ (in liters per minute). Find the total volume of water that enters the tank during the first 10 minutes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Set up the accumulation function:&lt;/strong&gt;
+$$
+V = \int_0^{10} (5+0.5t),dt.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Find the antiderivative:&lt;/strong&gt;
+$$
+\int (5+0.5t),dt = 5t + 0.25t^2 + C.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Evaluate from $$ t=0 $$ to $$ t=10 $$:&lt;/strong&gt;
+$$
+\left[5t+0.25t^2\right]_0^{10} = (5(10)+0.25(10)^2) - 0 = (50+25) = 75.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, 75 liters of water enter the tank in the first 10 minutes.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;8.4 Finding the Area Between Curves&lt;/h2&gt;
+&lt;p&gt;Finding the area between curves is a fundamental application of integration. When two functions, $$ f(x) $$ and $$ g(x) $$, define the upper and lower boundaries on an interval $$ [a,b] $$, the area between them is given by:
+$$
+\text{Area} = \int_a^b \bigl[f(x)-g(x)\bigr],dx.
+$$
+This technique is widely used in engineering and the sciences—for example, to determine the region of overlap between different data sets or to compute cross-sectional areas in design.&lt;/p&gt;
+&lt;h3&gt;Self-Check 4&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Find the area between the curves $$ f(x)= x^2 $$ and $$ g(x)= x+2 $$ on the interval where they intersect.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Find the intersection points:&lt;/strong&gt;
+Set $$ x^2 = x+2 $$, which gives
+$$
+x^2-x-2=0 \quad \Longrightarrow \quad (x-2)(x+1)=0.
+$$
+So, $$ x=2 $$ and $$ x=-1 $$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Determine which function is on top:&lt;/strong&gt;
+For $$ x=0 $$ (between $$ -1 $$ and $$ 2 $$):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$$ f(0)=0 $$ and $$ g(0)=2 $$, so $$ g(x) $$ is above $$ f(x) $$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Set up the integral:&lt;/strong&gt;
+$$
+\text{Area} = \int_{-1}^{2} \bigl[(x+2)-x^2\bigr],dx.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Evaluate the integral:&lt;/strong&gt;
+$$
+\int \left[(x+2)-x^2\right],dx = \frac{x^2}{2}+2x-\frac{x^3}{3} + C.
+$$
+Evaluate from $$ -1 $$ to $$ 2 $$:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;At $$ x=2 $$:
+$$
+\frac{4}{2}+4-\frac{8}{3} = 2+4-\frac{8}{3} = 6-\frac{8}{3} = \frac{10}{3}.
+$$&lt;/li&gt;
+&lt;li&gt;At $$ x=-1 $$:
+$$
+\frac{1}{2} -2 +\frac{1}{3} = \frac{1}{2} -2 +\frac{1}{3} = \frac{3}{6} -\frac{12}{6}+\frac{2}{6} = -\frac{7}{6}.
+$$
+The area is:
+$$
+\frac{10}{3} - \left(-\frac{7}{6}\right) = \frac{10}{3}+\frac{7}{6} = \frac{20}{6}+\frac{7}{6} = \frac{27}{6} = \frac{9}{2}.
+$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, the area between the curves is $$ \frac{9}{2} $$ square units.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;8.5 Volumes with Cross–Sections&lt;/h2&gt;
+&lt;p&gt;Another way to use integration is to compute the volume of a solid with known cross–sections. When the cross–section perpendicular to the x–axis has an area $$ A(x) $$, the volume is:
+$$
+V = \int_a^b A(x),dx.
+$$
+Common cross–sections include squares, rectangles, triangles, and semicircles. This method is especially useful in design and architecture, where the cross–sectional shape is known, and one must determine the overall volume.&lt;/p&gt;
+&lt;h3&gt;Self-Check 5&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+A solid has a base on the interval $$ [0,3] $$, and every cross–section perpendicular to the x–axis is a square whose side is given by $$ s(x)= 4-x $$. Find the volume of the solid.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Express the area of each cross–section:&lt;/strong&gt;
+The area of a square is:
+$$
+A(x) = s(x)^2 = (4-x)^2.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Set up the volume integral:&lt;/strong&gt;
+$$
+V = \int_0^3 (4-x)^2,dx.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Expand and integrate:&lt;/strong&gt;
+$$
+(4-x)^2 = 16 - 8x + x^2.
+$$
+Thus,
+$$
+V = \int_0^3 (16-8x+x^2),dx = \left[16x-4x^2+\frac{x^3}{3}\right]_0^3.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Evaluate at $$ x=3 $$:&lt;/strong&gt;
+$$
+16(3)-4(9)+\frac{27}{3} = 48-36+9 = 21.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, the volume is $$ 21 $$ cubic units.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;8.6 Volume with Disk and Washer Methods&lt;/h2&gt;
+&lt;p&gt;When a region is revolved around an axis, the resulting solid’s volume can be computed using the disk or washer methods. The &lt;strong&gt;disk method&lt;/strong&gt; applies when the cross–sections perpendicular to the axis of revolution are solid disks:
+$$
+V = \pi \int_a^b [R(x)]^2,dx,
+$$
+where $$ R(x) $$ is the radius. When the solid has a hole (i.e., it’s generated by revolving the area between two curves), the &lt;strong&gt;washer method&lt;/strong&gt; is used:
+$$
+V = \pi \int_a^b \left([R_{\text{outer}}(x)]^2 - [R_{\text{inner}}(x)]^2\right),dx.
+$$
+These methods are standard in both academic problems and real–world design, such as in manufacturing or engineering applications where rotational symmetry is present.&lt;/p&gt;
+&lt;h3&gt;Self-Check 6&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Find the volume of the solid obtained by revolving the region between $$ y=x $$ and $$ y=x^2 $$ around the x–axis.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Find the intersection points:&lt;/strong&gt;
+Set $$ x = x^2 \Longrightarrow x(x-1)=0 $$ so $$ x=0 $$ and $$ x=1 $$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Determine the radii:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Outer radius: $$ R_{\text{outer}}(x)= x $$ (since $$ x \ge x^2 $$ for $$ 0\le x\le1 $$).&lt;/li&gt;
+&lt;li&gt;Inner radius: $$ R_{\text{inner}}(x)= x^2 $$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Set up the washer integral:&lt;/strong&gt;
+$$
+V = \pi \int_0^1 \left[x^2 - (x^2)^2\right],dx = \pi \int_0^1 \left(x^2 - x^4\right),dx.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Integrate:&lt;/strong&gt;
+$$
+\int_0^1 (x^2 - x^4),dx = \left[\frac{x^3}{3} - \frac{x^5}{5}\right]_0^1 = \frac{1}{3} - \frac{1}{5} = \frac{5-3}{15} = \frac{2}{15}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Multiply by $$ \pi $$:&lt;/strong&gt;
+$$
+V = \pi\cdot\frac{2}{15} = \frac{2\pi}{15}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, the volume of the solid is $$ \frac{2\pi}{15} $$ cubic units.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;8.7 The Arc Length of a Smooth, Planar Curve and Distance Traveled&lt;/h2&gt;
+&lt;p&gt;The arc length of a curve provides a measure of the distance along the curve. For a smooth function $$ y=f(x) $$ defined on $$ [a,b] $$, the arc length is given by:
+$$
+L = \int_a^b \sqrt{1+[f&apos;(x)]^2},dx.
+$$
+This formula is derived by approximating the curve with small linear segments and taking the limit as the segment length approaches zero. In practical applications, the arc length formula can also be used to calculate the total distance traveled by an object, even when its path is curved.&lt;/p&gt;
+&lt;h3&gt;Self-Check 7&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Find the arc length of the curve $$ y=\frac{1}{3}x^{3/2} $$ from $$ x=0 $$ to $$ x=9 $$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Find the derivative:&lt;/strong&gt;
+$$
+y = \frac{1}{3}x^{3/2} \quad \Longrightarrow \quad f&apos;(x)= \frac{1}{3}\cdot\frac{3}{2}x^{1/2} = \frac{1}{2}x^{1/2}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Set up the arc length integral:&lt;/strong&gt;
+$$
+L = \int_0^9 \sqrt{1+\left(\frac{1}{2}x^{1/2}\right)^2},dx = \int_0^9 \sqrt{1+\frac{x}{4}},dx.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Simplify the integrand:&lt;/strong&gt;
+$$
+\sqrt{1+\frac{x}{4}} = \sqrt{\frac{4+x}{4}} = \frac{\sqrt{4+x}}{2}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Rewrite the integral:&lt;/strong&gt;
+$$
+L = \int_0^9 \frac{\sqrt{4+x}}{2},dx = \frac{1}{2}\int_0^9 \sqrt{4+x},dx.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Make a substitution:&lt;/strong&gt;&lt;br /&gt;
+Let $$ u = 4+x \Longrightarrow du=dx $$.&lt;br /&gt;
+When $$ x=0, , u=4 $$; when $$ x=9, , u=13 $$.
+$$
+L = \frac{1}{2}\int_4^{13} \sqrt{u},du = \frac{1}{2}\cdot\frac{2}{3}u^{3/2}\Big|_4^{13} = \frac{1}{3}\left(u^{3/2}\Big|_4^{13}\right).
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Evaluate the integral:&lt;/strong&gt;
+$$
+L = \frac{1}{3}\left(13^{3/2}-4^{3/2}\right) = \frac{1}{3}\left(13\sqrt{13}-8\right).
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, the arc length of the curve is $$ \frac{1}{3}\Bigl(13\sqrt{13}-8\Bigr) $$ units.&lt;/p&gt;
+&lt;hr /&gt;
+</content:encoded></item><item><title>CalcBC Ch7 - Differential Equations</title><link>https://mashiroisasleep.github.io/posts/calcbc/calcnotes7/</link><guid isPermaLink="true">https://mashiroisasleep.github.io/posts/calcbc/calcnotes7/</guid><description>Notes on AP calcBC chapter 7</description><pubDate>Mon, 07 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Chapter 7: Differential Equations&lt;/h2&gt;
+&lt;p&gt;Differential equations allow us to model and analyze systems where a quantity changes in relation to itself or other variables. They are fundamental in many fields such as physics, biology, economics, and engineering. In this chapter, we discuss several key topics:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Modeling with Differential Equations&lt;/li&gt;
+&lt;li&gt;Sketching Slope Fields&lt;/li&gt;
+&lt;li&gt;Euler’s Method for Approximations&lt;/li&gt;
+&lt;li&gt;Separation of Variables for General Solutions&lt;/li&gt;
+&lt;li&gt;Finding Particular Solutions Using Initial Conditions&lt;/li&gt;
+&lt;li&gt;Exponential Models&lt;/li&gt;
+&lt;li&gt;Logistic Models&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Each topic is explored in depth with background insights and practical self–check problems.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;7.1 Modeling with Differential Equations&lt;/h2&gt;
+&lt;p&gt;Differential equations describe relationships between a function and its derivatives. They arise naturally when the rate of change of a quantity depends on the current state of the system. For instance, in population dynamics, the rate at which a population grows might depend on its current size. The general form
+$$
+\frac{dy}{dt} = f(t, y)
+$$
+captures such relationships. This modeling approach provides a framework for predicting future behavior based on current trends.&lt;/p&gt;
+&lt;p&gt;These models are standardly used in fields as diverse as physics (to model motion), chemistry (to study reaction rates), and finance (to predict investments). The power of differential equations is that once a model is established, various techniques can be used to analyze and solve for the function that describes the system.&lt;/p&gt;
+&lt;h3&gt;Self-Check 1&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Suppose the rate at which a certain chemical concentration $$ y $$ changes in a reaction is directly proportional to its current concentration. Write the differential equation modeling this situation and describe its general solution form.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Modeling:&lt;/strong&gt;&lt;br /&gt;
+Since the rate is proportional to $$ y $$, we write:
+$$
+\frac{dy}{dt} = ky,
+$$
+where $$ k $$ is a constant.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;General Solution:&lt;/strong&gt;&lt;br /&gt;
+The general solution is:
+$$
+y(t) = y_0 e^{kt},
+$$
+where $$ y_0 $$ is the initial concentration.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2&gt;7.2 Sketching Slope Fields&lt;/h2&gt;
+&lt;p&gt;A slope field (or direction field) is a graphical tool that helps visualize the behavior of solutions to a differential equation without solving it explicitly. At each point $$ (t, y) $$, a short line segment is drawn with slope given by
+$$
+\frac{dy}{dt} = f(t,y).
+$$
+This visual representation allows you to see patterns such as equilibrium solutions, trends, and possible long–term behavior.&lt;/p&gt;
+&lt;p&gt;Slope fields are standardly used to gain intuition about the solutions and to check the reasonableness of analytic or numerical solutions. They can also be “stretched” to understand systems with more complicated dynamics.&lt;/p&gt;
+&lt;h3&gt;Self-Check 2&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Consider the differential equation
+$$
+\frac{dy}{dt} = y - t.
+$$
+Describe how you would sketch its slope field and determine whether there appears to be an equilibrium solution.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Procedure:&lt;/strong&gt;&lt;br /&gt;
+At several points $$ (t,y) $$, compute the slope $$ y - t $$ and draw a short line segment with that slope.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Observation:&lt;/strong&gt;&lt;br /&gt;
+Notice that if $$ y = t $$, then the slope becomes zero:
+$$
+\frac{dy}{dt} = t - t = 0.
+$$
+Hence, $$ y = t $$ acts as an equilibrium (or isocline) where the direction field has horizontal tangents.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2&gt;7.3 Euler’s Method for Approximations&lt;/h2&gt;
+&lt;p&gt;Euler’s Method is a numerical technique for approximating solutions to differential equations. It is especially useful when an analytic solution is difficult or impossible to obtain. The idea is to use the slope at a known point to estimate the value of the solution at a nearby point. The formula
+$$
+y_{n+1} = y_n + h,f(t_n,y_n)
+$$
+provides the next value $$ y_{n+1} $$ using a small step size $$ h $$.&lt;/p&gt;
+&lt;p&gt;While simple, Euler’s Method can be “stretched” by refining the step size to improve accuracy. It also introduces the concept of numerical error, which is an important consideration in practical applications.&lt;/p&gt;
+&lt;h3&gt;Self-Check 3&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Approximate the solution to the initial value problem
+$$
+\frac{dy}{dt} = 2y, \quad y(0)=1,
+$$
+using Euler’s Method with a step size of $$ h = 0.5 $$ to estimate $$ y(1) $$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Step 1 (from $$ t=0 $$ to $$ t=0.5 $$):&lt;/strong&gt;&lt;br /&gt;
+At $$ t=0 $$, $$ y(0)=1 $$ and $$ f(0,1)=2(1)=2 $$.
+$$
+y(0.5) \approx 1 + 0.5(2) = 2.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Step 2 (from $$ t=0.5 $$ to $$ t=1.0 $$):&lt;/strong&gt;&lt;br /&gt;
+At $$ t=0.5 $$, $$ y(0.5)=2 $$ and $$ f(0.5,2)=2(2)=4 $$.
+$$
+y(1) \approx 2 + 0.5(4) = 4.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, Euler’s Method approximates $$ y(1) \approx 4 $$.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;7.4 Separation of Variables for General Solutions&lt;/h2&gt;
+&lt;p&gt;Separation of Variables is a powerful technique for solving first–order differential equations that can be written in the form
+$$
+\frac{dy}{dt} = g(t) h(y).
+$$
+The method involves rearranging the equation to group all terms involving $$ y $$ on one side and all terms involving $$ t $$ on the other:
+$$
+\frac{1}{h(y)},dy = g(t),dt.
+$$
+Integrating both sides yields the general solution.&lt;/p&gt;
+&lt;p&gt;This method is standardly used when the differential equation is “separable” and provides insight into the structure of the solution. It is also flexible enough to be applied to problems that model physical, biological, or economic systems.&lt;/p&gt;
+&lt;h3&gt;Self-Check 4&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Solve the differential equation
+$$
+\frac{dy}{dt} = ty,
+$$
+with the initial condition $$ y(0)=3 $$ using separation of variables.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Separate variables:&lt;/strong&gt;
+$$
+\frac{1}{y},dy = t,dt.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Integrate both sides:&lt;/strong&gt;
+$$
+\int \frac{1}{y},dy = \int t,dt \quad \Longrightarrow \quad \ln|y| = \frac{t^2}{2} + C.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Solve for $$ y $$:&lt;/strong&gt;
+$$
+y = e^{\frac{t^2}{2} + C} = Ae^{\frac{t^2}{2}},
+$$
+where $$ A = e^C $$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Apply the initial condition $$ y(0)=3 $$:&lt;/strong&gt;
+$$
+3 = A e^0 \quad \Longrightarrow \quad A = 3.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, the solution is
+$$
+y(t) = 3e^{\frac{t^2}{2}}.
+$$&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;7.5 Finding Particular Solutions Using Initial Conditions&lt;/h2&gt;
+&lt;p&gt;Once the general solution of a differential equation is obtained, initial or boundary conditions are used to determine the particular solution that fits the specific situation. This step is crucial in applications since the general solution often contains an arbitrary constant. By substituting the given initial condition into the general solution, the constant is determined uniquely.&lt;/p&gt;
+&lt;p&gt;This process is standard in problems from physics (e.g., initial velocity), biology (e.g., initial population), and other fields. It “stretches” the mathematical model to a precise scenario.&lt;/p&gt;
+&lt;h3&gt;Self-Check 5&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Find the particular solution of the differential equation
+$$
+\frac{dy}{dt} = -0.5y,
+$$
+with the initial condition $$ y(0)=100 $$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;General solution:&lt;/strong&gt;&lt;br /&gt;
+Separate variables:
+$$
+\frac{dy}{y} = -0.5,dt.
+$$
+Integrate:
+$$
+\ln|y| = -0.5t + C \quad \Longrightarrow \quad y = Ae^{-0.5t}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Apply the initial condition:&lt;/strong&gt;&lt;br /&gt;
+$$
+100 = Ae^0 \quad \Longrightarrow \quad A = 100.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, the particular solution is
+$$
+y(t) = 100e^{-0.5t}.
+$$&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;7.6 Exponential Models with Differential Equations&lt;/h2&gt;
+&lt;p&gt;Exponential models arise when the rate of change of a quantity is directly proportional to the quantity itself. This leads to differential equations of the form
+$$
+\frac{dy}{dt} = ky.
+$$
+Their solutions, as discussed earlier, are given by
+$$
+y(t) = y_0e^{kt},
+$$
+which describe exponential growth (if $$ k&amp;gt;0 $$) or decay (if $$ k&amp;lt;0 $$). Exponential models are widely used in physics, biology, and finance to model processes such as radioactive decay, population growth, and interest accumulation.&lt;/p&gt;
+&lt;p&gt;These models are not only standard in their formulation but also serve as building blocks for more complex dynamics.&lt;/p&gt;
+&lt;h3&gt;Self-Check 6&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+A radioactive substance decays according to the law
+$$
+\frac{dN}{dt} = -\lambda N,
+$$
+where $$ \lambda=0.1 , \text{day}^{-1} $$ and the initial amount is $$ N(0)=500 , \text{grams} $$. Find the amount of substance after 10 days.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;General solution:&lt;/strong&gt;&lt;br /&gt;
+$$
+N(t) = 500e^{-0.1t}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Evaluate at $$ t=10 $$:&lt;/strong&gt;&lt;br /&gt;
+$$
+N(10)= 500e^{-1} \approx 500(0.3679) \approx 183.95 , \text{grams}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, approximately 184 grams remain after 10 days.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;7.7 Logistic Models with Differential Equations&lt;/h2&gt;
+&lt;p&gt;Logistic models describe growth that is initially exponential but slows as the system approaches a carrying capacity $$ L $$. The logistic differential equation is given by
+$$
+\frac{dy}{dt} = ky\left(1-\frac{y}{L}\right).
+$$
+This model is standard in population dynamics, where the growth rate decreases as the population nears the maximum sustainable level. It also finds applications in ecology, epidemiology, and economics.&lt;/p&gt;
+&lt;p&gt;Logistic models can be “stretched” further by analyzing stability and equilibrium points, making them powerful tools in understanding complex systems with constraints.&lt;/p&gt;
+&lt;h3&gt;Self-Check 7&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+A population grows logistically according to
+$$
+\frac{dP}{dt} = 0.5P\left(1-\frac{P}{1000}\right),
+$$
+with an initial population of $$ P(0)=100 $$. Find the equilibrium solutions and describe the long–term behavior of the population.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Equilibrium solutions occur when $$ \frac{dP}{dt} = 0 $$:&lt;/strong&gt;&lt;br /&gt;
+$$
+0.5P\left(1-\frac{P}{1000}\right) = 0.
+$$
+This gives $$ P=0 $$ or $$ 1-\frac{P}{1000}=0 \Longrightarrow P=1000. $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Long–term behavior:&lt;/strong&gt;&lt;br /&gt;
+Since the population is initially 100, and the logistic model predicts growth toward the carrying capacity, as $$ t\to\infty $$, $$ P(t)\to 1000 $$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, the population will stabilize at 1000 in the long run.&lt;/p&gt;
+&lt;hr /&gt;
+</content:encoded></item><item><title>CalcBC Ch6 - Integration and Accumulation of Change</title><link>https://mashiroisasleep.github.io/posts/calcbc/calcnotes6/</link><guid isPermaLink="true">https://mashiroisasleep.github.io/posts/calcbc/calcnotes6/</guid><description>Notes on AP calcBC chapter 6</description><pubDate>Sun, 06 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Chapter 6: Integration and Accumulation of Change&lt;/h2&gt;
+&lt;p&gt;Integration is a cornerstone of calculus—it allows us to accumulate small changes to compute areas, volumes, and other quantities. In this chapter, we explore several aspects of integration: how Riemann sums build the concept of area, how the Fundamental Theorem of Calculus links differentiation with integration, various methods to compute antiderivatives, and how integration can be applied in both standard and extended contexts.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;6.1 Riemann Sums and Approximating Areas&lt;/h2&gt;
+&lt;p&gt;Integration begins with the idea of approximating the area under a curve. &lt;strong&gt;Riemann sums&lt;/strong&gt; partition an interval into subintervals and sum up the areas of rectangles that approximate the region under a function. As the number of subintervals increases (and their width decreases), the sum converges to the exact area. This process is the intuitive foundation for the definite integral.&lt;/p&gt;
+&lt;p&gt;Riemann sums are not only used to define the integral rigorously but also to provide numerical approximations when an antiderivative is difficult to find. In practice, left–, right–, and midpoint Riemann sums each offer different approximations that can be compared and refined.&lt;/p&gt;
+&lt;h3&gt;Self-Check 1&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Approximate the area under the curve $$ f(x)=x^2 $$ on the interval $$ [0,1] $$ using a right Riemann sum with 4 subintervals.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Determine the width of each subinterval:&lt;/strong&gt;&lt;br /&gt;
+$$ \Delta x = \frac{1-0}{4} = 0.25. $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Identify the right endpoints:&lt;/strong&gt;&lt;br /&gt;
+$$ x_1=0.25,; x_2=0.50,; x_3=0.75,; x_4=1.0. $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Compute the sum:&lt;/strong&gt;&lt;br /&gt;
+$$ S = \sum_{i=1}^{4} f(x_i)\Delta x = \left[ (0.25)^2 + (0.50)^2 + (0.75)^2 + (1.0)^2 \right] \cdot 0.25. $$
+$$ S = \left[ 0.0625 + 0.25 + 0.5625 + 1 \right] \cdot 0.25 = (1.875) \cdot 0.25 = 0.46875. $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, the approximate area under $$ f(x)=x^2 $$ from $$ 0 $$ to $$ 1 $$ is $$ 0.46875 $$.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;6.2 Definite Integrals and the Fundamental Theorem of Calculus&lt;/h2&gt;
+&lt;p&gt;Once we understand Riemann sums, we define the &lt;strong&gt;definite integral&lt;/strong&gt; as the limit of these sums. The definite integral $$ \int_a^b f(x),dx $$ represents the net area under the curve $$ f(x) $$ from $$ x=a $$ to $$ x=b $$.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Fundamental Theorem of Calculus (FTC)&lt;/strong&gt; bridges differentiation and integration. Its first part tells us that if $$ F $$ is an antiderivative of $$ f $$, then:
+$$
+\int_a^b f(x),dx = F(b) - F(a).
+$$
+The second part assures that the derivative of an accumulation function is the original function:
+$$
+\frac{d}{dx}\left[\int_a^x f(t),dt\right] = f(x).
+$$&lt;/p&gt;
+&lt;p&gt;This theorem is standardly used to compute areas and solve problems involving accumulation, and it also underpins methods for evaluating net change in various applied contexts.&lt;/p&gt;
+&lt;h3&gt;Self-Check 2&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Evaluate the definite integral&lt;br /&gt;
+$$ \int_0^2 x^2,dx. $$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Find an antiderivative of $$ x^2 $$:&lt;/strong&gt;&lt;br /&gt;
+An antiderivative is $$ F(x) = \frac{x^3}{3}. $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Apply the Fundamental Theorem:&lt;/strong&gt;&lt;br /&gt;
+$$ \int_0^2 x^2,dx = F(2) - F(0) = \frac{2^3}{3} - 0 = \frac{8}{3}. $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, the area under the curve from 0 to 2 is $$ \frac{8}{3} $$.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;6.3 Antiderivatives and Indefinite Integrals&lt;/h2&gt;
+&lt;p&gt;An &lt;strong&gt;antiderivative&lt;/strong&gt; of a function $$ f(x) $$ is another function $$ F(x) $$ whose derivative is $$ f(x) $$; this process is often referred to as &quot;indefinite integration.&quot; The general antiderivative is expressed with a constant of integration, $$ C $$, because differentiation of a constant yields zero.&lt;/p&gt;
+&lt;p&gt;Basic rules such as the power rule for integration mirror the differentiation rules. For instance, if $$ f(x) = x^n $$ (with $$ n \neq -1 $$), then:
+$$
+\int x^n,dx = \frac{x^{n+1}}{n+1} + C.
+$$&lt;/p&gt;
+&lt;p&gt;Antiderivatives are used extensively not only to compute definite integrals (via the FTC) but also to solve differential equations and model systems where the accumulation of change is central.&lt;/p&gt;
+&lt;h3&gt;Self-Check 3&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Find the general antiderivative of&lt;br /&gt;
+$$ f(x) = 3x^2 + 2x - 5. $$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Integrate each term separately:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$$ \int 3x^2,dx = 3\cdot\frac{x^3}{3} = x^3. $$&lt;/li&gt;
+&lt;li&gt;$$ \int 2x,dx = 2\cdot\frac{x^2}{2} = x^2. $$&lt;/li&gt;
+&lt;li&gt;$$ \int (-5),dx = -5x. $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Combine and add the constant of integration:&lt;/strong&gt;&lt;br /&gt;
+$$ \int (3x^2 + 2x - 5),dx = x^3 + x^2 - 5x + C. $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, the general antiderivative is $$ x^3 + x^2 - 5x + C $$.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;6.4 Techniques of Integration&lt;/h2&gt;
+&lt;p&gt;While many integrals can be computed using basic rules, more complex integrals require specialized techniques. Two of the most common methods are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Substitution:&lt;/strong&gt;&lt;br /&gt;
+This technique is analogous to the Chain Rule in differentiation. By letting $$ u = g(x) $$, you simplify the integrand so that:
+$$ \int f(g(x))g&apos;(x),dx = \int f(u),du. $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Integration by Parts:&lt;/strong&gt;&lt;br /&gt;
+Derived from the product rule for differentiation, this method is useful when the integrand is a product of functions:
+$$ \int u,dv = uv - \int v,du. $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These techniques are standardly used across many problems—from computing areas to solving differential equations—and can be “stretched” for more creative applications. For instance, integration by parts is not only used in pure math problems but also in physics to derive energy relationships.&lt;/p&gt;
+&lt;h3&gt;Self-Check 4&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Evaluate the integral&lt;br /&gt;
+$$ \int x \cos(x^2),dx $$&lt;br /&gt;
+using substitution.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Let $$ u = x^2 $$ so that $$ du = 2x,dx $$ or $$ x,dx = \frac{du}{2} $$.&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Substitute into the integral:&lt;/strong&gt;
+$$ \int x \cos(x^2),dx = \int \cos(u) \frac{du}{2} = \frac{1}{2} \int \cos(u),du. $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Integrate:&lt;/strong&gt;
+$$ \frac{1}{2}\sin(u) + C. $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Substitute back:&lt;/strong&gt;
+$$ = \frac{1}{2}\sin(x^2) + C. $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, the evaluated integral is $$ \frac{1}{2}\sin(x^2) + C $$.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;6.5 Improper Integrals&lt;/h2&gt;
+&lt;p&gt;Improper integrals extend the concept of integration to functions with infinite limits or unbounded integrands. These integrals are defined as limits; for example, an integral with an infinite upper bound is expressed as:
+$$
+\int_a^\infty f(x),dx = \lim_{b\to\infty} \int_a^b f(x),dx.
+$$&lt;/p&gt;
+&lt;p&gt;Determining whether an improper integral converges (i.e., has a finite value) or diverges is crucial in many applications, including probability and physics. Techniques like the Comparison Test or the p–test are often used to analyze convergence.&lt;/p&gt;
+&lt;h3&gt;Self-Check 5&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Determine the convergence of and evaluate (if convergent) the integral&lt;br /&gt;
+$$ \int_1^\infty \frac{1}{x^2},dx. $$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Set up the integral as a limit:&lt;/strong&gt;
+$$ \int_1^\infty \frac{1}{x^2},dx = \lim_{b\to\infty} \int_1^b \frac{1}{x^2},dx. $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Integrate $$ \frac{1}{x^2} $$:&lt;/strong&gt;
+$$ \int \frac{1}{x^2},dx = -\frac{1}{x} + C. $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Evaluate from $$ 1 $$ to $$ b $$:&lt;/strong&gt;
+$$ \left[-\frac{1}{x}\right]_1^b = \left(-\frac{1}{b} + 1\right). $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Take the limit as $$ b\to\infty $$:&lt;/strong&gt;
+$$ \lim_{b\to\infty}\left(1 - \frac{1}{b}\right) = 1. $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, the integral converges and its value is $$ 1 $$.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;6.6 Applications of Integration&lt;/h2&gt;
+&lt;p&gt;Integration is a versatile tool that goes beyond computing areas. It is used to accumulate change in diverse applications such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Motion:&lt;/strong&gt;&lt;br /&gt;
+Integrating a velocity function gives the total distance traveled.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Economics:&lt;/strong&gt;&lt;br /&gt;
+The accumulation of cost or profit over time can be modeled with integrals.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Biology and Chemistry:&lt;/strong&gt;&lt;br /&gt;
+Integration helps in determining total population change or the accumulation of a substance over time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;By understanding the standard uses of integration, you can also “stretch” these methods to novel problems—for example, by combining integration with other mathematical tools to solve complex real–world systems.&lt;/p&gt;
+&lt;h3&gt;Self-Check 6&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+A car travels with a velocity given by $$ v(t)= 3t^2 - 4t + 2 $$ (in meters per second). Find the total displacement from $$ t=0 $$ to $$ t=3 $$ seconds.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Set up the displacement integral:&lt;/strong&gt;
+$$ \text{Displacement} = \int_0^3 v(t),dt = \int_0^3 (3t^2 - 4t + 2),dt. $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Find the antiderivative:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For $$ 3t^2 $$, the antiderivative is $$ t^3 $$.&lt;/li&gt;
+&lt;li&gt;For $$ -4t $$, it is $$ -2t^2 $$.&lt;/li&gt;
+&lt;li&gt;For $$ 2 $$, it is $$ 2t $$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Therefore, the antiderivative is:
+$$ F(t)= t^3 - 2t^2 + 2t. $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Evaluate from $$ t=0 $$ to $$ t=3 $$:&lt;/strong&gt;
+$$ F(3)-F(0)= \left(3^3 - 2(3)^2 + 2(3)\right) - 0 = \left(27 - 18 + 6\right)= 15. $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, the total displacement is $$ 15 $$ meters.&lt;/p&gt;
+&lt;hr /&gt;
+</content:encoded></item><item><title>CalcBC Ch5 - Analytical Applications of Differentiation</title><link>https://mashiroisasleep.github.io/posts/calcbc/calcnotes5/</link><guid isPermaLink="true">https://mashiroisasleep.github.io/posts/calcbc/calcnotes5/</guid><description>Notes on AP calcBC chapter 5</description><pubDate>Sat, 05 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Chapter 5: Differentiation — Analytical Applications&lt;/h2&gt;
+&lt;p&gt;In this chapter, we apply differentiation techniques to analyze and understand the behavior of functions. We explore key theorems that guarantee the existence of certain points, methods to locate and classify extrema, and tests to determine monotonicity and concavity. By combining these concepts, we can sketch graphs and solve optimization problems, even when functions are defined implicitly. The following seven topics will provide a detailed insight into these analytical applications.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;5.1 The Mean Value Theorem and Rolle&apos;s Theorem&lt;/h2&gt;
+&lt;p&gt;The Mean Value Theorem (MVT) is one of the cornerstone results in calculus. It formalizes the intuitive idea that for a smooth, continuous function, there must be at least one point where the instantaneous rate of change (the derivative) equals the average rate of change over an interval. Specifically, if $$ f $$ is continuous on $$ [a, b] $$ and differentiable on $$ (a, b) $$, then there exists some $$ c $$ in $$ (a, b) $$ such that&lt;/p&gt;
+&lt;p&gt;$$
+f&apos;(c) = \frac{f(b)-f(a)}{b-a}.
+$$&lt;/p&gt;
+&lt;p&gt;Rolle&apos;s Theorem is a special case of the MVT where the function takes the same value at the endpoints (i.e., $$ f(a) = f(b) $$). It guarantees the existence of a point $$ c $$ where $$ f&apos;(c) = 0 $$. These results not only provide theoretical underpinnings for more advanced topics but also serve as practical tools for solving problems.&lt;/p&gt;
+&lt;h3&gt;Self-Check 1&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Show that for the function $$ f(x) = x^2 $$ on the interval $$ [1,3] $$, there exists a point $$ c $$ where the instantaneous rate of change equals the average rate of change.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Compute the average rate of change:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+\frac{f(3)-f(1)}{3-1} = \frac{9-1}{2} = \frac{8}{2} = 4.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Differentiate $$ f(x) $$:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+f&apos;(x) = 2x.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Find $$ c $$ such that $$ f&apos;(c)=4 $$:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+2c = 4 \quad \Longrightarrow \quad c = 2.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, at $$ c=2 $$, the instantaneous rate of change is 4, which matches the average rate of change.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;5.2 Extrema and Critical Points&lt;/h2&gt;
+&lt;p&gt;The Extreme Value Theorem tells us that any continuous function on a closed interval attains both a maximum and a minimum value. Critical points, where $$ f&apos;(x) = 0 $$ or does not exist, are potential candidates for local extrema. Understanding where these occur is essential in identifying the highest or lowest points on a graph.&lt;/p&gt;
+&lt;p&gt;This concept is grounded in the idea that a function must “turn around” at a local extreme, causing the derivative to vanish (or become undefined). The systematic identification of critical points forms the basis for further analysis using derivative tests.&lt;/p&gt;
+&lt;h3&gt;Self-Check 2&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Find the critical points and determine the local extrema for the function $$ f(x) = x^3 - 3x^2 + 2 $$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Find the first derivative:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+f&apos;(x) = 3x^2 - 6x.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Set the derivative to zero:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+3x^2 - 6x = 0 \quad \Longrightarrow \quad 3x(x-2) = 0.
+$$
+Therefore, $$ x=0 $$ or $$ x=2 $$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Determine the nature of each critical point (using either the First or Second Derivative Test):&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For $$ x=0 $$, test values show a change from negative to positive, indicating a local minimum.&lt;/li&gt;
+&lt;li&gt;For $$ x=2 $$, test values show a change from positive to negative, indicating a local maximum.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, the function has a local minimum at $$ x=0 $$ and a local maximum at $$ x=2 $$.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;5.3 Increasing/Decreasing Functions and the First Derivative Test&lt;/h2&gt;
+&lt;p&gt;The first derivative of a function gives us vital information about its monotonicity—whether the function is increasing or decreasing. If $$ f&apos;(x) &amp;gt; 0 $$ on an interval, then $$ f $$ is increasing there; if $$ f&apos;(x) &amp;lt; 0 $$, it is decreasing. The First Derivative Test refines this idea by analyzing the sign changes of $$ f&apos;(x) $$ around critical points to classify them as local maxima or minima.&lt;/p&gt;
+&lt;p&gt;This test is fundamental because it provides an intuitive method to understand function behavior without needing to graph the function entirely.&lt;/p&gt;
+&lt;h3&gt;Self-Check 3&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Determine the intervals on which $$ f(x) = x^4 - 4x^3 $$ is increasing or decreasing using the First Derivative Test.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Differentiate $$ f(x) $$:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+f&apos;(x) = 4x^3 - 12x^2 = 4x^2(x-3).
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Find critical points by setting $$ f&apos;(x) = 0 $$:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+4x^2(x-3) = 0 \quad \Longrightarrow \quad x = 0 \text{ or } x = 3.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Test intervals around the critical points:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For $$ x &amp;lt; 0 $$, choose $$ x = -1 $$: $$ f&apos;(-1) = 4(1)(-4) = -16 \ (&amp;lt;0) $$.&lt;/li&gt;
+&lt;li&gt;For $$ 0 &amp;lt; x &amp;lt; 3 $$, choose $$ x = 1 $$: $$ f&apos;(1) = 4(1)(-2) = -8 \ (&amp;lt;0) $$.&lt;/li&gt;
+&lt;li&gt;For $$ x &amp;gt; 3 $$, choose $$ x = 4 $$: $$ f&apos;(4) = 4(16)(1) = 64 \ (&amp;gt;0) $$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, $$ f $$ is decreasing on $$ (-\infty, 3) $$ and increasing on $$ (3, \infty) $$, indicating a local minimum at $$ x=3 $$.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;5.4 Concavity and the Second Derivative Test&lt;/h2&gt;
+&lt;p&gt;The second derivative provides information about the concavity of a function—whether it curves upward or downward. A function is concave up if its second derivative is positive and concave down if it is negative. Additionally, the Second Derivative Test can help classify critical points: if $$ f&apos;(c)=0 $$ and $$ f&apos;&apos;(c)&amp;gt;0 $$, then $$ f $$ has a local minimum at $$ c $$; if $$ f&apos;&apos;(c)&amp;lt;0 $$, a local maximum occurs.&lt;/p&gt;
+&lt;p&gt;This concept is deeply linked to the geometric behavior of curves, helping to predict and explain the nature of turning points and inflection points.&lt;/p&gt;
+&lt;h3&gt;Self-Check 4&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+For the function $$ f(x) = x^3 - 3x^2 + 2 $$, use the Second Derivative Test to determine the nature of the critical points found earlier.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Find the second derivative:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+f&apos;&apos;(x) = 6x - 6.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Evaluate at the critical points:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;At $$ x = 0 $$:&lt;br /&gt;
+$$
+f&apos;&apos;(0) = 6(0) - 6 = -6 \ (&amp;lt;0) \quad \text{indicating a local maximum.}
+$$&lt;/li&gt;
+&lt;li&gt;At $$ x = 2 $$:&lt;br /&gt;
+$$
+f&apos;&apos;(2) = 6(2) - 6 = 6 \ (&amp;gt;0) \quad \text{indicating a local minimum.}
+$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, by the Second Derivative Test, $$ f $$ has a local maximum at $$ x=0 $$ and a local minimum at $$ x=2 $$.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;5.5 Graph Sketching&lt;/h2&gt;
+&lt;p&gt;Graph sketching is the synthesis of all analytical methods. By combining information about critical points, increasing/decreasing behavior, concavity, and inflection points, we can produce an accurate sketch of a function’s graph. This process involves plotting the critical values, identifying where the function rises or falls, and noting changes in curvature. Graph sketching is crucial for visualizing the behavior of functions and verifying analytical results.&lt;/p&gt;
+&lt;h3&gt;Self-Check 5&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Sketch the graph of $$ f(x) = x^3 - 3x^2 + 2 $$ using its critical points, intervals of increase/decrease, and concavity information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Critical points:&lt;/strong&gt;&lt;br /&gt;
+From previous problems, we have critical points at $$ x=0 $$ and $$ x=2 $$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Monotonicity:&lt;/strong&gt;&lt;br /&gt;
+The function is decreasing on $$ (-\infty, 3) $$ and increasing on $$ (3, \infty) $$ (based on the sign analysis of $$ f&apos;(x) $$).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Concavity:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Compute $$ f&apos;&apos;(x) = 6x - 6. $$&lt;/li&gt;
+&lt;li&gt;Inflection point occurs when $$ 6x - 6 = 0 \Longrightarrow x = 1. $$&lt;/li&gt;
+&lt;li&gt;For $$ x&amp;lt;1 $$, $$ f&apos;&apos;(x)&amp;lt;0 $$ (concave down); for $$ x&amp;gt;1 $$, $$ f&apos;&apos;(x)&amp;gt;0 $$ (concave up).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Plot the key points and shape:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;At $$ x=0 $$: $$ f(0)=2. $$&lt;/li&gt;
+&lt;li&gt;At $$ x=2 $$: $$ f(2)=2^3-3(2)^2+2 = 8-12+2=-2. $$&lt;/li&gt;
+&lt;li&gt;At $$ x=1 $$ (inflection point): Compute $$ f(1)=1-3+2=0. $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;By combining these details, one can sketch a curve that starts above, dips to a local maximum at $$ x=0 $$, passes through the inflection point at $$ (1,0) $$, reaches a local minimum at $$ (2,-2) $$, and then increases thereafter.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;5.6 Optimization Problems&lt;/h2&gt;
+&lt;p&gt;Optimization involves finding the best (maximum or minimum) value of a function under given conditions. This method is widely applied in economics, engineering, and the sciences. The process typically involves setting up a function that represents the quantity to be optimized, finding its derivative, and solving for critical points. Boundary conditions or constraints are then applied to determine the absolute optimum.&lt;/p&gt;
+&lt;h3&gt;Self-Check 6&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+A rectangle is to be inscribed under the curve $$ y = 16 - x^2 $$ with its base on the $$ x $$–axis. Find the dimensions of the rectangle with the maximum area.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Define variables:&lt;/strong&gt;&lt;br /&gt;
+Let the half–width of the rectangle be $$ x $$ (so the full width is $$ 2x $$) and the height be $$ y = 16 - x^2 $$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Express the area as a function of $$ x $$:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+A(x) = \text{width} \times \text{height} = 2x(16 - x^2) = 32x - 2x^3.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Differentiate $$ A(x) $$ with respect to $$ x $$:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+A&apos;(x) = 32 - 6x^2.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Find critical points by setting $$ A&apos;(x)=0 $$:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+32 - 6x^2 = 0 \quad \Longrightarrow \quad x^2 = \frac{32}{6} = \frac{16}{3} \quad \Longrightarrow \quad x = \frac{4}{\sqrt{3}}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Determine the height:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+y = 16 - \left(\frac{4}{\sqrt{3}}\right)^2 = 16 - \frac{16}{3} = \frac{32}{3}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, the rectangle with maximum area has a width of $$ 2\left(\frac{4}{\sqrt{3}}\right) = \frac{8}{\sqrt{3}} $$ and a height of $$ \frac{32}{3} $$.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;5.7 Exploring Behaviors of Implicit Relations&lt;/h2&gt;
+&lt;p&gt;Not all functions are given in explicit form; many important relationships are defined implicitly. In such cases, implicit differentiation becomes a crucial tool not only for finding $$ \frac{dy}{dx} $$ but also for exploring the behavior of the function. Studying implicit relations allows us to examine curves like ellipses, hyperbolas, and more complicated loci where traditional methods may not apply directly.&lt;/p&gt;
+&lt;p&gt;By differentiating both sides of an implicit equation with respect to $$ x $$ and solving for $$ \frac{dy}{dx} $$, we can identify key features such as slopes, tangent lines, and critical points. This exploration deepens our understanding of the structure and symmetry of these curves.&lt;/p&gt;
+&lt;h3&gt;Self-Check 7&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Consider the ellipse defined by $$ x^2 + 2y^2 = 18 $$. Use implicit differentiation to find the slope of the tangent line at the point $$ (3,2) $$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Differentiate both sides with respect to $$ x $$:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+2x + 4y\frac{dy}{dx} = 0.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Solve for $$ \frac{dy}{dx} $$:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+4y\frac{dy}{dx} = -2x \quad \Longrightarrow \quad \frac{dy}{dx} = -\frac{2x}{4y} = -\frac{x}{2y}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Substitute $$ x=3 $$ and $$ y=2 $$:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+\frac{dy}{dx}\Big|_{(3,2)} = -\frac{3}{2(2)} = -\frac{3}{4}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, the slope of the tangent line to the ellipse at $$ (3,2) $$ is $$ -\frac{3}{4} $$.&lt;/p&gt;
+&lt;hr /&gt;
+</content:encoded></item><item><title>CalcBC Ch4 - Contextual Applications of Differentiation</title><link>https://mashiroisasleep.github.io/posts/calcbc/calcnotes4/</link><guid isPermaLink="true">https://mashiroisasleep.github.io/posts/calcbc/calcnotes4/</guid><description>Notes on AP calcBC chapter 4</description><pubDate>Fri, 04 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Chapter 4: Differentiation — Contextual Applications&lt;/h2&gt;
+&lt;p&gt;As we progress in calculus, it is essential to understand not only how to compute derivatives but also how to apply them in various contexts. This chapter bridges the gap between abstract differentiation and its practical applications in real–world problems. We will examine how derivatives represent rates of change in different settings, how they describe motion, and how they can be used to solve related rates and approximation problems. Finally, we will explore L’Hôpital’s Rule—a powerful tool for handling indeterminate limits.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;4.1 Interpreting the Meaning of the Derivative in Context&lt;/h2&gt;
+&lt;p&gt;The derivative is far more than a tool for finding slopes; it represents the instantaneous rate of change of one quantity with respect to another. In various real–world scenarios, this means interpreting derivatives as velocities in motion, marginal costs in economics, or even growth rates in biology. The concept originates from the desire to measure how a quantity changes at a precise moment rather than on average. This instantaneous change is captured by the limit definition, which “zooms in” on the function at a point.&lt;/p&gt;
+&lt;p&gt;For instance, when considering the temperature change over time or the rate at which a population grows, the derivative gives us crucial insight into the behavior of the system at any given moment. It links the abstract mathematical concept to tangible quantities, providing a quantitative measure of change that informs decision–making in science, engineering, and everyday life.&lt;/p&gt;
+&lt;h3&gt;Self-Check 1&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+A company’s revenue is modeled by the function&lt;br /&gt;
+$$ R(t) = 4t^2 + 20, $$&lt;br /&gt;
+where $$ t $$ is time in months. Interpret the derivative $$ R&apos;(t) $$ and calculate the instantaneous rate of change of revenue at $$ t = 3 $$ months.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Interpretation:&lt;/strong&gt;&lt;br /&gt;
+The derivative $$ R&apos;(t) $$ represents the marginal revenue, or the instantaneous change in revenue with respect to time. It tells us how quickly revenue is increasing (or decreasing) at a specific time.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Calculation:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Differentiate $$ R(t) $$:&lt;br /&gt;
+$$ R&apos;(t) = \frac{d}{dt}(4t^2 + 20) = 8t. $$&lt;/li&gt;
+&lt;li&gt;Evaluate at $$ t = 3 $$:&lt;br /&gt;
+$$ R&apos;(3) = 8(3) = 24. $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, at $$ t = 3 $$ months, the revenue is increasing at a rate of 24 units per month.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;4.2 Straight-Line Motion: Connecting Position, Velocity, and Acceleration&lt;/h2&gt;
+&lt;p&gt;One of the most familiar applications of derivatives is in the study of motion. When an object moves along a straight line, its position is described by a function $$ s(t) $$, where $$ t $$ is time. The first derivative, $$ s&apos;(t) $$, gives the velocity—the rate at which the position changes. The second derivative, $$ s&apos;&apos;(t) $$, represents acceleration, which is the rate of change of velocity.&lt;/p&gt;
+&lt;p&gt;These relationships are derived directly from the limit definition of the derivative. They help us predict and analyze motion, from the simple falling of an object under gravity to the more complex trajectories in vehicle dynamics. Understanding these connections is crucial in physics and engineering, where accurate models of motion are necessary.&lt;/p&gt;
+&lt;h3&gt;Self-Check 2&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+An object’s position is given by&lt;br /&gt;
+$$ s(t) = t^3 - 6t^2 + 9t + 2. $$&lt;br /&gt;
+Find the velocity and acceleration at $$ t = 2 $$ seconds.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Velocity (First Derivative):&lt;/strong&gt;&lt;br /&gt;
+$$ s&apos;(t) = 3t^2 - 12t + 9. $$
+Evaluate at $$ t = 2 $$:&lt;br /&gt;
+$$ s&apos;(2) = 3(2)^2 - 12(2) + 9 = 12 - 24 + 9 = -3. $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Acceleration (Second Derivative):&lt;/strong&gt;&lt;br /&gt;
+Differentiate $$ s&apos;(t) $$:&lt;br /&gt;
+$$ s&apos;&apos;(t) = 6t - 12. $$
+Evaluate at $$ t = 2 $$:&lt;br /&gt;
+$$ s&apos;&apos;(2) = 6(2) - 12 = 12 - 12 = 0. $$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, at $$ t = 2 $$ seconds, the object’s velocity is $$-3$$ units per second (indicating a reversal in direction) and its acceleration is $$0$$.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;4.3 Rates of Change in Applied Contexts Other Than Motion&lt;/h2&gt;
+&lt;p&gt;While motion is a classic example, derivatives are also used to measure rates of change in diverse fields such as economics, biology, and chemistry. For instance, in economics, the derivative of a cost function represents the marginal cost—the cost of producing one additional unit of a product. In biology, derivatives can describe the rate at which a population grows or declines.&lt;/p&gt;
+&lt;p&gt;These applications stem from the fundamental idea that the derivative measures how a quantity changes with respect to another. This universality makes the derivative a cornerstone of modeling real–world phenomena. By understanding its interpretation, we can apply calculus to optimize processes, predict trends, and solve practical problems.&lt;/p&gt;
+&lt;h3&gt;Self-Check 3&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+The concentration of a chemical in a reaction is given by&lt;br /&gt;
+$$ C(t) = 100e^{-0.3t}, $$&lt;br /&gt;
+where $$ t $$ is time in minutes. Find the rate at which the concentration is changing at $$ t = 4 $$ minutes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Differentiate $$ C(t) $$:&lt;/strong&gt;&lt;br /&gt;
+Using the Chain Rule,&lt;br /&gt;
+$$ C&apos;(t) = 100 \cdot (-0.3)e^{-0.3t} = -30e^{-0.3t}. $$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Evaluate at $$ t = 4 $$:&lt;/strong&gt;&lt;br /&gt;
+$$ C&apos;(4) = -30e^{-0.3(4)} = -30e^{-1.2}. $$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Approximation:&lt;/strong&gt;&lt;br /&gt;
+Using $$ e^{-1.2} \approx 0.301 $$,&lt;br /&gt;
+$$ C&apos;(4) \approx -30(0.301) \approx -9.03. $$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, at $$ t = 4 $$ minutes, the concentration is decreasing at approximately 9.03 units per minute.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;4.4 Introduction to Related Rates&lt;/h2&gt;
+&lt;p&gt;Related rates problems involve two or more quantities that change over time and are connected by an equation. The technique of &lt;strong&gt;Implicit Differentiation&lt;/strong&gt; is employed here: by differentiating the entire relationship with respect to time, we can relate the rates of change of each quantity.&lt;/p&gt;
+&lt;p&gt;The origin of these problems lies in situations where measuring one variable directly is difficult, but its rate of change can be inferred from another variable. For example, in geometry, when the dimensions of a shape change over time, related rates allow us to connect the changing areas, volumes, or other attributes.&lt;/p&gt;
+&lt;h3&gt;Self-Check 4&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+The radius $$ r $$ of a circular balloon is increasing at a rate of 2 cm/s. The volume $$ V $$ of the balloon is given by&lt;br /&gt;
+$$ V = \frac{4}{3}\pi r^3. $$&lt;br /&gt;
+Find the rate at which the volume is increasing when $$ r = 5 $$ cm.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Differentiate $$ V $$ with respect to time $$ t $$:&lt;/strong&gt;&lt;br /&gt;
+$$ \frac{dV}{dt} = \frac{d}{dt}\left(\frac{4}{3}\pi r^3\right) = 4\pi r^2 \frac{dr}{dt}. $$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Substitute known values:&lt;/strong&gt;&lt;br /&gt;
+With $$ r = 5 $$ cm and $$ \frac{dr}{dt} = 2 $$ cm/s,&lt;br /&gt;
+$$ \frac{dV}{dt} = 4\pi (5)^2 (2) = 4\pi \cdot 25 \cdot 2 = 200\pi \text{ cm}^3/\text{s}. $$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, when $$ r = 5 $$ cm, the volume is increasing at a rate of $$ 200\pi $$ cm³/s.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;4.5 Solving Related Rates Problems&lt;/h2&gt;
+&lt;p&gt;In more complex related rates problems, several variables and their derivatives interact. A common example involves geometric figures—such as a ladder sliding down a wall or a shadow lengthening as an object moves. The key is to first establish a relationship between the variables, differentiate with respect to time, and then substitute known values to solve for the unknown rate.&lt;/p&gt;
+&lt;p&gt;This method not only reinforces the use of implicit differentiation but also teaches you to analyze dynamic systems where multiple quantities are interdependent.&lt;/p&gt;
+&lt;h3&gt;Self-Check 5&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+A 10-foot ladder is leaning against a wall. If the bottom of the ladder slides away from the wall at 1 ft/s, how fast is the top of the ladder sliding down when the bottom is 6 ft from the wall?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Establish the relationship:&lt;/strong&gt;&lt;br /&gt;
+Let $$ x $$ be the distance from the wall to the bottom of the ladder and $$ y $$ be the height of the ladder on the wall. By the Pythagorean theorem:&lt;br /&gt;
+$$ x^2 + y^2 = 10^2 = 100. $$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Differentiate with respect to $$ t $$:&lt;/strong&gt;&lt;br /&gt;
+$$ 2x\frac{dx}{dt} + 2y\frac{dy}{dt} = 0. $$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Solve for $$ \frac{dy}{dt} $$:&lt;/strong&gt;&lt;br /&gt;
+$$ \frac{dy}{dt} = -\frac{x}{y}\frac{dx}{dt}. $$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Substitute the known values:&lt;/strong&gt;&lt;br /&gt;
+When $$ x = 6 $$ ft,&lt;br /&gt;
+$$ y = \sqrt{100 - 6^2} = \sqrt{64} = 8 \text{ ft}, $$
+and $$ \frac{dx}{dt} = 1 $$ ft/s. Thus,&lt;br /&gt;
+$$ \frac{dy}{dt} = -\frac{6}{8}(1) = -\frac{3}{4} \text{ ft/s}. $$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Therefore, the top of the ladder is sliding down at $$ \frac{3}{4} $$ ft/s when the bottom is 6 ft from the wall.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;4.6 Approximating Values of a Function Using Local Linearity and Linearization&lt;/h2&gt;
+&lt;p&gt;Local linearity is the idea that if you “zoom in” close enough to a point on a smooth curve, the function behaves almost like a straight line. &lt;strong&gt;Linearization&lt;/strong&gt; uses the tangent line at a point $$ a $$ to approximate the function’s value for $$ x $$ near $$ a $$. This method is particularly useful when calculating exact values is difficult.&lt;/p&gt;
+&lt;p&gt;The linearization $$ L(x) $$ of a function $$ f(x) $$ at $$ x = a $$ is given by:
+$$
+L(x) = f(a) + f&apos;(a)(x - a).
+$$
+This formula comes directly from the tangent line equation and provides a first–order approximation of the function.&lt;/p&gt;
+&lt;h3&gt;Self-Check 6&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Use linearization to approximate $$ \sqrt{4.1} $$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Identify the function and point:&lt;/strong&gt;&lt;br /&gt;
+Let $$ f(x) = \sqrt{x} $$ and choose $$ a = 4 $$ because $$ \sqrt{4} $$ is easy to compute.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Find $$ f(a) $$ and $$ f&apos;(a) $$:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;$$ f(4) = 2 $$.&lt;/li&gt;
+&lt;li&gt;$$ f&apos;(x) = \frac{1}{2\sqrt{x}} $$ so $$ f&apos;(4) = \frac{1}{2(2)} = \frac{1}{4} $$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Write the linearization:&lt;/strong&gt;&lt;br /&gt;
+$$ L(x) = 2 + \frac{1}{4}(x - 4). $$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Approximate $$ \sqrt{4.1} $$:&lt;/strong&gt;&lt;br /&gt;
+$$ L(4.1) = 2 + \frac{1}{4}(4.1 - 4) = 2 + \frac{0.1}{4} = 2 + 0.025 = 2.025. $$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, $$ \sqrt{4.1} $$ is approximately 2.025.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;4.7 Using L’Hôpital’s Rule for Determining Limits and Indeterminate Forms&lt;/h2&gt;
+&lt;p&gt;L’Hôpital’s Rule is a valuable technique for evaluating limits that result in indeterminate forms like $$ \frac{0}{0} $$ or $$ \frac{\infty}{\infty} $$. The rule is based on the idea that if both the numerator and denominator approach zero (or infinity), their derivatives can be used to find the limit. This rule is rooted in the Mean Value Theorem and provides a systematic way to resolve otherwise challenging limits.&lt;/p&gt;
+&lt;p&gt;The formal statement is: if&lt;br /&gt;
+$$ \lim_{x \to c} f(x) = 0 \quad \text{and} \quad \lim_{x \to c} g(x) = 0, $$
+or both approach infinity, then
+$$
+\lim_{x \to c} \frac{f(x)}{g(x)} = \lim_{x \to c} \frac{f&apos;(x)}{g&apos;(x)},
+$$
+provided the latter limit exists.&lt;/p&gt;
+&lt;h3&gt;Self-Check 7&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;br /&gt;
+Evaluate the limit&lt;br /&gt;
+$$ \lim_{x \to 0} \frac{e^x - 1}{x}. $$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Identify the indeterminate form:&lt;/strong&gt;&lt;br /&gt;
+As $$ x \to 0 $$, both the numerator $$ e^x - 1 $$ and the denominator $$ x $$ approach 0.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Differentiate numerator and denominator:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Numerator derivative: $$ \frac{d}{dx}(e^x - 1) = e^x $$.&lt;/li&gt;
+&lt;li&gt;Denominator derivative: $$ \frac{d}{dx}(x) = 1 $$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Apply L’Hôpital’s Rule:&lt;/strong&gt;&lt;br /&gt;
+$$ \lim_{x \to 0} \frac{e^x - 1}{x} = \lim_{x \to 0} \frac{e^x}{1} = e^0 = 1. $$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, the limit evaluates to 1.&lt;/p&gt;
+&lt;hr /&gt;
+</content:encoded></item><item><title>CalcBC Ch3 - Differentiation Part 2</title><link>https://mashiroisasleep.github.io/posts/calcbc/calcnotes3/</link><guid isPermaLink="true">https://mashiroisasleep.github.io/posts/calcbc/calcnotes3/</guid><description>Notes on AP calcBC chapter 3</description><pubDate>Thu, 03 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Chapter 3: Differentiation — Composite, Implicit, and Inverse Functions&lt;/h2&gt;
+&lt;p&gt;In this chapter, we move beyond basic derivative rules to explore methods for differentiating functions that are more complex in structure. We examine composite functions where one function is applied inside another, equations defined implicitly rather than in the form $$y=f(x)$$, and the differentiation of inverse functions—including inverse trigonometric functions. Each method has its own origins and subtleties, and understanding when and how to apply them is crucial for tackling advanced problems in calculus.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;3.1 The Chain Rule&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;Chain Rule&lt;/strong&gt; is one of the most powerful tools in differentiation. It arises when we need to differentiate a composite function, that is, a function of a function. The idea is rooted in the concept that if a variable $$y$$ depends on $$u$$, which in turn depends on $$x$$, then the rate at which $$y$$ changes with respect to $$x$$ is the product of the rate at which $$y$$ changes with respect to $$u$$ and the rate at which $$u$$ changes with respect to $$x$$.&lt;/p&gt;
+&lt;p&gt;This rule is formally stated as:
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx},
+$$
+when $$y = f(u)$$ and $$u = g(x)$$. The derivation comes from considering the limit definition of the derivative and carefully analyzing the behavior of the inner function as the change in $$x$$ shrinks to zero. This layered perspective not only simplifies the differentiation of complex expressions but also deepens our understanding of how changes propagate through multiple functional relationships.&lt;/p&gt;
+&lt;h3&gt;Example: Differentiating a Composite Function&lt;/h3&gt;
+&lt;p&gt;Differentiate
+$$
+y = \sin(3x).
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Identify the inner and outer functions:&lt;/strong&gt;&lt;br /&gt;
+Let $$ u = 3x $$ (inner function) and $$ y = \sin(u) $$ (outer function).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Differentiate each part:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$$ \frac{dy}{du} = \cos(u) $$.&lt;/li&gt;
+&lt;li&gt;$$ \frac{du}{dx} = 3 $$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Apply the Chain Rule:&lt;/strong&gt;&lt;br /&gt;
+$$
+\frac{dy}{dx} = \cos(3x) \cdot 3 = 3\cos(3x).
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Self-Check 1&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Differentiate
+$$
+y = (2x+1)^5.
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Identify the inner function: $$ u = 2x+1 $$ and the outer function: $$ y = u^5 $$.&lt;/li&gt;
+&lt;li&gt;Differentiate each:
+&lt;ul&gt;
+&lt;li&gt;$$ \frac{du}{dx} = 2 $$.&lt;/li&gt;
+&lt;li&gt;$$ \frac{dy}{du} = 5u^4 $$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Apply the Chain Rule:
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = 5(2x+1)^4 \cdot 2 = 10(2x+1)^4.
+$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2&gt;3.2 Implicit Differentiation&lt;/h2&gt;
+&lt;p&gt;Not all functions are given in the explicit form $$ y = f(x) $$. Often, especially in more complex relationships like circles or ellipses, $$ x $$ and $$ y $$ are intertwined in an equation. &lt;strong&gt;Implicit Differentiation&lt;/strong&gt; is the technique used to differentiate such equations without solving explicitly for $$ y $$.&lt;/p&gt;
+&lt;p&gt;The key idea is to differentiate both sides of the equation with respect to $$ x $$, treating $$ y $$ as a function of $$ x $$. Whenever you differentiate a term involving $$ y $$, you must multiply by $$ \frac{dy}{dx} $$ (applying the Chain Rule). This process allows you to solve for $$ \frac{dy}{dx} $$ even when $$ y $$ is not isolated.&lt;/p&gt;
+&lt;h3&gt;Example: Differentiating an Implicit Equation&lt;/h3&gt;
+&lt;p&gt;Differentiate
+$$
+x^2 + y^2 = 25.
+$$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Differentiate both sides with respect to $$ x $$:
+$$
+2x + 2y \frac{dy}{dx} = 0.
+$$&lt;/li&gt;
+&lt;li&gt;Solve for $$ \frac{dy}{dx} $$:
+$$
+2y \frac{dy}{dx} = -2x \quad \Longrightarrow \quad \frac{dy}{dx} = -\frac{x}{y}.
+$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Self-Check 2&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Differentiate
+$$
+xy + y^2 = 10.
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Differentiate both sides with respect to $$ x $$:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For $$ xy $$, use the product rule: $$ \frac{d}{dx}(xy) = y + x\frac{dy}{dx} $$.&lt;/li&gt;
+&lt;li&gt;For $$ y^2 $$: $$ \frac{d}{dx}(y^2) = 2y\frac{dy}{dx} $$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thus,
+$$
+y + x\frac{dy}{dx} + 2y\frac{dy}{dx} = 0.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Combine like terms:
+$$
+y + (x+2y)\frac{dy}{dx} = 0.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Solve for $$ \frac{dy}{dx} $$:
+$$
+(x+2y)\frac{dy}{dx} = -y \quad \Longrightarrow \quad \frac{dy}{dx} = -\frac{y}{x+2y}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2&gt;3.3 Differentiating Inverse Functions&lt;/h2&gt;
+&lt;p&gt;Differentiating inverse functions can seem counterintuitive at first, but the process is grounded in a simple relationship between a function and its inverse. If $$ y = f(x) $$ is a one-to-one function with an inverse $$ x = f^{-1}(y) $$, then by the property of inverse functions, we have:
+$$
+f(f^{-1}(x)) = x.
+$$
+Differentiating both sides with respect to $$ x $$ using the Chain Rule yields
+$$
+f&apos;\bigl(f^{-1}(x)\bigr) \cdot \frac{d}{dx}\left[f^{-1}(x)\right] = 1.
+$$
+Solving for $$ \frac{d}{dx}\left[f^{-1}(x)\right] $$ gives the formula:
+$$
+\frac{d}{dx}\left[f^{-1}(x)\right] = \frac{1}{f&apos;\bigl(f^{-1}(x)\bigr)}.
+$$
+This result is especially useful when the derivative of the original function is easier to calculate than directly differentiating the inverse.&lt;/p&gt;
+&lt;h3&gt;Example: Differentiating the Inverse of $$ e^x $$&lt;/h3&gt;
+&lt;p&gt;Since $$ f(x) = e^x $$ has the inverse $$ f^{-1}(x) = \ln x $$ and $$ f&apos;(x) = e^x $$, we get:
+$$
+\frac{d}{dx}[\ln x] = \frac{1}{e^{\ln x}} = \frac{1}{x}.
+$$&lt;/p&gt;
+&lt;h3&gt;Self-Check 3&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Let $$ f(x) = x^3 + 1 $$. Find the derivative of the inverse function $$ f^{-1}(x) $$ at $$ x = 9 $$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First, find the value of $$ c $$ such that $$ f(c) = 9 $$:
+$$
+c^3 + 1 = 9 \quad \Longrightarrow \quad c^3 = 8 \quad \Longrightarrow \quad c = 2.
+$$&lt;/li&gt;
+&lt;li&gt;Compute $$ f&apos;(x) = 3x^2 $$. Then $$ f&apos;(2) = 3(2)^2 = 12 $$.&lt;/li&gt;
+&lt;li&gt;Use the inverse function derivative formula:
+$$
+\left[f^{-1}\right]&apos;(9) = \frac{1}{f&apos;(2)} = \frac{1}{12}.
+$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2&gt;3.4 Differentiating Inverse Trigonometric Functions&lt;/h2&gt;
+&lt;p&gt;Inverse trigonometric functions, such as $$ \arcsin x $$, $$ \arccos x $$, and $$ \arctan x $$, are the inverses of the familiar sine, cosine, and tangent functions. Their derivatives are derived using implicit differentiation along with the Pythagorean identity. For instance, to derive the derivative of $$ y = \arcsin x $$, we start with the equation
+$$
+\sin y = x.
+$$
+Differentiating both sides with respect to $$ x $$ (and remembering that $$ y $$ is a function of $$ x $$) gives:
+$$
+\cos y \cdot \frac{dy}{dx} = 1.
+$$
+Since $$ \cos y = \sqrt{1-\sin^2 y} = \sqrt{1-x^2} $$, we find:
+$$
+\frac{dy}{dx} = \frac{1}{\sqrt{1-x^2}}.
+$$
+A similar process is used for the other inverse trigonometric functions.&lt;/p&gt;
+&lt;h3&gt;Example: Differentiating $$ y = \arcsin x $$&lt;/h3&gt;
+&lt;p&gt;As derived above, the derivative is:
+$$
+\frac{d}{dx}[\arcsin x] = \frac{1}{\sqrt{1-x^2}},\quad |x| &amp;lt; 1.
+$$&lt;/p&gt;
+&lt;h3&gt;Self-Check 4&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Differentiate
+$$
+y = \arctan x.
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Start with the identity: $$ y = \arctan x $$ implies $$ \tan y = x $$.&lt;/li&gt;
+&lt;li&gt;Differentiate both sides with respect to $$ x $$:
+$$
+\sec^2 y \cdot \frac{dy}{dx} = 1.
+$$&lt;/li&gt;
+&lt;li&gt;Solve for $$ \frac{dy}{dx} $$:
+$$
+\frac{dy}{dx} = \frac{1}{\sec^2 y}.
+$$&lt;/li&gt;
+&lt;li&gt;Recall that $$ \sec^2 y = 1 + \tan^2 y $$ and since $$ \tan y = x $$, we have:
+$$
+\sec^2 y = 1+x^2.
+$$&lt;/li&gt;
+&lt;li&gt;Therefore,
+$$
+\frac{dy}{dx} = \frac{1}{1+x^2}.
+$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2&gt;3.5 Selecting Procedures for Calculating Derivatives&lt;/h2&gt;
+&lt;p&gt;Not every function is a simple candidate for a single rule. Often, a function may be a product of two functions, a composite of functions, or even defined implicitly. The challenge is to analyze the structure of the function and decide which rule (or combination of rules) to apply. In practice, you may need to use the Chain Rule together with the Product or Quotient Rule, or even combine implicit differentiation when functions are not given explicitly.&lt;/p&gt;
+&lt;p&gt;For example, consider a function that involves both a composite and a product:
+$$
+y = x^2 \sin(x^3).
+$$
+Here, one must first recognize that $$ \sin(x^3) $$ is a composite function and that the overall function is the product of $$ x^2 $$ and $$ \sin(x^3) $$. By breaking the problem into parts and determining the inner structure, you ensure that every component is handled correctly. This analytical approach is critical as the functions grow in complexity.&lt;/p&gt;
+&lt;h3&gt;Example: Differentiating $$ y = x^2 \sin(x^3) $$&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Recognize the product: $$ u(x) = x^2 $$ and $$ v(x) = \sin(x^3) $$.&lt;/li&gt;
+&lt;li&gt;Differentiate $$ u(x) $$: $$ u&apos;(x) = 2x $$.&lt;/li&gt;
+&lt;li&gt;For $$ v(x) $$, notice it’s composite:
+&lt;ul&gt;
+&lt;li&gt;Let $$ w = x^3 $$; then $$ v(x) = \sin w $$ and $$ \frac{dv}{dw} = \cos w $$.&lt;/li&gt;
+&lt;li&gt;Also, $$ \frac{dw}{dx} = 3x^2 $$.&lt;/li&gt;
+&lt;li&gt;Thus, $$ v&apos;(x) = \cos(x^3) \cdot 3x^2 $$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Apply the Product Rule:
+$$
+y&apos; = u&apos;(x)v(x) + u(x)v&apos;(x) = 2x \sin(x^3) + x^2\bigl[3x^2\cos(x^3)\bigr] = 2x \sin(x^3) + 3x^4\cos(x^3).
+$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Self-Check 5&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Differentiate
+$$
+y = (3x+2)^4 \cos(2x).
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Identify the two functions:
+&lt;ul&gt;
+&lt;li&gt;$$ u(x) = (3x+2)^4 $$ (which is composite) and $$ v(x) = \cos(2x) $$ (also composite).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Differentiate $$ u(x) $$:
+&lt;ul&gt;
+&lt;li&gt;Let $$ w = 3x+2 $$ so that $$ u(x) = w^4 $$ and $$ u&apos;(x) = 4w^3 \cdot \frac{dw}{dx} = 4(3x+2)^3 \cdot 3 = 12(3x+2)^3 $$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Differentiate $$ v(x) $$:
+&lt;ul&gt;
+&lt;li&gt;Let $$ z = 2x $$ so $$ v(x) = \cos z $$ and $$ v&apos;(x) = -\sin z \cdot \frac{dz}{dx} = -\sin(2x) \cdot 2 = -2\sin(2x) $$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Apply the Product Rule:
+$$
+y&apos; = u&apos;(x)v(x) + u(x)v&apos;(x) = 12(3x+2)^3 \cos(2x) - (3x+2)^4 \cdot 2\sin(2x).
+$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2&gt;3.6 Calculating Higher Order Derivatives&lt;/h2&gt;
+&lt;p&gt;Higher order derivatives provide insights into the curvature and acceleration of functions beyond their immediate rate of change. Once you have the first derivative, you can differentiate again to obtain the second derivative (and beyond). These subsequent derivatives are particularly important when studying the concavity of graphs, optimization problems, and differential equations.&lt;/p&gt;
+&lt;p&gt;When calculating higher order derivatives, it is essential to apply the differentiation rules (such as the Chain, Product, and Quotient Rules) consistently. Sometimes, the structure of the first derivative might simplify the process for the second derivative; other times, it requires careful algebraic manipulation to simplify the expression.&lt;/p&gt;
+&lt;h3&gt;Example: Finding the Second Derivative of $$ y = \ln(x^2+1) $$&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;First derivative:&lt;/strong&gt;&lt;br /&gt;
+Using the Chain Rule:
+$$
+y&apos; = \frac{1}{x^2+1} \cdot 2x = \frac{2x}{x^2+1}.
+$$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Second derivative:&lt;/strong&gt;&lt;br /&gt;
+Differentiate $$ y&apos; = \frac{2x}{x^2+1} $$ using the Quotient Rule:
+&lt;ul&gt;
+&lt;li&gt;Let $$ u(x) = 2x $$ and $$ v(x) = x^2+1 $$ so that $$ u&apos;(x) = 2 $$ and $$ v&apos;(x) = 2x $$.
+$$
+y&apos;&apos; = \frac{u&apos;(x)v(x) - u(x)v&apos;(x)}{[v(x)]^2} = \frac{2(x^2+1) - 2x(2x)}{(x^2+1)^2} = \frac{2x^2+2 - 4x^2}{(x^2+1)^2} = \frac{2-2x^2}{(x^2+1)^2}.
+$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Self-Check 6&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Find the second derivative of
+$$
+y = e^{2x}.
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;First derivative:&lt;/strong&gt;&lt;br /&gt;
+$$ y = e^{2x} $$ is a composite function with the inner function $$ u = 2x $$. Thus,
+$$
+y&apos; = e^{2x} \cdot 2 = 2e^{2x}.
+$$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Second derivative:&lt;/strong&gt;&lt;br /&gt;
+Differentiate $$ y&apos; = 2e^{2x} $$ again using the Chain Rule:
+$$
+y&apos;&apos; = 2 \cdot \frac{d}{dx}\left(e^{2x}\right) = 2 \cdot \left(e^{2x} \cdot 2\right) = 4e^{2x}.
+$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+</content:encoded></item><item><title>CalcBC Ch2 - Differentiation Part 1</title><link>https://mashiroisasleep.github.io/posts/calcbc/calcnotes2/</link><guid isPermaLink="true">https://mashiroisasleep.github.io/posts/calcbc/calcnotes2/</guid><description>Notes on AP calcBC chapter 2</description><pubDate>Wed, 02 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Chapter 2: Differentiation — Definition and Basic Derivative Rules&lt;/h2&gt;
+&lt;h2&gt;2.1 Average Rate of Change vs. Instantaneous Rate of Change&lt;/h2&gt;
+&lt;h3&gt;Average Rate of Change&lt;/h3&gt;
+&lt;p&gt;The &lt;em&gt;average rate of change&lt;/em&gt; of $$f(x)$$ between two points $$x=a$$ and $$x=b$$ is:&lt;/p&gt;
+&lt;p&gt;$$
+\frac{f(b) - f(a)}{b - a}.
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This is essentially the slope of the secant line connecting $$\bigl(a, f(a)\bigr)$$ and $$\bigl(b, f(b)\bigr)$$.&lt;/li&gt;
+&lt;li&gt;It tells us how fast the function’s output changes, on average, as the input goes from $$a$$ to $$b$$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Instantaneous Rate of Change&lt;/h3&gt;
+&lt;p&gt;The &lt;em&gt;instantaneous rate of change&lt;/em&gt; at $$x=a$$ is the derivative $$f&apos;(a)$$. Geometrically, it’s the slope of the tangent line at $$x=a$$. Analytically, it is defined using a limit:&lt;/p&gt;
+&lt;p&gt;$$
+f&apos;(a) ;=; \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}.
+$$&lt;/p&gt;
+&lt;p&gt;This limit expresses how $$f(x)$$ changes over an infinitesimally small interval around $$x=a$$.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;2.2 Defining the Derivative of a Function &amp;amp; Derivative Notation&lt;/h2&gt;
+&lt;h3&gt;Limit Definition of the Derivative&lt;/h3&gt;
+&lt;p&gt;$$
+f&apos;(x) ;=; \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}.
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If this limit exists for each $$x$$ in an interval, then $$f&apos;(x)$$ is a &lt;em&gt;function&lt;/em&gt; that gives the slope at every point.&lt;/li&gt;
+&lt;li&gt;If the limit does not exist at some $$x$$, then $$f$$ is not differentiable at that point.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Notation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Leibniz Notation&lt;/strong&gt;: $$\frac{dy}{dx}$$ or $$\frac{d}{dx}[f(x)]$$.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lagrange Notation&lt;/strong&gt;: $$f&apos;(x)$$.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Newton’s Notation&lt;/strong&gt;: $$\dot{y}$$ (often used in physics for time derivatives).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You might see all of these. They convey the same concept: the &lt;em&gt;instantaneous rate of change&lt;/em&gt; of $$y$$ with respect to $$x$$.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;2.3 Estimating Derivatives of a Function at a Point&lt;/h2&gt;
+&lt;p&gt;Sometimes you only have a graph or a table rather than an explicit formula. To approximate $$f&apos;(a)$$:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;From a Table&lt;/strong&gt;: Use the difference quotient $$\frac{f(x_2)-f(x_1)}{x_2-x_1}$$ for two points $$x_1$$ and $$x_2$$ around $$a$$ to get a “best guess.” Closer $$x_1, x_2$$ are to $$a$$, the better.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;From a Graph&lt;/strong&gt;: Draw a tangent line at $$x=a$$ and estimate its slope by “rise over run.”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;2.4 Connecting Differentiability and Continuity&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;If $$f$$ is &lt;em&gt;differentiable&lt;/em&gt; at $$x=a$$, then $$f$$ is automatically &lt;em&gt;continuous&lt;/em&gt; at $$x=a$$.&lt;/li&gt;
+&lt;li&gt;However, a function can be continuous but &lt;strong&gt;not&lt;/strong&gt; differentiable if it has a “sharp corner,” “vertical tangent,” or a cusp. For instance, $$|x|$$ is continuous everywhere but not differentiable at $$x=0$$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;2.5 The Power Rule&lt;/h2&gt;
+&lt;p&gt;A direct result of applying the limit definition to power functions is the &lt;strong&gt;Power Rule&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;$$
+\frac{d}{dx}[x^n] = n,x^{n-1}.
+$$&lt;/p&gt;
+&lt;p&gt;Examples:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$$\frac{d}{dx}[x^3] = 3x^2$$.&lt;/li&gt;
+&lt;li&gt;$$\frac{d}{dx}[x] = 1$$.&lt;/li&gt;
+&lt;li&gt;$$\frac{d}{dx}[\sqrt{x}] = \frac{d}{dx}[x^{1/2}] = \tfrac12 x^{-1/2} = \frac{1}{2\sqrt{x}}.$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;2.6 Derivative Rules: Constant, Sum, Difference, and Constant Multiple&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Constant Function Rule&lt;/strong&gt;&lt;br /&gt;
+$$\frac{d}{dx}[c] = 0,$$ where $$c$$ is any constant.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Sum / Difference Rules&lt;/strong&gt;&lt;br /&gt;
+$$
+\frac{d}{dx}[f(x)\pm g(x)] ;=; f&apos;(x);\pm;g&apos;(x).
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Constant Multiple Rule&lt;/strong&gt;&lt;br /&gt;
+$$
+\frac{d}{dx}[c,f(x)] ;=; c,f&apos;(x).
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;All these rules ensure derivatives behave in a linear way with respect to addition and scalar multiplication.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;2.7 Derivatives of $$\sin x$$, $$\cos x$$, $$e^x$$, and $$\ln x$$&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;$$\sin x$$ and $$\cos x$$&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$$\frac{d}{dx}[\sin x] = \cos x$$.&lt;/li&gt;
+&lt;li&gt;$$\frac{d}{dx}[\cos x] = -,\sin x$$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;$$e^x$$&lt;/strong&gt;&lt;br /&gt;
+$$\frac{d}{dx}[e^x] = e^x.$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;$$\ln x$$&lt;/strong&gt;&lt;br /&gt;
+$$\frac{d}{dx}[\ln x] = \frac{1}{x},\quad x&amp;gt;0.$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These are standard derivatives you should memorize. They can be derived rigorously using the limit definition, but in practice they’re typically treated as fundamental facts.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;2.8 The Product Rule&lt;/h2&gt;
+&lt;p&gt;When you have $$f(x) = u(x),v(x)$$, its derivative is given by:&lt;/p&gt;
+&lt;p&gt;$$
+f&apos;(x) = u&apos;(x),v(x) ;+; u(x),v&apos;(x).
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: If $$f(x)= (x^3),(\sin x)$$, then&lt;/p&gt;
+&lt;p&gt;$$
+f&apos;(x)= (3x^2)(\sin x) ;+; (x^3)(\cos x).
+$$&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;2.9 The Quotient Rule&lt;/h2&gt;
+&lt;p&gt;For a function that’s the ratio of two differentiable functions $$\frac{u(x)}{v(x)}$$, the derivative is:&lt;/p&gt;
+&lt;p&gt;$$
+\left(\frac{u}{v}\right)&apos; = \frac{u&apos;(x),v(x) - u(x),v&apos;(x)}{(,v(x),)^2}.
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: If $$g(x)= \frac{2x}{1+x^2}$$,&lt;/p&gt;
+&lt;p&gt;$$
+g&apos;(x)= \frac{(2)(1+x^2) - (2x)(2x)}{(1+x^2)^2}
+= \frac{2(1+x^2) -4x^2}{(1+x^2)^2}.
+$$&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;2.10 The Derivatives of $$\tan x$$, $$\cot x$$, $$\sec x$$, and $$\csc x$$&lt;/h2&gt;
+&lt;p&gt;Using the quotient rule (or known identities), we get:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$$\frac{d}{dx}[\tan x] = \sec^2 x.$$&lt;/li&gt;
+&lt;li&gt;$$\frac{d}{dx}[\cot x] = -,\csc^2 x.$$&lt;/li&gt;
+&lt;li&gt;$$\frac{d}{dx}[\sec x] = \sec x,\tan x.$$&lt;/li&gt;
+&lt;li&gt;$$\frac{d}{dx}[\csc x] = -,\csc x,\cot x.$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These can also be memorized or derived systematically using $$\tan x= \frac{\sin x}{\cos x}$$, etc.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Self-Check Practice&lt;/h2&gt;
+&lt;p&gt;Below are several sample problems to reinforce your understanding. Try each before looking at the solution.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Self-Check 1&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;: Using the &lt;strong&gt;limit definition&lt;/strong&gt; of the derivative, show that:&lt;/p&gt;
+&lt;p&gt;$$
+\frac{d}{dx}[x^2];=;2x.
+$$&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;Solution 1&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;By definition:&lt;/p&gt;
+&lt;p&gt;$$
+\frac{d}{dx}[x^2] ;=; \lim_{h\to 0}\frac{(x+h)^2 -x^2}{h}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Expand the numerator: $$(x+h)^2 = x^2 +2xh +h^2.$$&lt;/p&gt;
+&lt;p&gt;So,&lt;/p&gt;
+&lt;p&gt;$$
+\frac{(x+h)^2 -x^2}{h} = \frac{x^2 +2xh +h^2 -x^2}{h} = \frac{2xh + h^2}{h}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Factor out $$h$$:&lt;/p&gt;
+&lt;p&gt;$$
+\frac{2xh +h^2}{h} = 2x +h.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now take the limit as $$h\to 0$$. Clearly, $$2x +h \to 2x$$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hence, $$\frac{d}{dx}[x^2] = \boxed{2x}$$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Self-Check 2&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;: Differentiate $$ f(x)= 7x^4 -3x +10 $$ using &lt;strong&gt;Power, Sum, and Constant Rules&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;Solution 2&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Term by term:
+&lt;ol&gt;
+&lt;li&gt;$$\frac{d}{dx}[7x^4] = 7\cdot 4x^{3}=28x^3.$$&lt;/li&gt;
+&lt;li&gt;$$\frac{d}{dx}[-3x] = -3.$$&lt;/li&gt;
+&lt;li&gt;$$\frac{d}{dx}[10] = 0.$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Putting it all together:&lt;/p&gt;
+&lt;p&gt;$$
+f&apos;(x)= 28x^3 -3.
+$$&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Self-Check 3&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;: Differentiate $$ g(x)= x^5 \ln x $$ using the &lt;strong&gt;Product Rule&lt;/strong&gt;. Assume $$x&amp;gt;0$$.&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;Solution 3&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Let $$u(x)= x^5$$ and $$v(x)= \ln x$$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then $$u&apos;(x)= 5x^4$$ and $$v&apos;(x)= \frac{1}{x}$$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Product Rule:&lt;/p&gt;
+&lt;p&gt;$$
+g&apos;(x)= u&apos;(x),v(x) + u(x),v&apos;(x)
+= (5x^4)(\ln x) + (x^5)\left(\frac{1}{x}\right).
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Simplify the second term:&lt;/p&gt;
+&lt;p&gt;$$
+(x^5)\left(\frac{1}{x}\right) = x^4.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Therefore,&lt;/p&gt;
+&lt;p&gt;$$
+g&apos;(x)= 5x^4 \ln x + x^4 = x^4(5\ln x + 1).
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Self-Check 4&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;: Differentiate $$ h(x)= \frac{\sin x}{x^2} $$ using the &lt;strong&gt;Quotient Rule&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;Solution 4&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Let $$u(x)= \sin x$$ and $$v(x)= x^2$$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then $$u&apos;(x)= \cos x$$ and $$v&apos;(x)= 2x$$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Quotient Rule:&lt;/p&gt;
+&lt;p&gt;$$
+h&apos;(x)= \frac{u&apos;(x),v(x) - u(x),v&apos;(x)}{(v(x))^2}
+= \frac{(\cos x)(x^2) -(\sin x)(2x)}{(x^2)^2}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Simplify numerator and denominator:&lt;/p&gt;
+&lt;p&gt;$$
+= \frac{x^2 \cos x -2x \sin x}{x^4}
+= \frac{x^2\cos x}{x^4} - \frac{2x\sin x}{x^4}
+= \frac{\cos x}{x^2} - \frac{2\sin x}{x^3}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Final derivative:&lt;/p&gt;
+&lt;p&gt;$$
+h&apos;(x)= \boxed{\frac{\cos x}{x^2} - \frac{2\sin x}{x^3}}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Self-Check 5&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;: Find the derivatives of each of the following trigonometric functions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$$p(x)= \tan x$$&lt;/li&gt;
+&lt;li&gt;$$q(x)= \sec x$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;&lt;strong&gt;Solution 5&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;$$p(x)= \tan x$$&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Recall $$\tan x= \frac{\sin x}{\cos x}$$. Using the quotient rule:&lt;/p&gt;
+&lt;p&gt;$$
+p&apos;(x)= \frac{(\cos x)(\cos x) -(\sin x)(-\sin x)}{\cos^2 x}
+= \frac{\cos^2 x + \sin^2 x}{\cos^2 x}
+= \frac{1}{\cos^2 x} = \sec^2 x.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So, $$\frac{d}{dx}[\tan x]= \sec^2 x.$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;$$q(x)= \sec x$$&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$$\sec x= \frac{1}{\cos x}$$. Using the quotient rule or known identities:&lt;/p&gt;
+&lt;p&gt;$$
+q&apos;(x)= \sec x \tan x.
+$$
+Alternatively, you can do $$\frac{d}{dx}[\sec x]= \sec x \tan x$$ directly, if you’ve memorized it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Hence, the results:&lt;/p&gt;
+&lt;p&gt;$$
+\frac{d}{dx}[\tan x]= \sec^2 x \quad\text{and}\quad \frac{d}{dx}[\sec x]= \sec x \tan x.
+$$&lt;/p&gt;
+</content:encoded></item><item><title>早饭</title><link>https://mashiroisasleep.github.io/posts/novel/%E6%97%A9%E9%A5%AD/</link><guid isPermaLink="true">https://mashiroisasleep.github.io/posts/novel/%E6%97%A9%E9%A5%AD/</guid><description>想写点特别的短篇，便有了这篇《早饭》。最近实在是有些累。</description><pubDate>Wed, 02 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;灰蒙蒙的清晨像朦胧浸透的旧相片，不合时宜地在他意识里点亮又黯淡。滴答，滴答，水龙头的声音吗？不，那似乎是从毯子深处传来的心跳，或者是那些陈年记忆里卡壳的留声机。床头闹钟歪斜着，停留在某个昨夜遗失的时刻，没有指针的表盘，像一只无眼的猫头鹰盯着他。呼吸——要不要再多吸一口？或许只有空气中漂浮的尘埃见证，他昨夜睡着时想了些什么，又或者想不出什么。&lt;/p&gt;
+&lt;p&gt;他费力地睁开一只眼，随后另一只也尝试睁开，却被黏稠的睡意粘住了半扇世界。为何要起床？没有答案。世界有答案吗？门那边或许是走廊，走廊之外或许是街道，街道之外或许是别人的正常人生。可他只觉自己的被窝像沉陷的泥沼，拖住了脊背，却又推攘着他的躯体，让他浮起来。浮或沉，他都被动。躺下去试图再睡，可枕头里埋着的梦已经破洞，灰尘与早晨的光齐齐往脑子里灌。&lt;/p&gt;
+&lt;p&gt;他侧过头，看见窗玻璃上模糊映着自己脸的轮廓。也不知那还是不是自己的脸，能分清吗？他耳边似乎回荡着母亲低声叹息的嗓音，又或是某个多年不见的友人皱着眉头的劝慰。随即又一片空白，仿佛潮水退去，裸露出一片冷漠的沙滩。钟声在哪儿敲？或许在隔壁楼的顶层，或许在胃里蜷缩的饥饿发出痛鸣。走吧。身体里的某个声音怂恿他。去吧。可走到哪儿？先去洗漱？好像每天都要这么机械地开始，像一只木偶，被无形的指令牵引。&lt;/p&gt;
+&lt;p&gt;踉跄地起身。地板发出嘶哑的吱呀，像旧剧院里临摹的假声。是不是曾经在这里摔过一次？淤青留下没有？脑海里闪过一个深夜里淋雨的画面，不知何时何地，只知那雨下得令人窒息，像泪水汇成的海。对，他记得那海是暗红色的。为什么是红色？他不追究。因为他此刻只是想去洗漱，对，洗漱——刷牙，洗脸，看看镜子里的人是不是自己。&lt;/p&gt;
+&lt;p&gt;水龙头拧开，水流的声音像嘲笑。嘟嘟囔囔，他似乎听到有人在唱无字的歌。是自来水管道里的共鸣，还是楼上有人忘了关掉唱机？刷牙。牙膏挤出来，有点干，像一条地上翻白的虫子。泡沫在嘴里翻滚，他含糊地“呜呜”吐字。镜子发出刺眼的冷光，透过那层光，他看见自己面颊瘦削，眼窝幽暗，仿佛深埋着一只死去的太阳。左脸颧骨一块斑，好像多年前某次事故留下的疤痕，却记不得发生过什么。那些碎片化的记忆如同船底附着的青苔，顽固地存在，却无法组合成完整画面。&lt;/p&gt;
+&lt;p&gt;一次漱口，两次漱口，咕噜声像低沉的渔歌。水顺着下巴滴落，他盯着自己的左手。左手？对，五指张开，好似五条干枯的鱼，一动不动。为什么要盯着左手？他心里飘过一个诡异的问题：如果这只手不在了，世界会变得更简单吗？不知从何而起的念头，如被刮开的伤口，微微作痛，又好像不痛。一瞬间，他感觉胃里空荡如荒原，被风呼啦啦吹拂。饿了。还是作呕？不知道。只是想要填补某种空缺。&lt;/p&gt;
+&lt;p&gt;他转身回到那间半敞着门的厨房。地板太冷，脚心被寒意刺得一阵阵发麻。厨房里有碗碟，有刀，有他浑浑噩噩混日子的痕迹：褪色的桌布，放久了发灰的调料罐，还有那把刀柄上有裂痕的旧刀。看它时，他仿佛瞧见一只沉睡的怪物，瞳孔里还映着昨日的血痕。怎么会有血？番茄汁？他也懒得追究。饿意在胃里翻腾成风暴，他机械地张望：冰箱里那盒牛奶已过期，面包早就长毛，不想去买新鲜的，没人要逼自己吃正经的早餐。如果不吃呢？脑袋嗡地一下，如同被黑洞吸走了大半知觉，只留下一道荒谬的指令：可以吃别的东西。什么“别的东西”？他脑内轰鸣，像无数电报同时发来噪音，但所有讯号又在最后一秒合并成一丝诡谲的诱惑。&lt;/p&gt;
+&lt;p&gt;他拿起刀，先是轻轻掂了掂。那种厚重的金属感像一条沉默的毒蛇，冷冷贴在掌心，却唤起他血液里某种难言的躁动。左手伸向案板，仿佛在做一件平凡至极的事：切肉？切菜？他感到自己的呼吸忽然乱了节奏，大脑里钟摆似的回旋着“别，别，别……”可那口令仿佛来自遥远时空，一点也挡不住他手上的动作。为什么这样做？或许是在复仇？向谁复仇？向自己的躯体？向这被无形重压的灵魂？没有答案。就像他从不期盼那个“为什么”能带来解脱。&lt;/p&gt;
+&lt;p&gt;第一刀落下时，他甚至没来得及尖叫。那是骨头与刀钢相撞的干涩摩擦声，混合血液破裂时的温热噗声。痛，是在下一秒才汹涌爆发，如狂风带着火焰撕扯他神经。每一根神经都在燃烧，心脏猛地收缩，想要把血液全数抽离。可他又仿佛在这极度痛感里麻木了，像一块死木被火烧，却无法挣扎。血从指缝中冒出，像开了一朵罪恶的红玫瑰。大脑搅拌成一锅混乱，他依稀想起儿时摔破膝盖，母亲手忙脚乱地消毒包扎，泪水滴在纱布上。可如今没有母亲，没有纱布，只有刀和自己。&lt;/p&gt;
+&lt;p&gt;一刀，两刀，三刀……他看见那些指节脱离手掌，就像从树上被猛烈折断的树枝，断口处流着粘稠的汁液。他呆呆地看着这一切，吓得想 vomit，可是呕不出来，身体像被按下暂停键，只剩本能在推动刀刃。血滴答滴答落在地砖上，交织成一片狼藉，像画家失控的笔迹。一股铁锈味混合着油腻的空气，让人窒息又恶心。但他好像已陷入某种极端的专注：是的，专注于把自己的左手分离成一片片。他不再恨或怕，只剩灰蒙蒙的决然。&lt;/p&gt;
+&lt;p&gt;刀终于停下。他的左手只剩下残缺模糊的躯壳。痛感攀升到极点后又像忽然被掐断的电流，理智反而清晰起来。他伸出右手拧开火，蓝色火焰吞吐着阴冷的气息，好像死神吐着舌头。油倒进锅里，热气呲地一声冒起来，把那把刀片和刚才还在跳动的碎肉全都烫在炙热边缘。他颤抖着，把那些鲜血淋漓的手指肉片丢进锅中。就像在做一道普通料理，一道给自己的料理。火苗扑腾着，油花四溅。空气里蔓延的味道，说不上来是肉香还是腐败的预兆。盐呢？放不放？也许放与不放都是嘲讽。他随手抓了一把盐，轻轻撒在滚烫的血肉上，滋滋声里，似乎有灵魂在悲鸣。&lt;/p&gt;
+&lt;p&gt;他看着那一片片在油中卷曲蜷缩的肉块，自问：这是我的左手，还是一堆陌生人的残肢？脑子里仿佛又浮出一片别处风景：碧绿的草地，葵花在阳光下扭动，远处有人在喊他的名字……错乱。对，错乱就像一场无休止的落幕演出。他呛了一口油烟，在喉咙里咳嗽，然而哭不出来，泪水好似在别的世界里流淌。&lt;/p&gt;
+&lt;p&gt;当他把那盘烹熟的“早餐”端到桌上，一股虚弱感如崩溃的洪水冲垮所有骨骼。他却不想停下，因为如果停下，一切毫无意义。他抬眼看了看墙上的挂历——日期还是昨天，或者说天天都像昨天。指甲缝还粘着凝固的暗红，疼痛随血液跳动，嗵嗵地敲击耳膜。他坐下，桌椅发出呻吟，仿佛也对这疯狂场景目瞪口呆。他举起那一片已经失去形状的肉，颤抖着送进嘴里。嚼起来——口感怎样？他发现自己竟一时说不出是生硬、腥臭还是带着一种奇异的饱腹感。像是在吞咽自己的过去，也吞咽所有未曾明说的苦难。他的身体微微抽搐，胃部像被铁爪撕扯，可他仍往嘴里塞，那血肉混着泪水与口水，无从分辨哪一种更苦涩。&lt;/p&gt;
+&lt;p&gt;一口，又一口，唇齿之间飘过无名的凉意。他似乎看到镜子里有个人在对他嘲笑，还是对他悲悯？也或许只是灯光扭曲了虚像。地板上滴落的血染红了一条轨迹，从厨房到餐桌，像一段荒诞又凄凉的旅程。痛楚再度翻滚，他的身体仿佛在抗议。可他继续咀嚼，咀嚼自己最后的意志或无力。闭上眼睛，他脑海里出现父亲严厉的目光，那是在他小时候挑食时留下的记忆？也许不是。也许是幻象。所有的片段都像幽灵舞蹈，在他意识里回旋、飘移，想抓又抓不住。虚弱感与尖锐的痛混合着，像万箭同时钻进骨髓。他发出一声气若游丝的呻吟，筷子从手中滑落，叮当一声敲在地上。头晕，天花板仿佛在向内坍缩，周围景物像油画般在他视野里融化。想呼救？那张嘴却只剩无力的喃喃，正如一只即将灭灯的孤灯，转瞬就要沉入永夜。&lt;/p&gt;
+&lt;p&gt;他支撑着身体想站起来，却发现血已经流了太多，从左臂到脚下的每一步都注定沉重如万斤。他想，也许这就是终点。为什么要走到这一步？他想知道答案，却又清楚“答案”只是一个无可奈何的概念。痛苦、孤独、自弃、绝望，这些词语在脑海里像坏掉的霓虹灯忽闪忽灭。任何解释都显得多余。就像那荒唐的行为，既是自己注定的道路，也是一场无法诉说的刑罚。&lt;/p&gt;
+&lt;p&gt;他跌坐在地，视线越发模糊。耳朵里似有钟声在回荡，也可能是心跳渐渐微弱的回音。刀仍在桌上，带着未干的血凝固成黯淡黑红。那碟“早餐”只吃了一部分，余下的血肉毫无生气地瘫在那里，好像展示着一道极其惨烈的艺术品。天光透过窗户斜射进来，又照出地面上那一滩爬行的血液，像夜色里失控的河流，汹涌，却无声。远方有人关门、有人说话、有人驶车。世界继续转动，可他已经走到最后一节。&lt;/p&gt;
+&lt;p&gt;呼吸一点点浅下去。也许下一秒，他就不再需要呼吸。也许下一刻，城市的钟声照常敲响九点，人们依旧出门工作或上学，咖啡馆飘出烘焙的香气，报刊亭出售新的早报。可在这一隅——在这无声无息的厨房里，他的结局不再需要任何阐释，也无需谁的怜悯。那只空荡的左手，曾在凌晨的光里颤动，如今如同遗忘一样冰冷。为什么？为什么？问题绕过来又绕过去，最终散落在无可名状的虚空里——正如这条脉络混乱、只言片语的内心独白，在混沌中戛然而止。&lt;/p&gt;
+</content:encoded></item><item><title>CalcBC Ch1 - Limits and Contnuity</title><link>https://mashiroisasleep.github.io/posts/calcbc/calcnotes1/</link><guid isPermaLink="true">https://mashiroisasleep.github.io/posts/calcbc/calcnotes1/</guid><description>Notes on AP calcBC chapter 1</description><pubDate>Fri, 28 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Chapter 1: Limits and Continuity&lt;/h2&gt;
+&lt;h2&gt;1.1 Why Do We Need Limits?&lt;/h2&gt;
+&lt;h3&gt;The Big Idea: Instantaneous Rate of Change&lt;/h3&gt;
+&lt;p&gt;In everyday life, we talk about &lt;em&gt;average speed&lt;/em&gt; (like “I drove 120 miles in 2 hours, so my average speed was 60 mph”). But what about your &lt;em&gt;speed at a single instant&lt;/em&gt; (the number your car’s speedometer shows at exactly t = 30 seconds)?&lt;/p&gt;
+&lt;p&gt;In algebra, the slope of a line $$\Delta y / \Delta x$$ measures &lt;em&gt;average rate of change&lt;/em&gt; between two points. In calculus, we want the slope of a curve (the &lt;em&gt;instantaneous rate of change&lt;/em&gt;) at exactly one point.&lt;/p&gt;
+&lt;p&gt;To handle this, we let the two points on the curve get very close—so close that the difference between their $$x$$-coordinates ($$\Delta x$$) goes to zero. &lt;strong&gt;Limits&lt;/strong&gt; formalize the idea of “approaching a value” without necessarily reaching it.&lt;/p&gt;
+&lt;h4&gt;Key Vocabulary&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Secant line&lt;/strong&gt;: A line connecting two points on a function’s graph; it gives an &lt;em&gt;average rate of change&lt;/em&gt; over some interval.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tangent line&lt;/strong&gt;: A line that “just touches” (or is “instantaneous” to) a function at a single point, giving the &lt;em&gt;instantaneous rate of change&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;1.2 Formalizing the Concept of a Limit&lt;/h2&gt;
+&lt;p&gt;We write:&lt;/p&gt;
+&lt;p&gt;$$
+\lim_{x \to a} f(x) = L
+$$&lt;/p&gt;
+&lt;p&gt;to mean: “As $$x$$ gets closer and closer to $$a$$ (from both sides), the function $$f(x)$$ gets closer and closer to $$L$$.”&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It does &lt;strong&gt;not&lt;/strong&gt; require $$f(a)$$ to exist or to equal $$L$$. The limit depends only on the &lt;em&gt;approach&lt;/em&gt; to $$a$$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Left-Hand vs. Right-Hand Limits&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Left-hand limit&lt;/strong&gt;: $$\lim_{x \to a^-} f(x)$$ means $$x$$ approaches $$a$$ from values &lt;em&gt;less than&lt;/em&gt; $$a$$.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Right-hand limit&lt;/strong&gt;: $$\lim_{x \to a^+} f(x)$$ means $$x$$ approaches $$a$$ from values &lt;em&gt;greater than&lt;/em&gt; $$a$$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For $$\lim_{x \to a} f(x)$$ to exist (and be equal to some $$L$$), the left-hand limit and right-hand limit must &lt;em&gt;agree&lt;/em&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;1.3 &amp;amp; 1.4 Estimating Limits Graphically and from Tables&lt;/h2&gt;
+&lt;h3&gt;Estimating from a Graph&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Look at the point $$x=a$$ on your graph.&lt;/li&gt;
+&lt;li&gt;Trace from the left side and the right side to see if the function values head toward the same $$y$$-value.&lt;/li&gt;
+&lt;li&gt;If they do, that $$y$$-value is the limit.&lt;/li&gt;
+&lt;li&gt;If they approach two different $$y$$-values, the limit does not exist (DNE).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: The function might have a &lt;em&gt;hole&lt;/em&gt; or &lt;em&gt;no actual point&lt;/em&gt; at $$x=a$$. The limit can still exist if the $$y$$-value approached from both sides is the same.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Estimating from a Table&lt;/h3&gt;
+&lt;p&gt;If you have a table of $$(x, f(x))$$ values near $$x = a$$, look at how $$f(x)$$ behaves as $$x$$ gets closer to $$a$$ from above and below. If the outputs get closer to one number, that number is your estimated limit.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;1.5 Determining Limits Using Algebraic Methods&lt;/h2&gt;
+&lt;p&gt;Often, you can find a limit by:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Direct Substitution&lt;/strong&gt;&lt;br /&gt;
+If substituting $$x=a$$ into $$f(x)$$ doesn’t cause a division by zero or other undefined behavior, then
+$$
+\lim_{x \to a} f(x) = f(a).
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Factor &amp;amp; Cancel (for 0/0 forms)&lt;/strong&gt;&lt;br /&gt;
+If you get $$\frac{0}{0}$$ by substituting, try factoring the numerator and denominator, and cancel common factors causing the 0. Then re-check the limit.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Rationalizing (for radicals)&lt;/strong&gt;&lt;br /&gt;
+If you see square roots, you can multiply by a &lt;em&gt;conjugate&lt;/em&gt; to remove the radical from denominator or numerator.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Common Limit Laws&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$$\lim_{x\to a} [f(x) + g(x)] = \lim_{x\to a} f(x) + \lim_{x\to a} g(x)$$&lt;/li&gt;
+&lt;li&gt;$$\lim_{x\to a} [c \cdot f(x)] = c \cdot \lim_{x\to a} f(x)$$&lt;/li&gt;
+&lt;li&gt;$$\lim_{x\to a} [f(x)\cdot g(x)] = (\lim_{x\to a} f(x)) \cdot (\lim_{x\to a} g(x))$$, provided both limits exist.&lt;/li&gt;
+&lt;li&gt;$$\lim_{x\to a} \frac{f(x)}{g(x)} = \frac{\lim_{x\to a} f(x)}{\lim_{x\to a} g(x)}$$, provided $$\lim_{x\to a} g(x)\neq 0$$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2&gt;1.6 &amp;amp; 1.7 More Advanced Strategies: Squeeze Theorem &amp;amp; Selecting Procedures&lt;/h2&gt;
+&lt;h3&gt;Squeeze (Sandwich) Theorem&lt;/h3&gt;
+&lt;p&gt;If $$g(x)\leq f(x)\leq h(x)$$ for $$x$$ near $$a$$, and if&lt;/p&gt;
+&lt;p&gt;$$
+\lim_{x \to a} g(x) = \lim_{x \to a} h(x) = L,
+$$&lt;/p&gt;
+&lt;p&gt;then&lt;/p&gt;
+&lt;p&gt;$$
+\lim_{x \to a} f(x) = L.
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: $$\lim_{x \to 0} x \sin\left(\frac{1}{x}\right)$$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We know $$-1 \le \sin\left(\frac{1}{x}\right) \le 1$$.&lt;/li&gt;
+&lt;li&gt;Multiply by $$x$$: $$-|x|\le x,\sin\left(\tfrac{1}{x}\right)\le |x|$$.&lt;/li&gt;
+&lt;li&gt;$$\lim_{x \to 0} -|x| = 0$$ and $$\lim_{x \to 0} |x| = 0$$.&lt;/li&gt;
+&lt;li&gt;By the Squeeze Theorem, the limit is $$0$$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;1.8, 1.9, 1.10 Continuity and Discontinuities&lt;/h2&gt;
+&lt;h3&gt;Continuity at a Point&lt;/h3&gt;
+&lt;p&gt;A function $$f$$ is &lt;strong&gt;continuous&lt;/strong&gt; at $$x=a$$ if:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$$f(a)$$ is defined.&lt;/li&gt;
+&lt;li&gt;$$\lim_{x \to a} f(x)$$ exists.&lt;/li&gt;
+&lt;li&gt;$$\lim_{x \to a} f(x) = f(a)$$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In simpler terms, you can draw the function at $$x=a$$ &lt;em&gt;without lifting your pencil&lt;/em&gt;.&lt;/p&gt;
+&lt;h3&gt;Types of Discontinuities&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Removable (Hole)&lt;/strong&gt;: The limit exists, but $$f(a)$$ is not defined or isn’t equal to that limit.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Jump&lt;/strong&gt;: Left- and right-hand limits exist but are not equal.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Infinite&lt;/strong&gt;: The function goes to $$+\infty$$ or $$-\infty$$ near $$a$$, usually indicating a vertical asymptote at $$x=a$$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Removing a Discontinuity&lt;/h3&gt;
+&lt;p&gt;Sometimes you can redefine the function at $$a$$ to “fill in” a hole, making it continuous.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;1.11 &amp;amp; 1.12 Infinite Limits and Limits at Infinity&lt;/h2&gt;
+&lt;h3&gt;Infinite Limits (Vertical Asymptotes)&lt;/h3&gt;
+&lt;p&gt;$$
+\lim_{x\to a} f(x) = \infty
+$$&lt;/p&gt;
+&lt;p&gt;means $$f(x)$$ becomes arbitrarily large (positive) as $$x$$ approaches $$a$$. Often, $$x=a$$ is a vertical asymptote. Similarly for $$-\infty$$.&lt;/p&gt;
+&lt;h3&gt;Limits at Infinity (Horizontal Asymptotes)&lt;/h3&gt;
+&lt;p&gt;To understand how a function behaves as $$x$$ grows large (positively or negatively), look at:&lt;/p&gt;
+&lt;p&gt;$$
+\lim_{x \to \infty} f(x) \quad \text{or} \quad \lim_{x \to -\infty} f(x).
+$$&lt;/p&gt;
+&lt;p&gt;If a function approaches a finite value $$L$$ as $$x\to\infty$$, then $$y=L$$ is a &lt;strong&gt;horizontal asymptote&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Common Trick&lt;/strong&gt;: For rational functions $$\frac{P(x)}{Q(x)}$$:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If $$\deg(P)=\deg(Q)$$, limit at infinity is ratio of leading coefficients.&lt;/li&gt;
+&lt;li&gt;If $$\deg(P)&amp;lt;\deg(Q)$$, the limit is $$0$$.&lt;/li&gt;
+&lt;li&gt;If $$\deg(P)&amp;gt;\deg(Q)$$, the function grows without bound and no horizontal asymptote exists (there might be a slant asymptote instead).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;1.13 &amp;amp; 1.14 Intermediate Value Theorem (IVT)&lt;/h2&gt;
+&lt;p&gt;If $$f$$ is continuous on $$[a,b]$$ and $$N$$ is any number between $$f(a)$$ and $$f(b)$$, then there exists at least one $$c$$ in $$[a,b]$$ such that $$f(c) = N$$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Interpretation&lt;/strong&gt;: A continuous function on an interval can’t “jump over” any $$y$$-values. If $$f$$ transitions from negative to positive somewhere in $$[a,b]$$, it must cross zero.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Great for proving that a root exists.&lt;/li&gt;
+&lt;li&gt;Often used to show a continuous function hits every intermediate value between its endpoints.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Self-Check Practice&lt;/h2&gt;
+&lt;p&gt;Below are several sample problems to reinforce your understanding. &lt;strong&gt;Attempt to solve them first&lt;/strong&gt;, then compare your approach to the detailed solutions.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Self-Check 1&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;: Evaluate the limit by &lt;strong&gt;direct substitution&lt;/strong&gt; if possible, or determine if it does not exist:&lt;/p&gt;
+&lt;p&gt;$$
+\lim_{x \to 3} (2x + 1).
+$$&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;Solution 1&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;$$2x+1$$ is a polynomial, continuous everywhere.&lt;/li&gt;
+&lt;li&gt;Substitute $$x=3$$:
+$$
+2(3)+1 = 7.
+$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So, $$\boxed{7}$$ is the limit.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Self-Check 2&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;: Evaluate:&lt;/p&gt;
+&lt;p&gt;$$
+\lim_{x \to 1} \frac{x^2 - 1}{x - 1}.
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt;: You get $$\frac{0}{0}$$ if you plug in $$x=1$$ directly, so consider factoring.&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;Solution 2&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Factor numerator: $$x^2 - 1 = (x-1)(x+1)$$.&lt;/li&gt;
+&lt;li&gt;Rewrite the expression:
+$$
+\frac{(x-1)(x+1)}{x-1}.
+$$
+For $$x \neq 1$$, the $$(x-1)$$ cancels.&lt;/li&gt;
+&lt;li&gt;So the limit depends on $$\lim_{x \to 1} (x+1)$$, which is $$2$$.&lt;/li&gt;
+&lt;li&gt;$$\boxed{2}$$ is the limit.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Self-Check 3&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;: Use the &lt;strong&gt;Squeeze Theorem&lt;/strong&gt; to find:&lt;/p&gt;
+&lt;p&gt;$$
+\lim_{x \to 0} x \sin\Bigl(\frac{1}{x}\Bigr).
+$$&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;Solution 3&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;$$-1 \leq \sin\bigl(\tfrac{1}{x}\bigr)\leq 1$$.&lt;/li&gt;
+&lt;li&gt;Multiply by $$x$$: $$-|x|\le x,\sin\bigl(\tfrac{1}{x}\bigr)\le |x|$$.&lt;/li&gt;
+&lt;li&gt;As $$x\to 0$$, both $$-|x|$$ and $$|x|$$ go to 0.&lt;/li&gt;
+&lt;li&gt;By Squeeze Theorem, the limit is $$\boxed{0}$$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Self-Check 4&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;: Classify the discontinuity at $$x=2$$ for&lt;/p&gt;
+&lt;p&gt;$$
+f(x) =
+\begin{cases}
+\frac{x^2 - 4}{x - 2} &amp;amp; x \neq 2,\
+10 &amp;amp; x = 2.
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;Then find $$\lim_{x \to 2} f(x)$$.&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;Solution 4&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;For $$x \neq 2$$:
+$$
+\frac{x^2 - 4}{x - 2} = \frac{(x-2)(x+2)}{x-2} = x+2 \quad (x\neq 2).
+$$&lt;/li&gt;
+&lt;li&gt;As $$x\to 2$$, $$x+2 \to 4$$. So the limit from either side is 4.&lt;/li&gt;
+&lt;li&gt;But $$f(2)=10$$. The limit (4) is not equal to the function’s defined value (10).&lt;/li&gt;
+&lt;li&gt;This is a &lt;strong&gt;removable discontinuity&lt;/strong&gt; (a “hole”) at $$x=2$$.&lt;/li&gt;
+&lt;li&gt;$$\lim_{x \to 2} f(x)=\boxed{4}$$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Self-Check 5&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;: Evaluate:&lt;/p&gt;
+&lt;p&gt;$$
+\lim_{x \to \infty} \frac{3x^2 + 5x - 2}{6x^2 - 4}.
+$$&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;Solution 5&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Factor out $$x^2$$ from numerator and denominator:&lt;/p&gt;
+&lt;p&gt;$$
+\frac{3x^2 + 5x -2}{6x^2 -4}
+= \frac{x^2(3 + 5/x -2/x^2)}{x^2(6 - 4/x^2)}
+= \frac{3 + 5/x -2/x^2}{6 -4/x^2}.
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;As $$x\to\infty$$, $$5/x, 2/x^2,$$ and $$4/x^2$$ all go to 0.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The expression approaches $$\frac{3}{6} = \frac12$$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$$\boxed{\tfrac12}$$ is the limit. A horizontal asymptote is $$y=\tfrac12$$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Self-Check 6&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;: Show by the &lt;strong&gt;Intermediate Value Theorem&lt;/strong&gt; that&lt;/p&gt;
+&lt;p&gt;$$
+g(x) = x^3 + x - 1
+$$&lt;/p&gt;
+&lt;p&gt;has at least one real root in $$[0,1]$$.&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;Solution 6&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;$$g(0)= -1$$. $$g(1)= 1$$.&lt;/li&gt;
+&lt;li&gt;$$g$$ is a polynomial, so it’s continuous on $$[0,1]$$.&lt;/li&gt;
+&lt;li&gt;$$g(0)&amp;lt;0$$ and $$g(1)&amp;gt;0$$.&lt;/li&gt;
+&lt;li&gt;By IVT, there is some $$c$$ in $$[0,1]$$ for which $$g(c)=0$$. Hence a root exists in that interval.&lt;/li&gt;
+&lt;/ol&gt;
+</content:encoded></item><item><title>住在井底的猫</title><link>https://mashiroisasleep.github.io/posts/novel/%E4%BD%8F%E5%9C%A8%E4%BA%95%E5%BA%95%E7%9A%84%E7%8C%AB/</link><guid isPermaLink="true">https://mashiroisasleep.github.io/posts/novel/%E4%BD%8F%E5%9C%A8%E4%BA%95%E5%BA%95%E7%9A%84%E7%8C%AB/</guid><description>最近读了村上春树《1973年的弹子球》，大受震撼。想要试着模仿村上春树的风格，于是便有了这篇拙作。</description><pubDate>Thu, 13 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;那年冬天，我重新开始弹贝斯。&lt;/p&gt;
+&lt;p&gt;手指抚过琴弦时，我并没有感觉到多少温暖。房间里只有廉价电暖气的嗡嗡声与屋外雪花碰撞窗户的微弱声响。我弹出的旋律迟疑、零碎而毫无目标地漂浮着，好像破碎的冰块在杯中缓缓融化。&lt;/p&gt;
+&lt;p&gt;房间的角落里，墙上的钟滴滴答答地跳动着，我停下手中的琴弦，点燃一根烟。&lt;/p&gt;
+&lt;p&gt;“又来了吗？”墙上的猫淡淡地开口道。&lt;/p&gt;
+&lt;p&gt;“嗯，”我吐出一口烟雾，“又回来了。”&lt;/p&gt;
+&lt;p&gt;“你是指什么？”&lt;/p&gt;
+&lt;p&gt;“不知道，大概是一首从未弹出的旋律。”&lt;/p&gt;
+&lt;p&gt;猫打了个呵欠，转身从窗户跳了出去。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;1.1&lt;/h2&gt;
+&lt;p&gt;我抱着贝斯坐在房间中央，直到钟声走过凌晨一点。除了电暖气嗡嗡声和不时传来的滴水声外，四下万籁俱寂。&lt;/p&gt;
+&lt;p&gt;昨夜刚飘过一阵小雪，院子里的积雪不算太厚，却在昏暗路灯映照下显得黯淡朦胧。&lt;/p&gt;
+&lt;p&gt;地板上凌乱放着几张我没来得及收拾的旧稿纸：一些半成品的翻译稿，还有几页胡乱写下的音符。某个深夜我兴之所至想谱点什么，却只写了两小节就放弃了。看着那满纸涂抹的曲线，我心里发苦，也隐隐带点嘲弄：没想到还会有心情乱写音符。&lt;/p&gt;
+&lt;p&gt;抱起贝斯的时候，我能感到它冷冰冰的弦贴在手掌上，让指尖有点麻木。试着拨动几下，每次都只是零碎音符，不知从哪里开始，不知要弹向何方。就像在雪夜里迷路的人，即便看到前方有灯，也并不知道它会不会突然熄灭。&lt;/p&gt;
+&lt;p&gt;抽完那支烟，我望着窗户，想起刚才那只猫突然说话的情景。按理说，猫开口已是荒诞，但我竟不觉得惊讶——好像它本该如此。我叹气，一面对自己苦笑：难道是太久没和人交流，脑子都出现幻听？&lt;/p&gt;
+&lt;p&gt;侧耳倾听窗外，似乎没了声音。楼下那盏路灯时明时暗，雪地上勉强能分辨几只倒影，多半是风吹过树影。我猜那只猫应该跳到屋檐上，顺着狭窄缝隙离开。&lt;/p&gt;
+&lt;p&gt;疲惫感逐渐涌上来，我随手把贝斯靠到墙边——那里挤着一堆杂物：废弃收纳盒、几个破旧文件夹，还有当时买下贝斯时附赠的一把小螺丝刀。看着那些堆积物，我心里一时泛起无名愧疚：这把琴被我搁置太久了，却忽然又拿出来弹，也不知道自己是何目的。&lt;/p&gt;
+&lt;p&gt;稍作犹豫后，我还是决定先睡觉。反正明天还有翻译工作要赶。顺手关掉小台灯，室内顿时一片黑暗，只剩墙上钟表指针滴答。脑海里似乎闪过猫的声音——“又来了吗？”——但我不去深想，闭眼倒在床铺上。一夜过去，雪花声若有若无地陪伴我的半梦半醒。&lt;/p&gt;
+&lt;h2&gt;1.2&lt;/h2&gt;
+&lt;p&gt;翌日中午我才慢慢醒来，头隐隐作痛，枕边还有没熄干净的烟蒂残味，我赶紧打开窗通风。冷风携着点雪末钻进房，让我打个哆嗦。环顾四周，一切都显得格外凌乱：床上的被子堆成一团，地板上散落半截笔芯和空烟盒，几张旧报纸胡乱踩着脚印。&lt;/p&gt;
+&lt;p&gt;“看来是时候收拾一下了。”我咕哝。但手上翻译任务也不少，只能择要先把地板上垃圾拣走，其余等晚上再说。去洗手间冲把脸，发现镜子里自己胡渣明显，眼眶略带血丝，像个流浪了许久的家伙。苦笑一下，我拿出电动剃须刀，缓缓刮掉胡渣，看着镜面一点点恢复“清爽”外表，心里却并不轻松。&lt;/p&gt;
+&lt;p&gt;回到房里，我放下毛巾，随意瞟见贝斯还靠在墙角。昨天夜里的一幕幕浮现脑海：我弹了几下琴，猫对我说了几句“听不懂”的话，然后跳窗走了……这究竟是真是假？若不是地上那几根烟灰证实我抽烟直到深夜，我都要怀疑是幻梦。&lt;/p&gt;
+&lt;p&gt;但无论如何，我今天有正事要干：桌上摆着客户送来的机械操作手册，还有某公司关于滚动轴承应用的报告，二者加起来有上万字，需要在本周内译完。我只好揉揉额头，把昨夜的念头搁在一旁，钻进翻译工作。&lt;/p&gt;
+&lt;p&gt;打字打了两小时，脖子酸得要命，便起身拉伸。看窗外，雪已经止住，天色灰蒙蒙，楼下小巷湿滑难行。偶尔有人踩雪过去，留下浅浅脚印。我的思绪忽然飘向那只猫：它会不会就在巷子一角蹲着？或者早已不见踪影？&lt;/p&gt;
+&lt;p&gt;这种胡思乱想毫无意义，我叹口气，倒杯温水喝完。或许昨夜那只猫是幻觉，也或许是真猫，但总之我并不清楚它何时出现，何时离开，更不知道它意味着什么。把这些念头压下，我继续翻译，直到夜幕降临。&lt;/p&gt;
+&lt;p&gt;忙到近午夜，我腰酸背痛，正想收工，忽而瞥见贝斯仍孤单地立在墙角。想起昨晚我那几声凌乱拨弦，不禁莞尔：既然都拿出来了，要不再稍微弹几分钟？可一想到今天精力耗尽，我又觉得没那心力。&lt;/p&gt;
+&lt;p&gt;最终，我给琴罩上一个旧布套，至少别让它蒙尘。打算哪天状态好一点，再试试弹奏。做完这一切，我伸了个懒腰，懵懵懂懂去洗澡睡觉。猫影未再现，我也没再刻意期待。夜色在房内一如既往地铺展开来，冷风若有若无，像在替一切做注脚。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;没有人描述那口井的深度。只知道有人把贝斯扔进井底，扔下去时听不见落水声。或许井深到另一片星海。&lt;/p&gt;
+&lt;p&gt;草木攀附在井壁上，形成一条淡紫色蛇形小路。每当月光渗进井口，紫色就化为蜿蜒的漩涡。有人说那是猫留下的尾痕，也有人说那是死去的飞鸟。如果你把耳朵贴近井沿，会听见似是而非的琴音，它在井底回旋，却从未飘上地面。&lt;/p&gt;
+&lt;p&gt;冬天的风吹过井口，把一片又一片灰色羽毛送进去。羽毛落在黑暗里，激起某种火星，却又瞬间熄灭。你或许想看清它是谁的羽翼，却只见一只通体白得透明的猫在井下踱步，它时而举头，时而伏下身体，似在寻找另一只猫。&lt;/p&gt;
+&lt;p&gt;远方没有门，近处亦无门。井内似乎包容了所有门，却全都在黑暗里蒸发。最后，只听到一个模糊声音：&lt;/p&gt;
+&lt;p&gt;“又来了吗？”&lt;/p&gt;
+&lt;p&gt;“不知道，大概是一首从未弹出的旋律。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2&gt;2.1&lt;/h2&gt;
+&lt;p&gt;再度碰见那只猫，是在两夜之后——那时我刚结束一天的翻译工作，觉得脑中一团糨糊，便倒了杯廉价威士忌给自己，打算暖一下胃。大约午夜将近，我在厨房打开小灯，切着面包，忽听到客厅里似有什么金属声响。&lt;/p&gt;
+&lt;p&gt;我放下面包刀，走出去一看，只见我那把贝斯微微摆动，弦发出“嗡——”的回音。而琴边，赫然蹲着那只黑色猫。它一爪勾着弦，歪脑袋瞧我，似笑非笑：“你竟然藏了瓶威士忌？”&lt;/p&gt;
+&lt;p&gt;我愣住几秒，这画面又熟悉又荒谬：“你……你怎么进来？”&lt;/p&gt;
+&lt;p&gt;猫懒洋洋甩尾：“从门缝。”&lt;/p&gt;
+&lt;p&gt;“门不是关好的？”我皱眉。&lt;/p&gt;
+&lt;p&gt;“对猫而言，不存在什么门的障碍。”它并不解释太多。目光转向我手中那杯酒，“还剩下多少？要分我点吗?”&lt;/p&gt;
+&lt;p&gt;我一怔：“猫也要喝酒?”&lt;/p&gt;
+&lt;p&gt;它轻嗤：“当然不要，你想灌死我？不过我好奇你什么时候开始借酒解乏。”&lt;/p&gt;
+&lt;p&gt;我默默抿了口酒，并不想多谈，只问：“你来这里到底有何事?”&lt;/p&gt;
+&lt;p&gt;猫按住琴弦，让它停止振动：“看看你过得怎么样。昨天和前天，你似乎都没怎么动这把贝斯吧?”&lt;/p&gt;
+&lt;p&gt;它说这话时，好像一位不速之客，却又带点审视意味。令我忍不住反问：“我为什么要天天弹？我工作很累，哪有那么多精力.”&lt;/p&gt;
+&lt;p&gt;猫眯起眼：“那昨晚你宁可发呆，也没有碰它。难道心底没半点冲动?”&lt;/p&gt;
+&lt;p&gt;我放下酒杯，情绪微有波动：“冲动……也有，但不知道弹什么。就像我想往前走，却不知哪条路。为什么要像个无头苍蝇?”&lt;/p&gt;
+&lt;p&gt;猫深深看我一眼，并不急于言语。半晌后才说：“你可以想得简单点。无头苍蝇至少还会乱撞，你却是坐在这里干耗。试一试，不行吗?”&lt;/p&gt;
+&lt;p&gt;我语塞，说不上来。它也没逼我，把爪子从琴弦上松开，小心绕开琴头的调音钮，不想触碰。随后跳到窗台，尾巴扫过窗沿，望着室外黑夜：“行吧，你若不想弹，我就不耽搁你。继续喝酒呗.”&lt;/p&gt;
+&lt;p&gt;我一时愣着，心想猫来得突兀，走得更突兀，却又隐约感觉它的话暗示某种道理——我既拿起琴，又不愿投入，只能半吊子地难受。可我要如何改变？仍迷糊. 望着它正要跃出，我犹豫一秒：“喂……你下次还来?”&lt;/p&gt;
+&lt;p&gt;它回首笑笑：“谁知道？看你而定。要是真对琴失去全部兴趣，我大概也没理由跑来.”&lt;/p&gt;
+&lt;p&gt;说完，不待我回答，它已闪身跳入窗外夜幕. 呼地一阵风，带着几片冷霜飘进，我打了个寒颤. 再看室内，只剩贝斯站在原地，琴弦似乎还残留一丝轻颤.&lt;/p&gt;
+&lt;p&gt;我呆坐良久，喝完那杯威士忌，浑身开始发热，却没有再碰琴的勇气，怕弹出来一堆杂音令自己更烦躁. 最后，我收拾厨房回到床上，头昏脑涨地睡去. 迷糊中，梦见猫趴在我床头，说“你这个胆小鬼”，然后嘲笑着离开.&lt;/p&gt;
+&lt;h2&gt;2.2&lt;/h2&gt;
+&lt;p&gt;第二天，我起床后脑子还恍惚，但翻译任务催得急，只好强打精神埋头干活. 一整天我几乎没离开桌子半步，只在午餐时简短煮了个泡面，就着翻译稿边吃边写.&lt;/p&gt;
+&lt;p&gt;黄昏临近，我习惯性伸懒腰，觉得腰背酸痛，翻看墙角那把贝斯. 想起夜里猫的嘲弄，我心里不是滋味，索性走过去抚弦，看它好歹还能不能发声.&lt;/p&gt;
+&lt;p&gt;随着手指逐渐加压，我发现弦确有点松动，尤其A弦有点跑音，我就顺手调了调. 先拨一下，音色不准，再调，再拨. 这样一遍遍，直到耳朵大致判断OK. 我脑中浮现当年练琴的小技巧，原来还能想起一些，好似并没彻底遗忘.&lt;/p&gt;
+&lt;p&gt;调好后，我试着拨出最基础的音阶C-D-E-F-G-A-B-C. 前半程还有错音，但再来一遍就顺畅点. 居然把基本音阶弹下来，虽谈不上好听，却令我诧异地生出一丝快感：原来我还记得怎么对音.&lt;/p&gt;
+&lt;p&gt;但没弹多久，我又被自己笨拙的技巧打败——手指指腹很快酸痛，而且内心不清楚下一步要弹什么. 那只猫所说的“先弹再说”，乍听易行，操作起来却觉得乏力. 于是我又一次放下琴，转而收拾旧稿纸，把文件装订好.&lt;/p&gt;
+&lt;p&gt;夜幕降临后，我做了碗蛋炒饭，对着电视机新闻节目随便瞄两眼. 电视里播的是某地气温骤降、某处高速公路封闭、又或是某个名人丑闻，对我而言毫无触动. 我吃完饭，关了电视，整个人像陷回沉默的套子.&lt;/p&gt;
+&lt;p&gt;期间，脑海好几次闪过“黑猫是否会再来”，可直到深夜也不见动静. 窗外冷风阵阵，我钻被窝时还听见走廊有脚步声，也许是邻居回家，也许是路过的流浪猫.&lt;/p&gt;
+&lt;p&gt;我沉沉睡去，梦里仿佛握着贝斯在一条无人长廊上走，却始终找不到可停歇的门. 那种孤独感像冷雾一样笼罩我，让我心口发闷. 惊醒时天已快亮，脑中只残留猫的只言片语——“要真对琴失去兴趣，我也没理由跑来.”&lt;/p&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;石头会唱歌吗？&lt;/p&gt;
+&lt;p&gt;传说在某个枯井底部，沉睡的石块每隔百年发出低鸣. 那声音像极了低音弦——C弦或E弦，却又比海底更深重. 只有对风很敏感的人，才能隔着泥土听见.&lt;/p&gt;
+&lt;p&gt;他们说猫是风的学生，它知道哪里有石块在唱，哪里有树根在说话. 可猫永远不告诉人，因为人无法承受那种曲调.&lt;/p&gt;
+&lt;p&gt;你试图俯身探井，却撞见一只灰猫叼着你的心脏离去. 你喊不出声，它也不回头看. 井里回荡的仍是那陈旧曲调，跟你无关.&lt;/p&gt;
+&lt;p&gt;有人说只要丢下一把贝斯，就能让井水呈现出幻彩，但井里可能没有水，只有无边的宇宙飞船残骸. 在星尘的缝隙中，贝斯弦发出“叮”的回音，紧接着又被四散的彗尾撕裂.&lt;/p&gt;
+&lt;p&gt;猫吗？它披着银河的碎光，在那里守望——或许它叫黑猫，也或许叫白猫，它都不在意. 它只在意弦断与否. 假若弦断，它便伸爪弹一曲无声的葬礼.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2&gt;3.1&lt;/h2&gt;
+&lt;p&gt;我很少外出消遣，但某天结束翻译比平时早了两个小时，忽然觉得在房里发呆会更憋屈，就披上外套出门兜风. 夜晚风中仍带余寒，我在街巷里绕行几圈，见路旁一家旧书店还亮着昏暗灯，心想进去翻翻杂志也不错.&lt;/p&gt;
+&lt;p&gt;旧书店里堆满过期杂志和二手漫画，老板带着耳机听音乐，对顾客不怎么理睬. 我随手翻到一本老旧音乐刊物，上面写着“如何用简单低音谱写自我心声”之类的标题. 随手翻看，发现里面提到贝斯独奏的话题，里面还夹着几张霉味的旧插页，也许是主编当年插上去的例子曲谱.&lt;/p&gt;
+&lt;p&gt;我边翻边苦笑：一切看似熟悉却又遥远. 曾经的我，是否也幻想过成为一个能把心声用低音表达的人？可现实中，我连最简单的练习都懒得坚持，何况去写曲子. 脑子转到这儿，心里堵得慌，合上杂志，把它丢回堆里. 说不定我若真的买下看了也没用.&lt;/p&gt;
+&lt;p&gt;出了旧书店，走了十几步就看到一家弹子机游戏厅，橘色霓虹灯闪烁在招牌上，然而部分灯管坏了，只剩“PINB”几个字母发着忽明忽暗的光. 门里飘出机油和烟味，一股与夜色格格不入的热闹感.&lt;/p&gt;
+&lt;p&gt;我在门口稍一停留，就有人推门出来——一个疲惫的年轻人，看样子投完币输了个精光. 我们对视一眼，他垂头从我身旁走过. 我想，是不是进去玩一把？可脑中无由地冒出恐惧，仿佛那里面另有一个小世界，我一进去就会迷失.&lt;/p&gt;
+&lt;p&gt;终究，我还是转身离开，找了家便利店买了盒泡面和几听啤酒带回去. 一路上想：弹子机不适合我吧，我从没真正爱过那东西. 不过脑海里，又莫名浮现猫的话“过程不在于技巧”. 也许我完全可以尝试.&lt;/p&gt;
+&lt;p&gt;可直至深夜，我仍没有勇气行动. 回到房里吃完泡面，坐在椅子上，拿起贝斯弹了几下，却发现情绪低落得连最简单的音都弹不圆滑.&lt;/p&gt;
+&lt;p&gt;我瞪着琴弦发呆，耳朵却好像在等猫的声响——等它再次出现，嘲笑我或鼓励我都好，好歹能激起点涟漪. 可直到凌晨，猫也没出现. 风雪声渐停，夜色如一潭死水. 我只得自我安慰：其实不见也好，免得自己尴尬.&lt;/p&gt;
+&lt;h2&gt;3.2&lt;/h2&gt;
+&lt;p&gt;然而，没过几天，我却在便利店里不期然碰到那家游戏厅的老板. 他穿件深蓝羽绒背心，嘴里叼着烟，却没点火；看见我提着购物袋，笑着打招呼：“你好啊，见你好几次路过我们店门口，不想进来玩两把?”&lt;/p&gt;
+&lt;p&gt;我有点不知所措，干笑道：“我是住附近的，上下班会从那儿路过，但不太会玩.”&lt;/p&gt;
+&lt;p&gt;老板耸耸肩：“玩玩就会了，咱们店里也不是职业赌徒的天下，都是图个乐. 下次来尝试也行.”&lt;/p&gt;
+&lt;p&gt;说罢，他付了帐，提着一袋零食先行离去. 我望着他背影，心想他倒是坦率，也许真的只是想拉顾客吧.&lt;/p&gt;
+&lt;p&gt;回家时，我不自觉把这事放在心上. 一个晚上翻译到10点多，脑中累得发涨，忽然想起“要不要去游戏厅走一遭”？不为分数，只是换换环境.&lt;/p&gt;
+&lt;p&gt;结果，我还真出了门，穿过朦胧雪雾，走到游戏厅门口. 橘色招牌闪着不稳定的电流声. 推门进时，一阵热浪夹着烟味涌来，比我那廉价电暖气暖和多了.&lt;/p&gt;
+&lt;p&gt;店里摆了十多台弹子机，各种风格的彩绘面板，不少年轻人正津津有味地敲打操纵杆，场面显得热闹. 或许是灯光过于绚烂，我一时有点眩晕，找了个角落空位坐下，发现机器面板上印着宇宙飞船图案，看上去较老式.&lt;/p&gt;
+&lt;p&gt;我心念一动，就投了枚硬币. 开机灯亮的一瞬，我心里甚至生出一点惊奇：原来这玩意儿启动时也能让我紧张，如同拉动弦的一瞬. 球射出，撞到几个弹簧缓冲器后又滑到侧边，叮叮当当的声音短暂却让人兴奋. 没过多久，球坠下分界口，我得分不高，但也不在意.&lt;/p&gt;
+&lt;p&gt;一旁的店老板恰好看见我，对我点头微笑：“头一次吧？没事，慢慢来.” 我讪讪笑.&lt;/p&gt;
+&lt;p&gt;第二、第三球也没打出什么成绩，总共才几千分. 机器灯光熄灭，退币口吐回一枚零钱. 我耸肩起身打算离开，又觉得有点意犹未尽，但还是出了店门，夜风迎面吹来，我清醒不少.&lt;/p&gt;
+&lt;p&gt;回想这短暂十来分钟，内心还残留那股银色球高速撞击的余震. 某种程度上，和我拨动贝斯弦时的紧张感挺像——都需要一点掌控，也需要一点放手，让球或弦音自由走位. 回家路上，我思绪复杂，却多了一分奇异的轻松，好像一扇一直紧闭的门被掀开个缝儿.&lt;/p&gt;
+&lt;p&gt;那夜，我重新抱起贝斯弹了十分钟，不再那般抗拒，虽然依旧没弹出什么章法. 但我能感觉到，一点微妙的“动力”像种子般在心里萌芽.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;有一片荒漠，没有风，没有路标，只有延绵到天际的灰尘.&lt;/p&gt;
+&lt;p&gt;有人在荒漠正中摆了一张台子，上面放一架弹子机. 没人知是谁放的，或者为什么. 弹子机通了电，却没电源；球道里滚着数十颗银球，每颗都映出雾状的猫脸.&lt;/p&gt;
+&lt;p&gt;当你靠近，球自动弹出，撞击弹簧，迸发火星般的光. 然而荒漠里没有声音，一切碰撞都如沉默的烟花. 在暗夜里，你看到球道上刻着斑驳符号：C、D、E、F、G……原来是贝斯音阶？又像某种咒文.&lt;/p&gt;
+&lt;p&gt;有时你会望见黑猫伏在机台上，用尾巴拨动球. 球滚来滚去，却不曾坠下终点. 也有时你看见白猫坐在机外，静静看那颗球呼啸穿过无形轨迹. 所有人都想知道它们要干什么，但又仿佛没有任何答案，因为荒漠无边，猫也不说话.&lt;/p&gt;
+&lt;p&gt;琴弦的回响或许在千里之外，你若把耳朵贴向地面，也只能听见血液在身体里呼啸. 荒漠与弹子机互为镜子，没有人能在这镜中寻得真相.&lt;/p&gt;
+&lt;p&gt;一切结束时，只剩一个遥远的喃喃：“或许只是一首从未奏响的曲调.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2&gt;4.1&lt;/h2&gt;
+&lt;p&gt;日子缓慢推进，我依旧靠翻译为生，但间或想起那家游戏厅，每当加班太久大脑浆糊，就会走过去玩上几局弹子球，也不甚上瘾，只是释放一点压力. 店老板有时看我笨拙敲打挡板，会提醒我：“略微往左边晃一下，别急嘛.” 可大多数时候我还是胡乱撞，叮咚几下就完毕.&lt;/p&gt;
+&lt;p&gt;某回我碰到个自称是“老玩家”的人，对着一台新机搞得很熟练，据说他能打到十几万分，甚至一晚一口气狂玩五个小时. 我听得惊讶，更觉自己是个局外人，不过却也不羡慕. 毕竟我没打算把人生沉在机台上.&lt;/p&gt;
+&lt;p&gt;在这样两点一线生活中，那个会说话的黑猫，并非天天出现，但一周总要来个一两次，仍然在夜里或凌晨时分闪现在我房间，有时露面就嘲弄我几句，说我“进步不大”，有时则懒洋洋地不发话，只坐在窗台眯眼. 我每回都不知道它为何而来，又为何走，但也逐渐习惯了.&lt;/p&gt;
+&lt;p&gt;然而，一次出乎意料的偶遇不是黑猫，而是灰猫. 那天傍晚我下楼倒垃圾，看到走廊角落里蹲着只胖乎乎的灰猫，它正咬住一个塑料袋，不断往外扯鱼骨头. 看我出现，它也不跑，只瞟了我一眼，继续吃它的“战利品”. 我靠近时，它才往后退两步，发出一声哈气警告，显得警惕.&lt;/p&gt;
+&lt;p&gt;我回房拿了点面包屑想喂它，却被它无视，看来对人类食物不感兴趣. 我转身回屋，几分钟后再探头一看，它却悄悄地跟到了我门口. 彷佛对我的气味有点好奇吧.&lt;/p&gt;
+&lt;p&gt;我愣着要不要让它进，猫倒先一步挤入门缝，绕着客厅打转. 它与黑猫不同，身材肥大，面孔圆润，看不出半点“神秘感”，更像普通人家宠物. 我刚想伸手摸它脑袋，它已翻翻白眼，躲到贝斯旁边，让我哭笑不得：“你们猫都对我的琴有兴趣?”&lt;/p&gt;
+&lt;p&gt;它似乎对琴没多大爱好，凑近嗅了两下，又走到我床边，闻到我枕头上残存的烟味，打了个喷嚏. 然后转身对我“喵”地叫一声，昂起头，好似嫌弃我这里凌乱不堪.&lt;/p&gt;
+&lt;p&gt;我怕它随地大小便，准备劝它出去. 但就在此时，它一下跳到床沿，打个滚儿后又淡定走回门口. 我拿起相机——那台老宾得单反，心想拍张猫照作乐. 但它警觉到镜头，立刻竖尾巴绕开，钻出门缝一溜烟跑下楼.&lt;/p&gt;
+&lt;p&gt;我只拍到一个模糊的猫屁股影. 看照片预览时，镜头焦距都没对上，图像糊成灰色一团，更增添一分无可奈何.&lt;/p&gt;
+&lt;h2&gt;4.2&lt;/h2&gt;
+&lt;p&gt;后来我才知道，这灰猫属于楼上邻居，他常让猫在楼道里自由走动，以致它偶尔串门. 相比会说话的黑猫，这只肥猫真是再普通不过，但它却让房间增添几分烟火气息.&lt;/p&gt;
+&lt;p&gt;当天深夜，我处理完翻译稿，呆坐片刻，又想起黑猫的话：“你自己不动就永远在原地.” 随手把相机装上胶卷，想给房间和贝斯拍几张——哪怕只是练习摄影.&lt;/p&gt;
+&lt;p&gt;我先拍了贝斯近景，光线昏暗，大概会欠曝；又拍了床与窗台一角，说不定冲洗出来是一片灰黑. 我并不期望什么佳作，只是觉得“按下快门”这动作本身能让我放松一点.&lt;/p&gt;
+&lt;p&gt;拍完，我把相机收起，看了眼桌上的威士忌瓶，想再倒一杯暖身，却犹豫了. 最终还是倒了半杯，慢慢呷着. 酒液下肚，我感到脑海逐渐松弛，无需去思考明日的机械稿、猫的来历、或者贝斯为何沉默.&lt;/p&gt;
+&lt;p&gt;想到灰猫闯进来的事，我不禁失笑. 若换作黑猫或白猫，定会用某种奇怪语气对我冷嘲热讽. 可它偏偏只是一只大肚宠物. 天底下猫千千万，唯独黑猫白猫会说话——我或许走进了两条世界线的交界吧?&lt;/p&gt;
+&lt;p&gt;朦胧间，我站起拨动贝斯弦，发出低沉哼鸣. 有那么几秒，我恍若看到灰猫蹲在琴弦旁，抬头望我；又像看到黑猫尾巴把弦勾起. 而这些影像在灯光里一闪而逝. 我颤抖了下手，索性收了琴，上床睡去. 心里却还存一点希望：也许那只肥猫下次再来，我能拍张清楚的照片.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;低语遍布地面，地面却开裂，无数声音沿着裂缝流入地底.&lt;/p&gt;
+&lt;p&gt;有人路过，默念着某段残缺经文——也有人说那是音阶的逆向排列. 脚踩过裂缝，一只漆黑猫从缝隙里伸出爪子，抓住他的影子. 那影子在猫爪里化为灰烬，随风飘散到远方.&lt;/p&gt;
+&lt;p&gt;世界像折叠的纸板，被一把贝斯的弦所划开. 黑与白的猫在裂隙间穿梭，它们不对视也不争吵，只是在宏大的沉默里搜寻一个丢失的音符.&lt;/p&gt;
+&lt;p&gt;远处传来弹子机的彩灯闪耀，有人拉下发射杆，银球却不向前冲，反而贴着玻璃罩缓缓下坠，像被时间操纵成胶片慢放. 灯光映出无数虚影：灰猫、相机、雨伞、空房间…….&lt;/p&gt;
+&lt;p&gt;风停了，没有方向. 只余一条斑驳小路蜿蜒延伸，尽头是荒漠，或是井口，或是荒漠中的井口——谁又能分辨?&lt;/p&gt;
+&lt;p&gt;有人说那儿会出现白猫，对你投来浅淡一瞥，然后带走你的琴弦，让它在地下梦游. 一旦琴弦再也不会回响，也就没有什么需要守护.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2&gt;5.1&lt;/h2&gt;
+&lt;p&gt;日复一日，我对弹子机逐渐不再陌生，有时遇到压力特别大，就到那家游戏厅玩上几局，哪怕输个一塌糊涂，也当放松. 老板认得我，一见面就乐呵：“又来打发时间？今天有没有更大分数?”&lt;/p&gt;
+&lt;p&gt;我往往摇头笑：“估计不会，我就玩玩.”&lt;/p&gt;
+&lt;p&gt;但我常喜欢找那台老式宇宙飞船机，图案陈旧，却自有一股复古味道. 每当投币时，开机灯闪亮，我脑中总会浮现“也许这次能打出点奇迹”的期待. 可实际几乎每次都落空，球滚落时我也不怎么沮丧，更不在意分数. 就跟我拨琴弦，明知弹不出高明曲子，却也能享受瞬间颤动.&lt;/p&gt;
+&lt;p&gt;偶尔我也观察到旁边有高手，一招一式都精准控球，甚至能让弹子围绕弹簧连续得分. 看他们娴熟动作，我挺佩服，但没想向他们学习. 我天性不爱钻研技巧，对我来说，弹子机只是碰撞快感.&lt;/p&gt;
+&lt;p&gt;某天快要收场时，老板坐在吧台那边点烟，望向我那台旧机：“你挺喜欢它?”&lt;/p&gt;
+&lt;p&gt;我挑眉：“喜欢倒谈不上，主要它空着……”&lt;/p&gt;
+&lt;p&gt;他笑笑：“它确实很老，出故障多，一般客人都不愿碰. 不过我还一直没舍得扔，因为我喜欢这飞船图案，看着就觉得有点奇幻.”&lt;/p&gt;
+&lt;p&gt;我点头. 直到那时我才发现，他跟我有相似心态：并不执着分数，却对某些老物件怀有感情. 或许这也是我总来玩的原因——机器透着一股残存温度，让我似曾相识.&lt;/p&gt;
+&lt;p&gt;那晚快关门时，我投完最后一个硬币，刚想走，老板忽然叫住我：“哥们，你看你对这机子还挺有好感，真要哪天我撑不住要把它淘汰，你想不想要?”&lt;/p&gt;
+&lt;p&gt;我愣住：“要它？怎么拿回家啊，那家伙那么大，我也不会修.”&lt;/p&gt;
+&lt;p&gt;“哈哈，我就说说而已，毕竟卖不出去只好拆解. 当废品也不值几个钱，运费都不够.” 老板耸肩，“也怪可惜，不过世道就是这样，旧的终要被替换.”&lt;/p&gt;
+&lt;p&gt;听他说完，我心里闪过酸楚，却无言以对. 毕竟现实就是如此，一台老旧弹子机无法继续盈利，就难免被淘汰. 跟我曾经荒废的贝斯一样，若没人愿意拾起，它就沉睡在某个角落落灰.&lt;/p&gt;
+&lt;p&gt;走出游戏厅时，我望着门头那忽明忽暗的招牌，内心起伏不定. 这个城市里，像这台机器一般默默消失的东西不知有多少，或许也包括我的某些岁月与激情.&lt;/p&gt;
+&lt;h2&gt;5.2&lt;/h2&gt;
+&lt;p&gt;当晚回家，我闷坐在椅子里抽烟，脑中反复回荡老板那句话：“真要哪天我撑不住要把它淘汰，你想不想要?” 下意识地，我看向房内的贝斯. 它并不庞大，占地也不多，但我曾像老板嫌弃旧机一样，把琴抛弃在角落. 要不是某些机缘，也许它早被我转手扔掉了.&lt;/p&gt;
+&lt;p&gt;我想起黑猫和白猫的对话，“你可别让琴一直破败”，但实际上我也只是一点点拾回手感而已，还远称不上“用心保护”. 不知道老板会如何对待那台旧机？或许有朝一日，我会亲眼见它被拆. 想到这儿，又是一阵难言悲凉.&lt;/p&gt;
+&lt;p&gt;翻看桌上的翻译文件，越看越心烦，我索性拿起贝斯，试着弹一段简单旋律，好让自己静下来. 音色还是那样低沉，却在夜里显得格外温暖. 拨了几分钟后，我意外地发现，自己能顺畅地弹完一个短小片段，虽然编不成完整曲子，但已足以让我喘口气.&lt;/p&gt;
+&lt;p&gt;我关灯，沉进黑暗. 弦的回声仿佛还在房里绕动，继而逐渐与夜色融为一体. 直到我昏然入眠，隐约梦见那艘宇宙飞船发着微光，在一片漆黑的宇宙里航行，船舱里闪烁两个猫影：一黑一白，不言不语，却彼此对视良久.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;尾迹纠缠成绳索般的痕，一头系在星云，一头埋进井底. 有人拿剪刀想剪断，但猫跳起把剪刀叼走，穿进一扇通往风沙的暗门.&lt;/p&gt;
+&lt;p&gt;谁在弹琴？谁在发球？谁在呼喊？一切只是影子叠影，无人能给出答案. 你想喊住它们，却发现自己舌头粘了浆糊；你想看清飞船，却只看到玻璃罩里银球环绕，映照出贝斯弦的倒影.&lt;/p&gt;
+&lt;p&gt;最终，一只无形大手把扳手推到末端，灯瞬间熄灭. 你彷徨四顾，却在地上捡到一根琴弦，泛着幽绿色光. 你试图用它发声，却什么也没听见，于是你只好丢回井里. 井中有回声，但回声像被猫尾巴卷走.&lt;/p&gt;
+&lt;p&gt;或许没有结束，也不需要结束. 世间所有物，都在暗处接受命运的拆解与融合.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2&gt;6.1&lt;/h2&gt;
+&lt;p&gt;在翻译和弹子机之间游移的日子里，黑猫偶尔来访，嘲笑我进度缓慢或弦音跑调，但次数也开始减少. 直到某个初春的深夜，我正坐在床头发呆，忽然看见那只白猫静立窗台. 它与黑猫不同，身形略显纤细，气息温柔多了.&lt;/p&gt;
+&lt;p&gt;我愣了片刻，记得上回见白猫还是在某个更冷的夜晚. 那时它也只出现了几秒就走. 这次它轻轻跳入房间，先审视一圈，然后对我点头：“还是这样啊？倒也不错.”&lt;/p&gt;
+&lt;p&gt;“你说我房间？”我站起身关掉电脑，一面问.&lt;/p&gt;
+&lt;p&gt;它笑了笑，眯眼看贝斯：“不是指房间，而是指你的状态. 你开始经常拨弦，对吧?”&lt;/p&gt;
+&lt;p&gt;我点头：“嗯，稍微练练，谈不上熟练. 倒是心情改善不少.”&lt;/p&gt;
+&lt;p&gt;白猫尾巴在空气中描出一个圆弧：“看得出来. 可你仍带着疑惑，不知下一步怎样?”&lt;/p&gt;
+&lt;p&gt;我无奈地笑：“可能是我的常态吧. 去游戏厅玩弹子机，翻译工作，偶尔弹琴，也没什么大目标.”&lt;/p&gt;
+&lt;p&gt;它跳到琴身旁，用鼻尖蹭了下琴木面，说：“其实这样已经很好了. 至少你不再像从前那样把琴扔在墙角，怕得要命.”&lt;/p&gt;
+&lt;p&gt;我抬眼看它：“你们猫都爱重复这番话：让我拨弦别怕. 可过程还是有障碍啊.”&lt;/p&gt;
+&lt;p&gt;白猫抖了下耳朵：“障碍比你想象的小，你自己却给它放大.”&lt;/p&gt;
+&lt;p&gt;沉默几秒后，我心里冒出个念头：“黑猫说过它要走，白猫你呢，会不会也走?”&lt;/p&gt;
+&lt;p&gt;白猫闻言，神色微变：“你真要我回答？好吧，我也迟早得离开，等你能坦然面对自己，就没必要有我.”&lt;/p&gt;
+&lt;p&gt;一股失落油然而生，我还是问：“那现在还没到时候吗?”&lt;/p&gt;
+&lt;p&gt;它笑得温柔：“看你表现啊.”&lt;/p&gt;
+&lt;p&gt;我嗫嚅片刻，不再追问. 白猫跳下琴，走到窗边，做出离开的姿势. 我忽然不舍：“这么快?”&lt;/p&gt;
+&lt;p&gt;白猫回头：“我先撤了，或者说让你独处. 你已经够安稳，剩下的路自己走. 再见.”&lt;/p&gt;
+&lt;p&gt;说完，它不等我作答，轻巧翻过窗沿. 我追到窗边，只见夜幕茫茫，月光把邻楼顶反射成白蒙蒙的轮廓，猫却已不见踪影.&lt;/p&gt;
+&lt;p&gt;我发呆许久，房间依旧那般冷清，可似乎又多了点不一样——好像经过这番对话，我和白猫都知道彼此终有离别. 我躺回床上，脑中再浮现那艘宇宙飞船与老弹子机，隐约感到一切都朝“终场”走，却说不清对我意味着什么.&lt;/p&gt;
+&lt;h2&gt;6.2&lt;/h2&gt;
+&lt;p&gt;接下来的几天，我用工作麻痹思维，却每晚抽空练琴，逐渐将音阶和弦拼成小小乐句. 没有华丽旋律，却慢慢消除恐惧，让我对贝斯生出更多亲近感.&lt;/p&gt;
+&lt;p&gt;一次半夜里，我恍然听见屋外好像有猫打架的嘶叫，跑去看却空无一猫. 想起白猫，我微微失落：也许它真的不再来了. 我站在廊灯下吹半晌冷风，最终回房，心情有些黯然.&lt;/p&gt;
+&lt;p&gt;某天傍晚，我于翻译社提交完稿件，回程又路过游戏厅. 橘色招牌依旧忽明忽暗，那台老式宇宙飞船机孤独地摆在角落，鲜有人问津. 老板忙着收账，见我来就挥手示意. 我也笑笑，投币打两局，然后没啥建树地离开. 心里对那机子生出同情，就像即将寿终正寝的老马.&lt;/p&gt;
+&lt;p&gt;是夜回到家，我点了一盏温暖的小台灯，对着贝斯一连弹了十多分钟. 前所未有地流畅，虽仍有走音，却让我产生小小满足感. 关灯前，我望向窗台，却空空荡荡. 想象若白猫在那儿，会不会对我说“挺好嘛”？然而只有夜风袭来，给了我一阵寒意.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;琴弦失去松紧之分，所有音融合成同一种灰调. 有人把手伸进琴腔里摸索，却触及一片漩涡. 漩涡吞没手指，让他惊呼，却发不出声音，嘴巴里只吐出一只纸猫.&lt;/p&gt;
+&lt;p&gt;纸猫晃晃悠悠跑到弹子机面板上，用纸尾巴抽打银球. 银球砸碎玻璃，碎屑在黑夜中呈现五彩光斑. 光斑落地成花，每一朵花里都种着一只猫耳，那耳朵能听遍尘世万象，却不会回答任何疑问.&lt;/p&gt;
+&lt;p&gt;远方井口仍漆黑，来不及收纳所有坠落之物. 贝斯弦在水下继续发光，像烛火，却照不亮猫的去向. 有人站在井沿仰望星空，看见飞船残躯横在星河中，闪烁一瞬又沉没.&lt;/p&gt;
+&lt;p&gt;四处嘈杂又寂静，读不懂，也不必读懂.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2&gt;7.1&lt;/h2&gt;
+&lt;p&gt;忙碌之余，我偶尔仍然用那台修好的老相机四处拍拍，胶卷已经拍到最后几格. 有次索性跑到公园拍雪后风景，也在那家游戏厅门口拍了张招牌，想留住它那半坏不坏的霓虹灯.&lt;/p&gt;
+&lt;p&gt;除此之外，我还想捕捉黑猫或白猫的真身，但它们出现时间总太不固定，往往等我翻出相机，它们已闪走. 灰猫则没再来，听说邻居把它锁在家里，不让到处乱逛.&lt;/p&gt;
+&lt;p&gt;某一天，我决定把最后一卷胶卷拍完冲洗，整理成册. 于是对着房间、对着贝斯，再对着窗外夜色各按几次快门. 尤其我想留下自己与贝斯同处的痕迹，就撑着三脚架拍了几张——虽说镜头只拍到我一半身影，但能记录自己在此时此刻弹琴的姿态. 那一刻，心里甚至浮现一丝浪漫：好像想告诉未来的我，“瞧，那年冬春交替时，我曾在这昏暗房里学着重新拿起乐器.”&lt;/p&gt;
+&lt;p&gt;拍摄完，我将胶卷取下，送去冲洗店. 店主一看日期，笑说“这胶卷年份不短了，别期待有多清晰.” 我说无所谓，做个纪念就好.&lt;/p&gt;
+&lt;p&gt;两天后去取照片，结果大半张都色调失真或曝光过度，但也有几张颇有奇异之感. 尤其有张夜间房间照片，窗台上一团白影，让人怀疑是不是白猫？可又极模糊，也可能只是窗帘反光或噪点. 还有一张拍到我抱贝斯的背影，灯光把我和琴投在墙上，影子多出两只尖耳朵形状，仿佛猫耳……看得我心生恍惚.&lt;/p&gt;
+&lt;p&gt;“拍得挺怪，但有意思.” 店主评论. 我点头苦笑，收起照片带回家. 放在桌上翻看时，脑中再次浮起黑白猫的形象. 是幻影还是现实？它们果真刻下了痕迹吗？我想不透，也懒得纠结，只把照片装入文件袋，在心里默念：或许某些事注定无法解释，我只要保留它们就好.&lt;/p&gt;
+&lt;h2&gt;7.2&lt;/h2&gt;
+&lt;p&gt;当晚，我把贝斯取下琴套，例行调音并弹了一遍短曲. 那是自己东拼西凑的小调，音色缓慢悠长，听不出风格，却很舒缓，仿佛一条在夜里流动的小河. 不知道猫听了会否觉得乏味，但我个人已足够满意.&lt;/p&gt;
+&lt;p&gt;弹罢后，余音还在耳边回荡. 我坐在地上，看着那一叠刚洗的照片，有股想笑的冲动：回想几个月前，我对琴几近放弃，却因某些荒诞奇遇又捡起来；对这房间和这城市也心存倦意，却奇怪地没有真正离开. 弹子机、猫、贝斯，把我拉进了一场类似命运的旋转，却也让我渐渐在旋转中找回自己.&lt;/p&gt;
+&lt;p&gt;夜深，我倚床想入眠，脑中浮现一个断续的梦：自己仿佛在一片缓慢旋转的球道里行走，周遭散布着旧琴、照片碎片、还有猫毛. 远处隐约有飞船图案的灯光闪烁，却不再吸引我过去. 我只是随心往前，抱着贝斯，感觉猫们在远处注视，好像在默默鼓励.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;月亮碎裂成四块，漂浮在浅滩. 你走近，发现每块里都有一只猫的倒影，却不知它们从何而来.&lt;/p&gt;
+&lt;p&gt;你拿弦试着拨动水面，水波递进，把那四块月光糅合，却又变成九块. 猫的数量翻倍，尾巴交错，看不清具体形态. 你想问谁能给予指示，却只听见井底远远传来空洞回声.&lt;/p&gt;
+&lt;p&gt;突然，有银球从天而降，砸进水里，轰然不见. 你怀疑它是来自弹子机，但这里没有机柜，没有任何推杆. 更奇怪的是，球入水后并未溅起涟漪，而似石头沉入泥沙.&lt;/p&gt;
+&lt;p&gt;猫们一起仰头，张口无声地呼唤. 它们的眼里闪着绿光，像要唤醒某个沉睡的东西. 你心慌想退，却被夜色裹住. 那夜色如同干涸的琴弦缠绕你脚腕，让你举步维艰.&lt;/p&gt;
+&lt;p&gt;再一瞬，一切消失，只余窸窣之声在岸边回响，像贝斯弹错的和弦. 没有人可解，也无从解.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2&gt;8.1&lt;/h2&gt;
+&lt;p&gt;某天午后，我刚吃完午餐，楼上邻居来敲门，说他要带猫离开本市，问我能否暂时帮忙照料半天. 我打开门看到那只胖灰猫，懒洋洋蜷在他怀里，一脸茫然. 邻居说要去办点手续，猫不便带，我若有空就收留一下午，等他回来接走.&lt;/p&gt;
+&lt;p&gt;我瞅了瞅这只胖猫，想起它以前随意闯我屋的场景，也就没拒绝，点头答应. 邻居便把猫递给我：“多谢，记得别让它乱跑.”&lt;/p&gt;
+&lt;p&gt;猫被我放在地上后，先是四处闻，确定是熟悉气味，就甩尾巴走向贝斯所在角落. 我想“果然还是对那琴感兴趣？”可它只是闻了闻琴，再转身绕到沙发脚下趴下，闭目打盹. 我乐得清闲，在桌前忙翻译时，不时瞄它一眼. 它睡得极沉，仿佛对房里一切都已熟悉.&lt;/p&gt;
+&lt;p&gt;临近傍晚，阳光透过窗户照进来，一大束金色光斜洒到地板. 猫被阳光烤得暖呼呼，伸直四肢翻过来露肚皮，喉咙里发出微小呼噜声. 我看着这画面，不禁露出笑意——它真像一位悠闲长者，无意跟我说话，也无意在这陌生房里探索，好像只是找了个温暖处打盹，就心满意足.&lt;/p&gt;
+&lt;p&gt;想起黑猫白猫，总在夜里带着神秘或讥讽出现；而这只灰猫，白天里就敢把我当床，懒懒散散，让人感觉踏实. 那一刻，我深深感悟：也许猫并非都带有隐喻，有时它们只是一种最日常的陪伴.&lt;/p&gt;
+&lt;p&gt;傍晚邻居回来接猫，我把它抱起送到门口时，它还依依不舍打了个哈欠，对我叫一声. 邻居笑：“它喜欢你房间吧，可能觉得你这里够安静.”&lt;/p&gt;
+&lt;p&gt;我心想：是啊，这里长久以来都冷清，不知它感受到什么. 不过我也不想多解释，只耸肩道别. 看着他和猫背影消失在楼道，我回房对着贝斯发呆几秒，随即认真调弦，弹了十分钟，反复琢磨某个小乐句，直到手指发热. 用这种方式来纪念灰猫留下的温暖，也算奇妙.&lt;/p&gt;
+&lt;p&gt;那晚夜深时，白猫或黑猫都没现身，我也没等它们. 心里很平静，把琴放回架子上后便熄灯. 躺在床上时，我想：世界如此大，不同的猫，不同的人，不同的琴，彼此偶遇又别离，就像一场缓慢流动的溪水，偶尔在浅滩处发出潺潺声，过了就无声无息.&lt;/p&gt;
+&lt;h2&gt;8.2&lt;/h2&gt;
+&lt;p&gt;以后几天，灰猫又来过几次，但都是短暂停留——大概邻居忙搬家事宜，无暇顾及它. 每当它敲门进来，我也不阻拦，让它在地板或沙发上走动. 有次它盯着贝斯弦发呆，我忍不住上前拨了几下，它就偏头“喵”地叫，似有些惊讶.&lt;/p&gt;
+&lt;p&gt;我甚至试图拍它与琴同框的照片，却拍得一塌糊涂，灰猫不肯老实摆姿势. 最后只留下几张模糊影像，猫耳朵或尾巴变得扭曲，背景是我那乱糟糟的房间和贝斯. 可我倒也喜欢这“失败之作”，因为它代表某种杂乱的真实.&lt;/p&gt;
+&lt;p&gt;过不了多久，邻居终于搬离这座公寓，带走灰猫. 临行前，他对我道谢，说“猫似乎对你房间印象深，可惜不再有机会打扰”. 我目送猫被他抱走，心里多了些许惆怅：一个小小日常插曲结束了.&lt;/p&gt;
+&lt;p&gt;整整一晚，我翻译到深夜，疲倦时伸手摸到贝斯，抚弦半响，回想猫的毛茸茸触感，又想起黑猫白猫冷峻或温柔的话语，觉得自己似乎不再那么孤单，却也更加懂得孤单的正常. 世界上每个人、每只猫都会来来去去，我留在这里，依赖一把琴，似乎就能继续下去.&lt;/p&gt;
+&lt;p&gt;凌晨时分，楼道彻底安静. 我晃到窗前看向外面，绵雨初落，路灯下水洼闪着微光. 我耳边仿佛还能听见灰猫打呼噜的声音，可一晃神才发觉是自己心跳. 我轻轻一笑，把窗关上，让夜和琴一起陪我入眠.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;9.1&lt;/h2&gt;
+&lt;p&gt;初夏来临时，我收到一封远方朋友寄来的明信片. 他是一位曾跟我合伙翻译过文稿的旧相识，名片上写着：“听说你又开始弹贝斯？真不错，记得大学时你琴弹得可带劲.” 我看着这话，不由得感慨万千：是啊，大学时代，我尚有冲劲玩乐队，后来却没坚持，到如今重新拾起，又是怎样的曲折?&lt;/p&gt;
+&lt;p&gt;那夜我抱着贝斯，一股冲动涌来：想弹出一些超越音阶的东西. 但才试两三下就发现尚不够熟练，索性把最简单和弦配合低音节奏打了一小段，录到手机里，勉强算演奏片段. 回放时，虽然生涩，却让人感到某种重新起步的力量.&lt;/p&gt;
+&lt;p&gt;正当我收拾琴、关灯之际，却听见窗户那边传来熟悉的“喵”声. 我心头一热，果然，看见黑猫优雅地跳进屋里，停在桌上. 它打量一圈房间：“你似乎过得还不赖啊. 这地儿比从前整洁些.”&lt;/p&gt;
+&lt;p&gt;我笑了笑：“从前你来，我都没在意. 现在倒觉得难得见你了.”&lt;/p&gt;
+&lt;p&gt;黑猫甩甩尾巴：“是啊，这段时间我少来，主要看你不用我天天盯着.”&lt;/p&gt;
+&lt;p&gt;我点头：“是，你们——” 说到这忽然卡住，不知要不要提及白猫. 黑猫似懂我意思，接口：“白猫嘛，它大概也在别处逍遥. 我们彼此独立存在，却也关照同一个人.”&lt;/p&gt;
+&lt;p&gt;我无言，心里却倍感温暖. 那一刻，回想起我和黑猫的交往，从最初的抵触到慢慢受其激励，再到现在开始走向独立，似乎已走完一条弧线.&lt;/p&gt;
+&lt;p&gt;我正想问它近况，黑猫先开口：“其实我今晚来，是打算跟你正式道别.”&lt;/p&gt;
+&lt;p&gt;“道别？” 我果然心头一颤，“你跟白猫一样，要走?”&lt;/p&gt;
+&lt;p&gt;它平静地舔爪：“我们原本只是你心中的两道影子或火焰，若你还需要，我们可暂时驻留. 可当你慢慢回归自己的步调，我们也就没多少用武之地了.”&lt;/p&gt;
+&lt;p&gt;我嘴角微苦，却也明白这是必然结局：“你说得对，我现在……虽称不上大好，但至少不再像从前那样迷茫.”&lt;/p&gt;
+&lt;p&gt;黑猫微笑：“那就足够了. 我记得，你第一回把贝斯拿出来时，手指都僵硬发抖. 现在可以自如弹几段，这便是进步.”&lt;/p&gt;
+&lt;p&gt;我一股暖流涌上心头：“谢谢. 尽管说不清你们——你和白猫——到底是什么存在，但你们确实帮了我.”&lt;/p&gt;
+&lt;p&gt;猫耸肩：“别谢. 我自有我的轨迹，不因你而停留. 但我承认，和你相处这段时间也蛮有意思，见证一个家伙如何从自我放逐到重新尝试.”&lt;/p&gt;
+&lt;p&gt;我苦笑：“还能再见吗?”&lt;/p&gt;
+&lt;p&gt;黑猫不置可否：“也许在你特别需要时，我会在某个夜里出现，也可能不出现. 命运之事，谁说得准?”&lt;/p&gt;
+&lt;p&gt;它又用尾巴敲了敲桌沿：“好啦，不多废话. 我要走了，你好好照顾琴，偶尔想玩弹子机也行. 反正别再死气沉沉就对.”&lt;/p&gt;
+&lt;p&gt;我还没来得及回答，它已跳下桌，走向窗台. 月色之下，它回头给我最后一瞥，眼里似含某种笑意. 然后轻巧一跃，便消失在夜风里.&lt;/p&gt;
+&lt;p&gt;我站在原处，只觉心被拉扯，却也理解这正是最终的分别. 可以说，我再无须依赖黑猫白猫，它们的使命到此结束. 空荡荡的房间重新回到深夜的宁静，但这宁静并不刺骨. 相反，我隐约感到一种新的从容.&lt;/p&gt;
+&lt;h2&gt;9.2&lt;/h2&gt;
+&lt;p&gt;次日清晨，我揉着眼睛醒来，脑中还有黑猫最后一句话“别再死气沉沉”. 望着墙角那把贝斯，我轻轻笑了笑. 洗漱后，有个念头：要不早上就来练琴？以前我是晚间才摸弦，现在想换换时间，看看感觉如何.&lt;/p&gt;
+&lt;p&gt;于是我稍微吃了片面包，又抱起琴，小心拨动音阶. 窗户打开着，春夏交替的清风吹来，街巷里响起断续的人声、车辆声，都成了我琴外的伴奏. 弹几分钟后，我越发感到畅快，哪怕不算好听，却是新鲜的体验.&lt;/p&gt;
+&lt;p&gt;这时房门外传来一阵急促脚步声，我还以为是邻居敲门催水费啥的，结果响了一下又远去，可能是过路罢了. 我漠然一笑，继续弹着那段略带民谣风的小节. 不多会儿，指尖酸胀，但我告诉自己，没关系，这正是熟悉的练习感.&lt;/p&gt;
+&lt;p&gt;等弹完我设想的小段，不自觉已经过半小时，肚子开始咕咕叫. 我放下琴，整理一下翻译台，准备吃早饭、开始一天工作，却感觉内心出奇轻盈：像搬走了一块大石头，也像有人帮我掸掉了灰尘——或许就是黑猫白猫的离别，让我学会独立面对生活.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在井底沉睡的那些碎片，渐渐化为流沙. 流沙推着贝斯弦滑向更深处.&lt;/p&gt;
+&lt;p&gt;四周没有光，只有一个无形漩涡吞噬一切音色. 黑猫尾巴缠绕着白猫，但它们互不对视. 任凭流沙把它们一起卷进弹子机下方的空洞.&lt;/p&gt;
+&lt;p&gt;空洞并非没有尽头，只是尽头再度连接另一片荒漠. 那里或许有灰猫蹲守，也或许什么都没有——因为谁也没见过它.&lt;/p&gt;
+&lt;p&gt;忽地，一只银球撞破漩涡，像彗星冲进漆黑. 猫们抬头，只听见隆隆作响，却分不清来自何方. 你若在井上，只能看见井口喷出蓝紫色烟雾，那烟雾随风飘向无名之地，散落成零星尘埃.&lt;/p&gt;
+&lt;p&gt;有人问：然后呢？没有然后，只有一片更加深远的寂静.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2&gt;10.1&lt;/h2&gt;
+&lt;p&gt;自那以后，黑猫白猫都没再造访，灰猫也随邻居搬离，此后我的房间真正恢复“人类独居”的格局. 若是从旁人眼中看，我依旧是那个翻译稿件、偶尔在外面吃饭、周末在家打扫的普通青年. 可我自己明白，内心变得和几个月前大不相同——不再整日郁结，不再害怕拿起贝斯，也不再对弹子机生出焦虑.&lt;/p&gt;
+&lt;p&gt;白天工作，晚间闲时我弹琴或偶尔看看书. 偶尔也翻出老相机到街上拍几张，拍到什么算什么，再没对构图、光圈执着. 毕竟这就是我的日常，我并不需要用摄影来证明什么.&lt;/p&gt;
+&lt;p&gt;有一天，我偶尔被翻译社的同事拉去一场小聚会，席间有人带了木吉他，让我即兴来两首. 我先是推辞，后来半推半就抱起琴弹了段简单的蓝调音列，引得同事鼓掌. 虽然吉他和贝斯不同，但多少也可通用些基础低音常识. 那一刻，我并没有感到怯懦，而是沉住气完成，结束后还有人说“你弹得不错啊，别太谦虚.”&lt;/p&gt;
+&lt;p&gt;我笑笑，没解释太多，只在心里想：若黑猫白猫看见这场景，也许会点头表示满意.&lt;/p&gt;
+&lt;h2&gt;10.2&lt;/h2&gt;
+&lt;p&gt;回家路上，我途经那家游戏厅旧址. 它早在上个月就换成一家新电玩店，门外张贴宣传画，里面挤满五颜六色大型设备，看不见老式弹子机的影子. 我怔立几秒，想象那台宇宙飞船机恐怕真的被拆了吧. 那就让它化作往昔回忆也好，我并不愤恨.&lt;/p&gt;
+&lt;p&gt;闪烁的灯光映在街面水洼里，我低头踩过去. 脑中浮现所有猫与弹子机的片断：黑猫尖锐的语气，白猫柔声的指引，灰猫慵懒的伸展……以及游戏厅老板对旧机依依不舍的神情，一切都宛如一场悠长梦境，残留某些浪花，却不会回头.&lt;/p&gt;
+&lt;p&gt;回到公寓，夜色已浓，我抱起贝斯练了一小段自编旋律，不算好听，却让我愈发接近内心. 关灯后躺在床上，我没有任何悲伤或不安，只觉得世界已在一种温和秩序里运转. 就如同深夜风在窗口掠过，不再带来寒意，而是温柔地摇晃窗帘，告诉我一切皆可安.&lt;/p&gt;
+&lt;p&gt;第二天清晨，阳光刺破云层，我醒来时精神不错，坐到桌前打算翻译新的稿件. 抬头看见墙角那把贝斯，想“练两分钟音阶预热一下头脑也好.”&lt;/p&gt;
+&lt;p&gt;拨出几声低音，我忽然心生奇想：要不要写个短篇，把这段和猫、弹子机的相遇记录下来? 但又想，人们会不会觉得太诡异? 也无所谓，或许只是对自己说说吧. 此后人生也许还会出现更多奇妙事物，但我已能坦然去面对.&lt;/p&gt;
+&lt;p&gt;就这样，我在晨曦中弹奏那简单音阶，仿佛在与尚未完全苏醒的城市对话. 我想，也许这就是我想要的——不追求高分，不追求掌声，只想让音与心同在. 哪怕再微不足道，我也会继续拨弦.&lt;/p&gt;
+&lt;p&gt;回首那年冬天的开端，我坐在寒冷房里，贝斯生硬，猫问我“又来了吗”之时，我完全不知道前路. 然而，如今回到这个六月清晨，我已不必问为什么或怎样，只需安静地弹下去，一步步让音符陪伴我度过春秋冬夏.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;最终的夜晚，无人看见井口——&lt;/p&gt;
+&lt;p&gt;只有猫低垂眼帘.&lt;/p&gt;
+&lt;p&gt;没有回答，也无所谓回答. 世界的片段在此兀自合拢，如同大幕落下，观众离去，舞台归于本然. 若尚存微光，乃是风里飘落的一句耳语：&lt;/p&gt;
+&lt;p&gt;“又来了吗？大概……是一首从未弹出的旋律.”&lt;/p&gt;
+&lt;/blockquote&gt;
+</content:encoded></item></channel></rss>
