@@ -1,5 +1,5 @@
 ---
-title: physics1notes1
+title: physicsCnotes1
 published: 2025-04-04
 description: ''
 image: ''
